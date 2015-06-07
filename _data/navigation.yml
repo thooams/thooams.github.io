@@ -1,0 +1,13 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: Portfolio
+  url: /portfolio/
+
+- title: Blog
+  url: /posts/
+
+- title: Ui Bibz
+  url: http://hummel.link/Ui-Bibz/

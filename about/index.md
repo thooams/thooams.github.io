@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-tags: [Thomas Hummel, thomas HUMMEL, thomas hummel developer, extjs, ruby, RoR, rails]
+tags: [Thomas Hummel ruby, thomas HUMMEL, thomas hummel developer, extjs, ruby, RoR, rails]
 modified: 2015-08-08T20:53:07.573882-04:00
 comments: false
 social: false
@@ -30,7 +30,7 @@ at all: large accounts, SME / SMI, Independent, Artisan, Institutional, ...
 I build communication device in line with expectations. My creative talents and
 ergonomist can bring a dimension in which the user is at the heart of the experience.
 
-## Technical Solution
+## {% icon fa-rocket %}  Technical Solution
 
 The development of Web sites with high value added. Here are my skills:
 

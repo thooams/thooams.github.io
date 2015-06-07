@@ -1,4 +1,5 @@
 _site
+tags
 .sass-cache
 .DS_Store
 *.sublime-project

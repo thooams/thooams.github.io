@@ -1,7 +1,7 @@
 ---
 layout: home
 excerpt: "French Ruby Developer."
-tags: [thomas hummel, ruby, ruby on rails, french ruby, ui bibz, french ror]
+tags: [thomas hummel, ruby, ruby on rails, french ruby, french extjs]
 image:
   feature: sample-image-2.jpg
   credit: WeGraphics

@@ -3,8 +3,10 @@ layout: {{ layout }}
 title: {{ title }}
 date: {{ date }}
 modified:
+comments: false
 excerpt:
 tags: []
+social: false
 image:
-  feature: 
+  feature:
 ---

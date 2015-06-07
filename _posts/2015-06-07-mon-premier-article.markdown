@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Mon Premier Article"
+modified:
+categories:
+excerpt: "Celui-ci sera bref et je me donne la liberté de parler un peu de tout sur ce
+blog. J'évoquerai plus particulièrement des langages qui sont cher à mon coeur,
+c'est à dire : [Ruby](https://www.ruby-lang.org/fr/) et notamment [Ruby on Rails](http://rubyonrails.org/)."
+tags: [Ruby, Extjs, Ui Bibz, jekyll]
+comments: true
+image:
+  feature:
+date: 2015-06-07T19:26:17+02:00
+---
+
+
+
+C'est mon premier article à partir de [jekyll](http://jekyllrb.com/).
+<img src="http://www.nodeforsure.com/content/images/2015/01/HELLOWORLD.gif" style="width: 140px; float: left; margin: 10px" />
+Celui-ci sera bref et je me donne la liberté de parler un peu de tout sur ce
+blog. J'évoquerai plus particulièrement des langages qui sont cher à mon coeur,
+c'est à dire : [Ruby](https://www.ruby-lang.org/fr/) et notamment [Ruby on Rails](http://rubyonrails.org/).
+<br/>
+<br/>
+Je pense faire quelques tutos sur [Ui Bibz](http://hummel.link/Ui-Bibz/) et
+peut-être sur [Extjs](http://www.sencha.com/products/extjs/).
+J'espère que ces articles vous seront utiles. À très bientôt avec
+un nouvel article, qui je pense vous interressera.
+

@@ -1,25 +1,42 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
-comments: true
+title: About
+tags: [Thomas Hummel ruby, thomas HUMMEL, thomas hummel developer, extjs, ruby,
+RoR, rails]
+modified: 2015-08-08T20:53:07.573882-04:00
+comments: false
+social: false
 image:
   feature: sample-image-1.jpg
   credit: WeGraphics
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+> I am a French Ruby developer who daily seeks to progress and actively pursue
+knowledge and personal growth. <br/>
+My pragmatism is my greatest strength.<br/>
+My motto: "Never regret anything."
 
-## Minimal Mistakes is all about:
+## {% icon fa-road %} Experience
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
+With 9 years of experience, I involved in online communication. Web design (ecommerce, showcase tools, ...),
+software, referencing, auditing, graphic identity, monitoring and maintenance.
+I make every effort to ensure that the project succeeds and the investment is profitable.
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+## {% icon fa-group %} Complementarity profile Experts
+
+The combination of my skills develops and promotes design allows me to respond to specific problems
+at all: large accounts, SME / SMI, Independent, Artisan, Institutional, ...
+I build communication device in line with expectations. My creative talents and
+ergonomist can bring a dimension in which the user is at the heart of the experience.
+
+## {% icon fa-rocket %}  Technical Solution
+
+The development of Web sites with high value added. Here are my skills:
+
+* Ruby, Ruby on Rails
+* Javascript, Extjs, Jquery, Coffescript
+* HTML, CSS, Haml, Sass
+* Php, Drupal, Wordpress
+* Vim, Photoshop
+* Osx, Linux

@@ -1,7 +1,7 @@
 ---
 layout: post-index
 title: All Posts
-excerpt: "A List of Posts"
+excerpt: "Thomas HUMMEL Posts"
 image:
-  feature: sample-image-4.jpg
+  feature: sample-image-2.jpg
 ---

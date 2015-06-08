@@ -9,7 +9,7 @@ c'est à dire : [Ruby](https://www.ruby-lang.org/fr/) et notamment [Ruby on Rail
 tags: [Ruby, Extjs, Ui Bibz, jekyll]
 comments: true
 image:
-  feature:
+  feature: posts/HELLOWORLD.gif
 date: 2015-06-07T19:26:17+02:00
 ---
 

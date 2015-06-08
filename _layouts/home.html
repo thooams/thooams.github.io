@@ -30,6 +30,8 @@
     {% include _author-bio.html %}
   </div>
   <div id="index">
+    <h3>Presentation</h3>
+    <p>{{ page.excerpt | strip_html }} <a class="more" href="{{ site.url }}/about">more...</a></p>
     <h3><a href="{{ site.url}}/posts/">Recent Posts</a></h3>
     {% for post in site.posts limit:5 %}
     <article>

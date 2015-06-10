@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: portfolio-index
 title: Portfolio
 excerpt: "Portfolio of Thomas HUMMEL"
 image:
@@ -10,10 +10,10 @@ image:
 
 {% include _toc.html %}
 
-{% for post in site.portfolio %}
-# {{ post.title }}
-{{ post.image }}
-{{ post.description }}
+{% for portfolio in site.portfolio %}
+# {{ portfolio.title }}
+{{ portfolio.image }}
+{{ portfolio.description }}
 {% endfor %}
 
 

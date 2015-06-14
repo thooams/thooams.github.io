@@ -3,7 +3,7 @@ layout: portfolio
 title: "Ui Bibz"
 excerpt: "Ui Bibz is a referential that lets you easily perform your Life Cycle Assessments (LCA) and your eco-design projects in compliance with international programmes and standards."
 image:
-  feature: posts/HELLOWORLD.gif
+  feature: portfolio/ui-bibz/logo.gif
 date: 2015-06-07T19:26:17+02:00
 ---
 

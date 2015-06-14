@@ -41,12 +41,13 @@
         {% endif %}
       {% endunless %}
       <article>
-        {% if creation.link %}
-          <h2 class="link-creation.><a href="{{ site.url }}{{ creation.url }}" title="{{ creation.title }}">{{ creation.title }}</a> <a href="{{ creation.link }}" target="_blank" title="{{ creation.title }}"><i class="fa fa-link"></i></a></h2>
-        {% else %}
-          <h2><a href="{{ site.url }}{{ creation.url }}" title="{{ creation.title }}">{{ creation.title }}</a></h2>
+        <a href="{{ site.url }}{{ creation.url }}" title="{{ creation.title }}">
+          <h2>
+              {{ creation.title }}
+          </h2>
+            <img src="{{ site.url }}/images/{{ creation.image.feature }}" alt='{{ creation.title }} feature image' />
           <p>{{ creation.excerpt | strip_html | truncate: 160 }}</p>
-        {% endif %}
+          </a>
       </article>
     {% endfor %}
   </div><!-- /#index -->

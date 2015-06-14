@@ -8,6 +8,7 @@ image:
 date: 2015-06-07T19:26:17+02:00
 ---
 
+{% include _toc.html %}
 
 ## Presentation
 
@@ -23,7 +24,7 @@ Eime is develop in [Ruby on Rails](http://rubyonrails.org/) in his core and in [
 Eime dispose d'un versionning de données au coeur de l'application. Mixé à de
 nombreuses formules de calcul et d'une énorme base de données, Eime permet en très
 peu de temps, grâce à ces requêtes (postgres) optimisées, d'analyser le produit
-créé par l'utilisateur dans le logiciel.
+créé par l'utilisateur dans le logiciel en un temps record.
 
 #### Centre de notification
 
@@ -37,8 +38,9 @@ Pour les opérations plus longues comme :
 
 Eime permet de les lancer en tache de fond, les actions gourmandes en
 temps/processus pour que l'utilisateur puisse être libre de continuer à utiliser
-le logiciel sans aucune latence. Bien sur, un affichage du pourcentage de chaque
-action est disponible dans le centre notification. Ainsi qu'un système de
+le logiciel sans aucune latence.<br/>
+Bien sur, un affichage du pourcentage de chaque
+action est disponible en **temps** réel dans le centre notification. Ainsi qu'un système de
 notification web (Chrome/Firefox) permettant d'être prévenu de la finalité du
 processus.
 <br/>
@@ -49,7 +51,8 @@ processus.
 <br/>
 <br/>
 La technologie du centre de notification s'appuie sur un système de background
-job (Delayed Job) et un système de pubsub (Faye).
+job ([Delayed Job](https://github.com/collectiveidea/delayed_job)) et un système de
+pubsub ([Faye](http://faye.jcoglan.com/)).
 <br/>
 <br/>
 
@@ -57,14 +60,14 @@ job (Delayed Job) et un système de pubsub (Faye).
 
 <br/>
 <br/>
-On peut aussi retrouver dans ce centre de notification un historique du
+On peut aussi retrouver, dans ce centre de notification, un historique du
 copier/couper/coller permettant de choisir une des 3 dernières actions en
 vigueur.
 
 #### Multi copier/couper/coller
 
 Ce système est utilisé à de nombreuses endroits dans l'application.
-Eime étant un logiciel comprenant la logique du "container-item", il est donc
+Eime étant un logiciel comprenant la logique du "container/item", il est donc
 naturel qu'un moyen simple et efficace pour déplacer de nombreux projects,
 folders, cases study, containers, modules, flows soit mis en place.
 
@@ -74,24 +77,94 @@ folders, cases study, containers, modules, flows soit mis en place.
 
 ### Front office
 
-#### Analyse/graphique/calcul
+La partie front office est créé dynamiquement avec le framework Extjs.
+Celui-ci permet de créé des tableau dynamiques modulables mais aussi permet
+l'interaction simple comme le glisser-déposer, les notifications et la recherche en temps réel
+ou le déplacement de composant de l'interface.
 
+#### Analyse/graphique/calcul Interface
+
+La partie Analyse comporte deux parties distinctes :
+
+* la partie tableau de valeurs
+* la partie graphique
+
+Les calcules sont créés et optimisés grâce à des requêtes permettant un gain de
+performance optimal. Un gestion d'onglet à été créé afin de pouvoir comparer les
+résultats de calculs.
+
+<br/>
 ![Analysis values]({{ site.url }}/images/portfolio/eime/analysis-values.png)
+
+<br/>
+<br/>
+
+Les graphiques reprennent les valeurs précédentes en les exploitant afin de
+fournir le graphique le plus approprié (pie, bar, column...). Il est possible
+d'affiner les résultats des graphiques en temps réél et aussi de paramétrer ces
+dernier à travers la 3d ou le changement d'échelles.
+<br/>
+<br/>
+
 ![Analysis graph]({{ site.url }}/images/portfolio/eime/analysis-graphs.png)
 
-#### Design
+<br/>
+
+#### Design Interface
+
+La partie Design comporte plusieurs éléments distincts :
+
+* Tab
+* Tree
+* Overview
+* Breadcrumb
+* Database
+
+Un cas d'étude contient des phases, ces phases sont représenter par un système
+d'onglet. Dans ces onglet, il y a un tree à gauche, un overview avec un moteur
+de recherche, un breadcrumb interactif et des panneaux informatifs.
+
+La database avec moteur de recherche intégré comporte un panel d'information.
+
+<br/>
+<br/>
 ![Design]({{ site.url }}/images/portfolio/eime/design.png)
 
-#### Project
+<br/>
+Chaque élément insérer dans l'overview comporte des droits et chacun est
+différent selon l'endroit où il se trouve. Des informations visuelles viennent
+indiqué en temps réelles si l'on peut ou pas faire telle ou telle action.
+
+Le copy/cut/paste est aussi de la partie tt une fenêtre s'ouvre en indiquant
+en temps réel (comme dans les OS modernes) l'avancée de l'action en cours.
+
+
+#### Project Interface
+
+La partie projet disposent d'un tree projet à gauche, d'un overview au centre et
+d'un panel détail à droite.
+Le copy/cut/paste en présent et des actions au clique droit sont mises en place.
+
+<br/>
+<br/>
 ![Project]({{ site.url }}/images/portfolio/eime/project.png)
 
+<br/>
+
 ### Main Search (spotlight)
+
+La recherche principale est une sorte de spotlight (apple) et permet de
+rechercher n'importe quelle information dans l'application à travers une fenêtre
+de recherche.
+
+<br/>
+<br/>
 ![Main search]({{ site.url }}/images/portfolio/eime/main-search.png)
 
 #### Other interfaces
 
 D'autres interfaces(database, adminstration, project manager) sont en cours de
-développements et prendront les fonctionnalités et le visuels déjà existant dans
+développements et prendront les fonctionnalités et le visuels déjà existant sur
 les autres interfaces.
 
 

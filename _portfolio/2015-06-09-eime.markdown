@@ -2,6 +2,7 @@
 layout: portfolio
 title: "Eime"
 excerpt: "Eime is a referential that lets you easily perform your Life Cycle Assessments (LCA) and your eco-design projects in compliance with international programmes and standards."
+social: false
 image:
   feature: portfolio/eime/logo.png
 date: 2015-06-07T19:26:17+02:00
@@ -20,30 +21,42 @@ Eime is develop in [Ruby on Rails](http://rubyonrails.org/) in his core and in [
 ### Core programation
 
 Eime dispose d'un versionning de données au coeur de l'application. Mixé à de
-nombreuses formules de calcul et d'une énorme base de données, Eime permet à
-grande vitesse, grâce à ces requêtes (postgres) optimisées, d'analyser le produit
-créé par l'utilisateur dans le logiciel à une vitesse fulgurante.
+nombreuses formules de calcul et d'une énorme base de données, Eime permet en très
+peu de temps, grâce à ces requêtes (postgres) optimisées, d'analyser le produit
+créé par l'utilisateur dans le logiciel.
 
 #### Centre de notification
 
 Pour les opérations plus longues comme :
-  - export xls
-  - import xls
-  - export analyse
-  - export design
-  - multi copy/cut/paste
 
-Eime permet de les lancer en tache de fond les actions gourmante en
+- export xls
+- import xls
+- export analyse
+- export design
+- multi copy/cut/paste
+
+Eime permet de les lancer en tache de fond, les actions gourmandes en
 temps/processus pour que l'utilisateur puisse être libre de continuer à utiliser
-le logiciel sans aucune latence. Biensur, un affichage du pourcentage de chaque
+le logiciel sans aucune latence. Bien sur, un affichage du pourcentage de chaque
 action est disponible dans le centre notification. Ainsi qu'un système de
-notification web (chrome/firefox) permettant d'être prévenu de la finalité du
+notification web (Chrome/Firefox) permettant d'être prévenu de la finalité du
 processus.
+<br/>
+<br/>
 
+![Chrome notification]({{ site.url }}/images/portfolio/eime/notification-chrome.png)
+
+<br/>
+<br/>
 La technologie du centre de notification s'appuie sur un système de background
-job (Delayed Job) et un sytème de pubsub (Faye).
+job (Delayed Job) et un système de pubsub (Faye).
+<br/>
+<br/>
 
+![Notification center]({{ site.url }}/images/portfolio/eime/notification-center.png)
 
+<br/>
+<br/>
 On peut aussi retrouver dans ce centre de notification un historique du
 copier/couper/coller permettant de choisir une des 3 dernières actions en
 vigueur.
@@ -51,21 +64,36 @@ vigueur.
 #### Multi copier/couper/coller
 
 Ce système est utilisé à de nombreuses endroits dans l'application.
-Eime étant un logiciel compronent la logique du "container-item", il est donc
+Eime étant un logiciel comprenant la logique du "container-item", il est donc
 naturel qu'un moyen simple et efficace pour déplacer de nombreux projects,
 folders, cases study, containers, modules, flows soit mis en place.
+
+<br/>
+![Copy cut paste]({{ site.url }}/images/portfolio/eime/copy-paste.png)
+
 
 ### Front office
 
 #### Analyse/graphique/calcul
 
+![Analysis values]({{ site.url }}/images/portfolio/eime/analysis-values.png)
+![Analysis graph]({{ site.url }}/images/portfolio/eime/analysis-graphs.png)
+
 #### Design
+![Design]({{ site.url }}/images/portfolio/eime/design.png)
 
 #### Project
+![Project]({{ site.url }}/images/portfolio/eime/project.png)
 
-#### Database
+### Main Search (spotlight)
+![Main search]({{ site.url }}/images/portfolio/eime/main-search.png)
 
-#### Administration
+#### Other interfaces
+
+D'autres interfaces(database, adminstration, project manager) sont en cours de
+développements et prendront les fonctionnalités et le visuels déjà existant dans
+les autres interfaces.
+
 
 
 

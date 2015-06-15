@@ -161,7 +161,7 @@ de recherche.
 <br/>
 ![Main search]({{ site.url }}/images/portfolio/eime/main-search.png)
 
-#### Other interfaces
+#### Et après
 
 D'autres interfaces(database, adminstration, project manager) sont en cours de
 développements et prendront les fonctionnalités et le visuels déjà existant sur

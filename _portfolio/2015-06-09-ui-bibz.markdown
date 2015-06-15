@@ -1,30 +1,29 @@
 ---
 layout: portfolio
 title: "Ui Bibz"
-excerpt: "Ui Bibz is a referential that lets you easily perform your Life Cycle Assessments (LCA) and your eco-design projects in compliance with international programmes and standards."
+excerpt: "Ui bibz is an interface framework for building an interface very quickly and simply using Ruby on Rails 4 and 3 Boostrap."
 image:
   feature: portfolio/ui-bibz/logo.gif
 date: 2015-06-07T19:26:17+02:00
 ---
 
+{% include _toc.html %}
 
 ## Presentation
 
-**Ui Bibz** est un framework d'interface permettant de construire une interface très rapidement
-et simplement à l'aide de [Ruby on Rails 4](http://rubyonrails.org/) et de [Boostrap 3](http://getbootstrap.com/).
+**Ui bibz** is an interface framework for building an interface very quickly and simply using
+[Ruby on Rails 4](http://rubyonrails.org/) and [Boostrap 3](http://getbootstrap.com/)
 
-## Technique
+## Technical
 
-Ui bibz est une **gem** pour Ruby on Rails qui permet facilement d'utiliser et de
-créer des composants grâce à un seul élément de base initial : ```Component```.
+Ui bibz is a gem for Ruby on Rails easy to use and create components with a single basic element: ```Component```.
 <br/>
 ![dropdown]({{ site.url }}/images/portfolio/ui-bibz/button_split_dropdown.png)
 <br/>
 <br/>
 
-La création de composant en Ruby permet de ne plus avoir à écrire de code HTML pour les
-**composants Bootstrap**. Et de ce fait, ne pas avoir à mettre à jour tout le code HTML
-et CSS lors des mises à jour de Boostrap.
+Creating components in Ruby allows not having to write HTML code for **Bootstrap elements***.
+And therefore do not have to update all the HTML and CSS when updates to Boostrap
 
 <br/>
 
@@ -32,13 +31,13 @@ et CSS lors des mises à jour de Boostrap.
 <br/>
 <br/>
 
-Ui Bibz est entièrement **testé, documenté et extensible**. Certain composant complexe comme
-le tableau + recherche + pagination + internalisation fait déjà parti du
-framework. De nombreux composants sont à venir pour des versions ultérieures.
+Ui bibz is fully **tested, documented and extensible***.
+Some complex components like tables with their search, their pagination and their internalization is already part of the framework.
+Many components are coming in later versions.
 
-## Autre
+## And After
 
-Cette librairie est open source est diponible à cette adresse : [Ui-Bibz]({{ site.url }}/Ui-Bibz/)
-Elle a été créé et est maintenue par ma propre initiative.
+This library is open source (MIT), available at: [Ui-Bibz]({{ site.url }}/Ui-Bibz/)
+It was created and is maintained by yours truly.
 
 

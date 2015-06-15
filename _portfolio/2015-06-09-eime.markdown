@@ -21,28 +21,27 @@ Eime is develop in [Ruby on Rails](http://rubyonrails.org/) in his core and in [
 
 ### Core programation
 
-Eime dispose d'un versionning de données au coeur de l'application. Mixé à de
-nombreuses formules de calcul et d'une énorme base de données, Eime permet en très
-peu de temps, grâce à ces requêtes (postgres) optimisées, d'analyser le produit
-créé par l'utilisateur dans le logiciel en un temps record.
+Eime has a data versioning in the core application. Mixed with many formulas and a huge database,
+Eime allows very little time, thanks to these optimized applications (postgresql),
+analyzing the product created by the user in the software in record time.
 
-#### Centre de notification
+#### Notification Center
 
-Pour les opérations plus longues comme :
+For long operationg:
 
-- export xls
-- import xls
-- export analyse
-- export design
+- .xls export
+- .xls import
+- analyse export
+- design export
 - multi copy/cut/paste
 
-Eime permet de les lancer en tache de fond, les actions gourmandes en
-temps/processus pour que l'utilisateur puisse être libre de continuer à utiliser
-le logiciel sans aucune latence.<br/>
-Bien sur, un affichage du pourcentage de chaque
-action est disponible en **temps** réel dans le centre notification. Ainsi qu'un système de
-notification web (Chrome/Firefox) permettant d'être prévenu de la finalité du
-processus.
+Eime allows to launch in the background, time-intensive actions / processes so that the user
+can be continued to use the software without any latency.
+
+<br/>
+Of course, a percentage display of each action is available in **real time** in the notification center.
+And a web notification system (Chrome / Firefox) to be informed of the purpose of the process.
+
 <br/>
 <br/>
 
@@ -50,9 +49,9 @@ processus.
 
 <br/>
 <br/>
-La technologie du centre de notification s'appuie sur un système de background
-job ([Delayed Job](https://github.com/collectiveidea/delayed_job)) et un système de
-pubsub ([Faye](http://faye.jcoglan.com/)).
+The technology of the notification center is based on a background job system
+([Delayed Job](https://github.com/collectiveidea/delayed_job)) and a
+pubsub system ([Faye](http://faye.jcoglan.com/)).
 <br/>
 <br/>
 
@@ -60,16 +59,13 @@ pubsub ([Faye](http://faye.jcoglan.com/)).
 
 <br/>
 <br/>
-On peut aussi retrouver, dans ce centre de notification, un historique du
-copier/couper/coller permettant de choisir une des 3 dernières actions en
-vigueur.
+One can also find in this notification center, a history of copy / cut / paste to choose one of the last 3 actions in force.
 
-#### Multi copier/couper/coller
+#### Multi copy/cut/paste
 
-Ce système est utilisé à de nombreuses endroits dans l'application.
-Eime étant un logiciel comprenant la logique du "container/item", il est donc
-naturel qu'un moyen simple et efficace pour déplacer de nombreux projects,
-folders, cases study, containers, modules, flows soit mis en place.
+This system is used in many places in an application.
+Eime is a software including the logic of "container / item", so it is natural
+that a simple and effective way to move many projects, folders, boxes study, containers, modules, flow is established.
 
 <br/>
 ![Copy cut paste]({{ site.url }}/images/portfolio/eime/copy-paste.png)
@@ -77,21 +73,20 @@ folders, cases study, containers, modules, flows soit mis en place.
 
 ### Front office
 
-La partie front office est créé dynamiquement avec le framework Extjs.
-Celui-ci permet de créé des tableau dynamiques modulables mais aussi permet
-l'interaction simple comme le glisser-déposer, les notifications et la recherche en temps réel
-ou le déplacement de composant de l'interface.
+The front office is created dynamically with the Ext JS framework.
+This helps create scalable dynamic table but also allows simple
+interaction like drag and drop, notifications and real-time search
+or interface component displacement. All thanks to the MVC pattern.
 
-#### Analyse/graphique/calcul Interface
+#### Analysis/graphs/calculation Interface
 
-La partie Analyse comporte deux parties distinctes :
+The analysis part comprises two distinct parts:
 
-* la partie tableau de valeurs
-* la partie graphique
+* the table of values
+* the graphics
 
-Les calcules sont créés et optimisés grâce à des requêtes permettant un gain de
-performance optimal. Un gestion d'onglet à été créé afin de pouvoir comparer les
-résultats de calculs.
+Some calculations are created and optimized with requests for optimal performance gain.
+A tab management was created in order to compare the results of calculations.
 
 <br/>
 ![Analysis values]({{ site.url }}/images/portfolio/eime/analysis-values.png)
@@ -99,10 +94,8 @@ résultats de calculs.
 <br/>
 <br/>
 
-Les graphiques reprennent les valeurs précédentes en les exploitant afin de
-fournir le graphique le plus approprié (pie, bar, column...). Il est possible
-d'affiner les résultats des graphiques en temps réél et aussi de paramétrer ces
-dernier à travers la 3d ou le changement d'échelles.
+The graphs show the previous values in the operator to provide the most appropriate chart (pie, bar, column ...).
+You can refine the results of graphics in real time and also set these last through the 3D or changing scales.
 <br/>
 <br/>
 
@@ -112,7 +105,7 @@ dernier à travers la 3d ou le changement d'échelles.
 
 #### Design Interface
 
-La partie Design comporte plusieurs éléments distincts :
+The design part includes several distinct elements:
 
 * Tab
 * Tree
@@ -120,30 +113,29 @@ La partie Design comporte plusieurs éléments distincts :
 * Breadcrumb
 * Database
 
-Un cas d'étude contient des phases, ces phases sont représenter par un système
-d'onglet. Dans ces onglet, il y a un tree à gauche, un overview avec un moteur
-de recherche, un breadcrumb interactif et des panneaux informatifs.
+A case study contains phases, these phases are represented by a tab system.
+In this tab, there is a tree on the left, an overview with a search engine,
+an interactive breadcrumb and information panels.
 
-La database avec moteur de recherche intégré comporte un panel d'information.
+<br/>
+The database with integrated search engine includes an information panel.
 
 <br/>
 <br/>
 ![Design]({{ site.url }}/images/portfolio/eime/design.png)
 
 <br/>
-Chaque élément insérer dans l'overview comporte des droits et chacun est
-différent selon l'endroit où il se trouve. Des informations visuelles viennent
-indiqué en temps réelles si l'on peut ou pas faire telle ou telle action.
+Each element inserted in the overview includes rights and everyone is different depending on where it is located.
+Visual information are shown in real time, or if we can not do this or that action.
 
-Le copy/cut/paste est aussi de la partie tt une fenêtre s'ouvre en indiquant
-en temps réel (comme dans les OS modernes) l'avancée de l'action en cours.
-
+<br/>
+The copy / cut / paste is also part tt a window opens indicating in real time (as in modern OS)
+the progress of the current action.
 
 #### Project Interface
 
-La partie projet disposent d'un tree projet à gauche, d'un overview au centre et
-d'un panel détail à droite.
-Le copy/cut/paste en présent et des actions au clique droit sont mises en place.
+The project part have a project tree on the left, an overview of the center and a
+retail panel on the right. The copy / cut / paste into this and right click actions are implemented.
 
 <br/>
 <br/>
@@ -153,19 +145,17 @@ Le copy/cut/paste en présent et des actions au clique droit sont mises en place
 
 ### Main Search (spotlight)
 
-La recherche principale est une sorte de spotlight (apple) et permet de
-rechercher n'importe quelle information dans l'application à travers une fenêtre
-de recherche.
+The main research is a kind of spotlight (Apple) and allows you to search
+any information in the application through a search window.
 
 <br/>
 <br/>
 ![Main search]({{ site.url }}/images/portfolio/eime/main-search.png)
 
-#### Et après
+#### And After
 
-D'autres interfaces(database, adminstration, project manager) sont en cours de
-développements et prendront les fonctionnalités et le visuels déjà existant sur
-les autres interfaces.
+Other interfaces (database, administration, project manager)
+are under development and will features and existing visual on other interfaces.
 
 
 

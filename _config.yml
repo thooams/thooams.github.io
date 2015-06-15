@@ -26,7 +26,10 @@ kramdown:
 owner:
   name: Thomas HUMMEL
   avatar: profil.jpg
-  bio: "French Ruby Developer<br/>31 years old<br/>Driving licence"
+  bio: "French Ruby Developer<br/>
+    31 years old<br/>
+    Driving licence<br/>
+    <a href='https://www.google.fr/maps/place/Grenoble/@45.1841656,5.7155424,13z/data=!3m1!4b1!4m2!3m1!1s0x478af48bd689be6f:0x618c10cd6e995398' target='blank'>Grenoble</a> (FRANCE)"
   email: thomas.hummel.link
   disqus-shortname:
   twitter: thooams

@@ -8,16 +8,37 @@ date: 2015-06-07T19:26:17+02:00
 ---
 
 
+## Presentation
 
-C'est mon premier article à partir de [jekyll](http://jekyllrb.com/).
-<img src="http://www.nodeforsure.com/content/images/2015/01/HELLOWORLD.gif" style="width: 140px; float: left; margin: 10px" />
-Celui-ci sera bref et je me donne la liberté de parler un peu de tout sur ce
-blog. J'évoquerai plus particulièrement des langages qui sont cher à mon coeur,
-c'est à dire : [Ruby](https://www.ruby-lang.org/fr/) et notamment [Ruby on Rails](http://rubyonrails.org/).
+**Ui Bibz** est un framework d'interface permettant de construire une interface très rapidement
+et simplement à l'aide de [Ruby on Rails 4](http://rubyonrails.org/) et de [Boostrap 3](http://getbootstrap.com/).
+
+## Technique
+
+Ui bibz est une **gem** pour Ruby on Rails qui permet facilement d'utiliser et de
+créer des composants grâce à un seul élément de base initial : ```Component```.
+<br/>
+![dropdown]({{ site.url }}/images/portfolio/ui-bibz/button_split_dropdown.png)
 <br/>
 <br/>
-Je pense faire quelques tutos sur [Ui Bibz](http://hummel.link/Ui-Bibz/) et
-peut-être sur [Extjs](http://www.sencha.com/products/extjs/).
-J'espère que ces articles vous seront utiles. À très bientôt avec
-un nouvel article, qui je pense vous interressera.
+
+La création de composant en Ruby permet de ne plus avoir à écrire de code HTML pour les
+**composants Bootstrap**. Et de ce fait, ne pas avoir à mettre à jour tout le code HTML
+et CSS lors des mises à jour de Boostrap.
+
+<br/>
+
+![Table]({{ site.url }}/images/portfolio/ui-bibz/table.png)
+<br/>
+<br/>
+
+Ui Bibz est entièrement **testé, documenté et extensible**. Certain composant complexe comme
+le tableau + recherche + pagination + internalisation fait déjà parti du
+framework. De nombreux composants sont à venir pour des versions ultérieures.
+
+## Autre
+
+Cette librairie est open source est diponible à cette adresse : [Ui-Bibz]({{ site.url }}/Ui-Bibz/)
+Elle a été créé et est maintenue par ma propre initiative.
+
 

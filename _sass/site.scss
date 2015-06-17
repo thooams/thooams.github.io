@@ -2,22 +2,22 @@
    Site wide styles
    ========================================================================== */
 
-/* 
+/*
    Selection
    ========================================================================== */
 
-::-moz-selection { 
-	background-color: lighten($basecolor, 65%); 
-	color: $basecolor; 
-	text-shadow: none; 
-}  	
-::selection { 
-	background-color: lighten($basecolor, 65%); 
-	color: $basecolor; 
-	text-shadow: none; 
+::-moz-selection {
+	background-color: lighten($basecolor, 65%);
+	color: $basecolor;
+	text-shadow: none;
+}
+::selection {
+	background-color: lighten($basecolor, 65%);
+	color: $basecolor;
+	text-shadow: none;
 }
 
-/* 
+/*
    Global classes
    ========================================================================== */
 
@@ -29,6 +29,10 @@
 /* Float left */
 .pull-left {
 	float: left;
+}
+
+.img-portfolio {
+  margin-bottom: 10px
 }
 
 /* Float right */
@@ -63,7 +67,7 @@
 	}
 }
 
-/* 
+/*
    Global transition
    ========================================================================== */
 

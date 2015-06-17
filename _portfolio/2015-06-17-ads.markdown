@@ -1,10 +1,10 @@
 ---
 layout: portfolio
-title: "Ui Bibz"
-excerpt: "Ui bibz is an interface framework for building an interface very quickly and simply using Ruby on Rails 4 and 3 Boostrap."
+title: "Ads and real estates"
+excerpt: "List of ads and real estates projects..."
 image:
-  thumb: portfolio/ui-bibz/ui-bibz.jpg
-  feature: portfolio/ui-bibz/logo.gif
+  thumb: portfolio/ads/adis.jpg
+  feature: portfolio/ads/logo.gif
 date: 2015-06-07T19:26:17+02:00
 ---
 

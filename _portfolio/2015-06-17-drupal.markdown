@@ -12,33 +12,31 @@ date: 2015-06-07T19:26:17+02:00
 
 ## Presentation
 
-**Ui bibz** is an interface framework for building an interface very quickly and simply using
-[Ruby on Rails 4](http://rubyonrails.org/) and [Boostrap 3](http://getbootstrap.com/)
+2 sites were created with [Drupal](https://www.drupal.org/) CMS:
 
-## Technical
+* Buyster
+* Tenesol
 
-Ui bibz is a gem for Ruby on Rails easy to use and create components with a single basic element: ```Component```.
-<br/>
-![dropdown]({{ site.url }}/images/portfolio/ui-bibz/button_split_dropdown.png)
-<br/>
-<br/>
+### Buyster
 
-Creating components in Ruby allows not having to write HTML code for **Bootstrap elements***.
-And therefore do not have to update all the HTML and CSS when updates to Boostrap
+![Buyster]({{ site.url }}/images/portfolio/drupal/buyster.jpg)
 
 <br/>
+Buyster is a mobile payment showcase site with a webservice
+to communicate with the application on mobile phones.
 
-![Table]({{ site.url }}/images/portfolio/ui-bibz/table.png)
 <br/>
+
+**Technology:** PHP and Drupal
+
+### Tenesol
+
+![Tenesol]({{ site.url }}/images/portfolio/drupal/tenesol.jpg)
+
+<br/>
+Tenesol is a showcase site solar panels multilingual with 8 different languages.
+
 <br/>
 
-Ui bibz is fully **tested, documented and extensible***.
-Some complex components like tables with their search, their pagination and their internalization is already part of the framework.
-Many components are coming in later versions.
-
-## And After
-
-This library is open source (MIT), available at: [Ui-Bibz]({{ site.url }}/Ui-Bibz/)
-It was created and is maintained by yours truly.
-
+**Technology:** PHP and Drupal
 

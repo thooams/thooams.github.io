@@ -12,33 +12,61 @@ date: 2015-06-07T19:26:17+02:00
 
 ## Presentation
 
-**Ui bibz** is an interface framework for building an interface very quickly and simply using
-[Ruby on Rails 4](http://rubyonrails.org/) and [Boostrap 3](http://getbootstrap.com/)
+Plusieurs types de sites ont été entièrement créé dans cette partie.
+Cela va du site e-commerce, jusq'au site de petites annonces en passant par le
+site d'annonces immobilières.
 
-## Technical
+### Quintessence international
 
-Ui bibz is a gem for Ruby on Rails easy to use and create components with a single basic element: ```Component```.
-<br/>
-![dropdown]({{ site.url }}/images/portfolio/ui-bibz/button_split_dropdown.png)
-<br/>
-<br/>
-
-Creating components in Ruby allows not having to write HTML code for **Bootstrap elements***.
-And therefore do not have to update all the HTML and CSS when updates to Boostrap
+![Quintessence international]({{ site.url }}/images/portfolio/ads/quintessence.jpg)
 
 <br/>
 
-![Table]({{ site.url }}/images/portfolio/ui-bibz/table.png)
+Quintessence international est un site de vente en ligne spécialisé dans la
+vente de livre.
+La site frontOffice ainsi que backOffice à été entièrement réalisé from
+scratch.
+
 <br/>
+
+**Technology:** PHP / HTML and CSS / Javascript
+
+### Fast Affair
+
+![Fast Affair]({{ site.url }}/images/portfolio/ads/fastaffair.jpg)
+
 <br/>
 
-Ui bibz is fully **tested, documented and extensible***.
-Some complex components like tables with their search, their pagination and their internalization is already part of the framework.
-Many components are coming in later versions.
+Fast Affair est un site de petites annonces en ligne comprenant des photos mais
+aussi des vidéos. Le site est traduit en 5 langues.
 
-## And After
+<br/>
 
-This library is open source (MIT), available at: [Ui-Bibz]({{ site.url }}/Ui-Bibz/)
-It was created and is maintained by yours truly.
+**Technology:** PHP and CAKEPHP / HTML and CSS / Javascript
 
+### LocaRabat, LocaFes, LocaTanger
+
+![LocaRabat]({{ site.url }}/images/portfolio/ads/locarabat.jpg)
+
+<br/>
+
+LocaRabat est un site de petites annonces immobilières avec une gestion
+d'enchères. Le site a été créé pour le territoire Marocain.
+
+<br/>
+
+**Technology:** Ruby and Ruby on Rails / HTML and CSS / Javascript
+
+### LocaMonde
+
+![Locamonde]({{ site.url }}/images/portfolio/ads/locamonde.jpg)
+
+<br/>
+
+Locamonde est une extension de locaRabat mais à l'echelle mondial et traduit en
+2 langues.
+
+<br/>
+
+**Technology:** Ruby and Ruby on Rails / HTML and CSS / Javascript
 

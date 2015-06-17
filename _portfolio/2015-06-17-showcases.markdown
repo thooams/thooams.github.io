@@ -12,33 +12,164 @@ date: 2015-06-07T19:26:17+02:00
 
 ## Presentation
 
-**Ui bibz** is an interface framework for building an interface very quickly and simply using
-[Ruby on Rails 4](http://rubyonrails.org/) and [Boostrap 3](http://getbootstrap.com/)
+L'ensemble de ces sites vitrines sont réalisés soit en html et css ou en flash.
 
-## Technical
+### Adeios
 
-Ui bibz is a gem for Ruby on Rails easy to use and create components with a single basic element: ```Component```.
-<br/>
-![dropdown]({{ site.url }}/images/portfolio/ui-bibz/button_split_dropdown.png)
-<br/>
-<br/>
-
-Creating components in Ruby allows not having to write HTML code for **Bootstrap elements***.
-And therefore do not have to update all the HTML and CSS when updates to Boostrap
+![Adeios]({{ site.url }}/images/portfolio/showcases/adeios.jpg)
 
 <br/>
 
-![Table]({{ site.url }}/images/portfolio/ui-bibz/table.png)
+**Technology:** HTML and CSS
+
+### Atr
+
+![Atr]({{ site.url }}/images/portfolio/showcases/atr.jpg)
+
 <br/>
+
+**Technology:** FLASH
+
+### Ctb
+
+![Ctb]({{ site.url }}/images/portfolio/showcases/ctb.jpg)
+
 <br/>
 
-Ui bibz is fully **tested, documented and extensible***.
-Some complex components like tables with their search, their pagination and their internalization is already part of the framework.
-Many components are coming in later versions.
+**Technology:** HTML and CSS / Javascript
 
-## And After
+### EMCM
 
-This library is open source (MIT), available at: [Ui-Bibz]({{ site.url }}/Ui-Bibz/)
-It was created and is maintained by yours truly.
+![EMCM]({{ site.url }}/images/portfolio/showcases/emcm.jpg)
 
+<br/>
 
+**Technology:** FLASH
+
+### Domaine Fabray
+
+![Fabray]({{ site.url }}/images/portfolio/showcases/fabray.jpg)
+
+<br/>
+
+**Technology:** FLASH
+
+### Désir de Fleurs
+
+![Fleur]({{ site.url }}/images/portfolio/showcases/fleur.jpg)
+
+<br/>
+
+**Technology:** FLASH
+
+### Florence Saltiel
+
+![Florence Saltiel]({{ site.url }}/images/portfolio/showcases/florence.jpg)
+
+<br/>
+
+**Technology:** HTML and CSS
+
+### Formabel
+
+![Formabel]({{ site.url }}/images/portfolio/showcases/formabel.jpg)
+
+<br/>
+
+**Technology:** FLASH
+
+### Gipeblor
+
+![Gipeblor]({{ site.url }}/images/portfolio/showcases/gipeblor.jpg)
+
+<br/>
+
+**Technology:** HTML and CSS / Javascript
+
+### Heat Mirror
+
+![Heat Mirror]({{ site.url }}/images/portfolio/showcases/heat.jpg)
+
+<br/>
+
+**Technology:** FLASH
+
+### Hexa 3
+
+![Hexa3]({{ site.url }}/images/portfolio/showcases/hexa.jpg)
+
+<br/>
+
+**Technology:** FLASH
+
+### Ik
+
+![Ik]({{ site.url }}/images/portfolio/showcases/ik.jpg)
+
+<br/>
+
+**Technology:** HTML and CSS / Javascript
+
+### It  Cafe
+
+![It Cafe]({{ site.url }}/images/portfolio/showcases/itcafe.jpg)
+
+<br/>
+
+**Technology:** FLASH
+
+### Jardin Deco
+
+![Jardin]({{ site.url }}/images/portfolio/showcases/jardin.jpg)
+
+<br/>
+
+**Technology:** FLASH
+
+### Mania Construction
+
+![Mania construction]({{ site.url }}/images/portfolio/showcases/mania.jpg)
+
+<br/>
+
+**Technology:** PHP / HTML and CSS / Javacript
+
+### Maurice
+
+![Maurice]({{ site.url }}/images/portfolio/showcases/maurice.jpg)
+
+<br/>
+
+**Technology:** FLASH
+
+### SDAP
+
+![SDAP]({{ site.url }}/images/portfolio/showcases/sdap.jpg)
+
+<br/>
+
+**Technology:** PHP and Wordpress / HTML and CSS / Javascript
+
+### Sound Factor
+
+![Sound Factor]({{ site.url }}/images/portfolio/showcases/soundfactor.jpg)
+
+<br/>
+
+**Technology:** FLASH
+
+### Léa et Théo
+
+![Theo]({{ site.url }}/images/portfolio/showcases/theo.jpg)
+
+<br/>
+
+**Technology:** FLASH
+
+### Urbanisme
+
+![It Cafe]({{ site.url }}/images/portfolio/showcases/urbanisme.jpg)
+
+<br/>
+
+**Technology:** HTML and CSS

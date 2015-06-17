@@ -42,3 +42,6 @@ This library is open source (MIT), available at: [Ui-Bibz]({{ site.url }}/Ui-Bib
 It was created and is maintained by yours truly.
 
 
+<br/>
+
+**Technology:** Ruby and Ruby on Rails / HTML and CSS

@@ -158,6 +158,9 @@ any information in the application through a search window.
 Other interfaces (database, administration, project manager)
 are under development and will features and existing visual on other interfaces.
 
+<br/>
+
+**Technology:** Ruby and Ruby on Rails / Javascript and Extjs / HTML and CSS
 
 
 

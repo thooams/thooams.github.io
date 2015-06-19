@@ -12,7 +12,7 @@ date: 2015-06-07T19:26:17+02:00
 
 ## Presentation
 
-L'ensemble de ces sites vitrines sont réalisés soit en html et css ou en flash.
+All these website showcases are made either in html, css and javascript or flash.
 
 ### Adeios
 

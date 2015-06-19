@@ -12,20 +12,16 @@ date: 2015-06-07T19:26:17+02:00
 
 ## Presentation
 
-Plusieurs types de sites ont été entièrement créé dans cette partie.
-Cela va du site e-commerce, jusq'au site de petites annonces en passant par le
-site d'annonces immobilières.
+Several types of sites were created entirely in this section.
+These range from e-commerce site, to classifieds site through the site listings.
 
 ### Quintessence international
 
 ![Quintessence international]({{ site.url }}/images/portfolio/ads/quintessence.jpg)
 
 <br/>
-
-Quintessence international est un site de vente en ligne spécialisé dans la
-vente de livre.
-La site frontOffice ainsi que backOffice à été entièrement réalisé from
-scratch.
+Quintessence International is a specialized online sales website in the sale of the book.
+The website and back office to front office made entirely from scratch.
 
 <br/>
 
@@ -37,8 +33,7 @@ scratch.
 
 <br/>
 
-Fast Affair est un site de petites annonces en ligne comprenant des photos mais
-aussi des vidéos. Le site est traduit en 5 langues.
+Fast Affair is an online classifieds site with photos but also videos. The site is translated into 5 languages.
 
 <br/>
 
@@ -50,8 +45,8 @@ aussi des vidéos. Le site est traduit en 5 langues.
 
 <br/>
 
-LocaRabat est un site de petites annonces immobilières avec une gestion
-d'enchères. Le site a été créé pour le territoire Marocain.
+LocaRabat is a site of real estate classified ads with auction management.
+The site was created to Moroccan territory.
 
 <br/>
 
@@ -63,8 +58,7 @@ d'enchères. Le site a été créé pour le territoire Marocain.
 
 <br/>
 
-Locamonde est une extension de locaRabat mais à l'echelle mondial et traduit en
-2 langues.
+Locamonde is an extension of locaRabat but at the global scale and translated into two languages.
 
 <br/>
 

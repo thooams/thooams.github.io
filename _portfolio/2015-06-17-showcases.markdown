@@ -2,6 +2,7 @@
 layout: portfolio
 title: "Showcases"
 excerpt: "List of showcases projects"
+tags: [showcase development, showcase ruby, showcase javascript]
 image:
   thumb: portfolio/showcases/showcases.jpg
   feature: portfolio/showcases/logo.gif

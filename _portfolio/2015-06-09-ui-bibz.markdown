@@ -2,6 +2,7 @@
 layout: portfolio
 title: "Ui Bibz"
 excerpt: "Ui bibz is an interface framework for building an interface very quickly and simply using Ruby on Rails 4 and 3 Boostrap."
+tags: [Ui bibz, bootstrap rails, bootstrap framework, bootstrap ruby, bootstrap ruby on rails, bibz]
 image:
   thumb: portfolio/ui-bibz/ui-bibz.jpg
   feature: portfolio/ui-bibz/logo.gif

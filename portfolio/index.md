@@ -2,6 +2,8 @@
 layout: portfolio-index
 title: Portfolio
 excerpt: "Portfolio of Thomas HUMMEL"
+tags: [ruby development, rails development, ruby portfolio, ruby on rails
+portfolio]
 image:
   feature: sample-image-3.jpg
   credit: WeGraphics

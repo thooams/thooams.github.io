@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-tags: [Thomas Hummel ruby, thomas HUMMEL, thomas hummel developer, extjs, ruby, RoR, rails]
+tags: [Thomas Hummel ruby, thomas HUMMEL, thomas hummel developer, extjs developer, ruby developer, RoR developer, rails developer]
 modified: 2015-08-08T20:53:07.573882-04:00
 comments: false
 social: false

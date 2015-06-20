@@ -2,6 +2,7 @@
 layout: portfolio
 title: "Drupal"
 excerpt: "List of drupal projects..."
+tags: [drupal developer, drupal development, drupal website]
 image:
   thumb: portfolio/drupal/drupal.jpg
   feature: portfolio/drupal/logo.gif

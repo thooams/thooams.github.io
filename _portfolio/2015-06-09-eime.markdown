@@ -3,6 +3,7 @@ layout: portfolio
 title: "Eime"
 excerpt: "Eime is a referential that lets you easily perform your Life Cycle Assessments (LCA) and your eco-design projects in compliance with international programmes and standards."
 social: false
+tags: [Eime, life cycle analysis, extjs, ruby development, rails development, javascript developement]
 image:
   thumb: portfolio/eime/eime.jpg
   feature: portfolio/eime/logo.png

@@ -2,6 +2,7 @@
 layout: portfolio
 title: "Ads and real estates"
 excerpt: "List of ads and real estates projects..."
+tags: [real estates development, ads website in ruby]
 image:
   thumb: portfolio/ads/adis.jpg
   feature: portfolio/ads/logo.gif

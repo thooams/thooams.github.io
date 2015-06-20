@@ -12,7 +12,7 @@ date: 2015-06-07T19:26:17+02:00
 
 ## Presentation
 
-All these website showcases are made either in html, css and javascript or flash.
+All these website showcases are created either in html, css and javascript or flash.
 
 ### Adeios
 

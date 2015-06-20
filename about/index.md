@@ -40,3 +40,5 @@ I put at your disposal my development expertise of Web sites with high value add
 * Php, Drupal, Wordpress
 * Vim, Photoshop
 * Osx, Linux
+
+Ps: Have a good surf on my website !

@@ -12,16 +12,16 @@ date: 2015-06-07T19:26:17+02:00
 
 ## Presentation
 
-Several types of sites were created entirely in this section.
-These range from e-commerce site, to classifieds site through the site listings.
+In this section, the majority of sites were created entirely from scratch.
+Can be found an e-commerce site, an ads site as well as real estate sites.
 
 ### Quintessence international
 
 ![Quintessence international]({{ site.url }}/images/portfolio/ads/quintessence.jpg)
 
 <br/>
-Quintessence International is a specialized online sales website in the sale of the book.
-The website and back office to front office made entirely from scratch.
+Quintessence International is an online e-commerce website specialized in the sale of the book.
+The website was entirely builded from back office to front office.
 
 <br/>
 
@@ -33,7 +33,7 @@ The website and back office to front office made entirely from scratch.
 
 <br/>
 
-Fast Affair is an online classifieds site with photos but also videos. The site is translated into 5 languages.
+Fast Affair is an online classifieds site with photos and videos. The site is translated into 5 languages.
 
 <br/>
 
@@ -45,7 +45,7 @@ Fast Affair is an online classifieds site with photos but also videos. The site 
 
 <br/>
 
-LocaRabat is a site of real estate classified ads with auction management.
+LocaRabat is real estate site with auction management.
 The site was created to Moroccan territory.
 
 <br/>

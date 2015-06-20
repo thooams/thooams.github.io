@@ -33,8 +33,8 @@ And therefore do not have to update all the HTML and CSS when updates to Boostra
 <br/>
 
 Ui bibz is fully **tested, documented and extensible***.
-Some complex components like tables with their search, their pagination and their internalization is already part of the framework.
-Many components are coming in later versions.
+Some complex components like tables with their search, their pagination and their internalization are already part of the framework.
+Many components are coming soon in futur versions.
 
 ## And After
 

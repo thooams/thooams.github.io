@@ -23,7 +23,7 @@ date: 2015-06-07T19:26:17+02:00
 
 <br/>
 Buyster is a mobile payment showcase site with a webservice
-to communicate with the application on mobile phones.
+to communicate with a mobile phone application.
 
 <br/>
 
@@ -34,7 +34,7 @@ to communicate with the application on mobile phones.
 ![Tenesol]({{ site.url }}/images/portfolio/drupal/tenesol.jpg)
 
 <br/>
-Tenesol is a showcase site solar panels multilingual with 8 different languages.
+Tenesol is a showcase site solar panels multilingual available in 8 different languages.
 
 <br/>
 

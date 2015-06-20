@@ -13,12 +13,12 @@ date: 2015-06-07T19:26:17+02:00
 
 ## Presentation
 
-Eime is a referential that lets you easily perform your Life Cycle Assessments (LCA)
-and your eco-design projects in compliance with international programmes and standards.
+Eime is a referential that allows you easily perform your Life Cycle Assessments (LCA)
+and your eco-design projects in accordance with international programmes and standards.
 
 ## Technology
 
-Eime is develop in [Ruby on Rails](http://rubyonrails.org/) in his core and in [Extjs](http://www.sencha.com/products/extjs/) for FrontOffice.
+Eime is developped in [Ruby on Rails](http://rubyonrails.org/) in his core and in [Extjs](http://www.sencha.com/products/extjs/) for FrontOffice.
 
 ### Core programation
 
@@ -36,12 +36,11 @@ For long operationg:
 - design export
 - multi copy/cut/paste
 
-Eime allows to launch in the background, time-intensive actions / processes so that the user
-can be continued to use the software without any latency.
+Eime will launch in the background intensive action in time and process so the user can continue to browse without any latency.
 
 <br/>
-Of course, a percentage display of each action is available in **real time** in the notification center.
-And a web notification system (Chrome / Firefox) to be informed of the purpose of the process.
+Of course, a percentage display of each action is available in real time in the notification center.
+In addition, a web notification system (Chrome / Firefox) allows to be informed of the purpose of the process.
 
 <br/>
 <br/>
@@ -60,13 +59,13 @@ pubsub system ([Faye](http://faye.jcoglan.com/)).
 
 <br/>
 <br/>
-One can also find in this notification center, a history of copy / cut / paste to choose one of the last 3 actions in force.
+The notification center provides a historical of copy / cut / paste to choose one of the last 3 actions in force
 
 #### Multi copy/cut/paste
 
-This system is used in many places in an application.
-Eime is a software including the logic of "container / item", so it is natural
-that a simple and effective way to move many projects, folders, boxes study, containers, modules, flow is established.
+The system of multi copy / cut / paste is used in several interfaces within the application.
+Eime is a software including the logic of "container / item", so it is natural that a simple and
+effective method is implemented to move many projects, folders, boxes study, containers, modules flows.
 
 <br/>
 ![Copy cut paste]({{ site.url }}/images/portfolio/eime/copy-paste.png)
@@ -75,18 +74,19 @@ that a simple and effective way to move many projects, folders, boxes study, con
 ### Front office
 
 The front office is created dynamically with the Ext JS framework.
-This helps create scalable dynamic table but also allows simple
-interaction like drag and drop, notifications and real-time search
+This allows dynamic arrays created modular but also allows simple
+interactions like drag and drop,notifications and real-time search
 or interface component displacement. All thanks to the MVC pattern.
+Everything is tested with [selenium](http://www.seleniumhq.org/).
 
 #### Analysis/graphs/calculation Interface
 
-The analysis part comprises two distinct parts:
+The analysis part include two distinct parts:
 
-* the table of values
-* the graphics
+* Table of values
+* Gaphics
 
-Some calculations are created and optimized with requests for optimal performance gain.
+Some calculations are optimized through database queries to a performance gain.
 A tab management was created in order to compare the results of calculations.
 
 <br/>
@@ -95,8 +95,8 @@ A tab management was created in order to compare the results of calculations.
 <br/>
 <br/>
 
-The graphs show the previous values in the operator to provide the most appropriate chart (pie, bar, column ...).
-You can refine the results of graphics in real time and also set these last through the 3D or changing scales.
+Graphics exploit previous values to offer the most appropriate chart (pie, bar, column ...).
+It is possible to refine the results of graphics in real time and also to set these through the 3d or changing scales.
 <br/>
 <br/>
 
@@ -114,9 +114,8 @@ The design part includes several distinct elements:
 * Breadcrumb
 * Database
 
-A case study contains phases, these phases are represented by a tab system.
-In this tab, there is a tree on the left, an overview with a search engine,
-an interactive breadcrumb and information panels.
+A case study contains phases represented by a tab system. These tabs contain a tree on the left,
+an overview with a search engine, an interactive breadcrumb and information panels.
 
 <br/>
 The database with integrated search engine includes an information panel.
@@ -126,17 +125,17 @@ The database with integrated search engine includes an information panel.
 ![Design]({{ site.url }}/images/portfolio/eime/design.png)
 
 <br/>
-Each element inserted in the overview includes rights and everyone is different depending on where it is located.
-Visual information are shown in real time, or if we can not do this or that action.
+Each element inserted in the overview includes all different rights depending on where the item is located.
+Visual information just indicate in real time if the insertion is possible to achieve.
 
 <br/>
-The copy / cut / paste is also part tt a window opens indicating in real time (as in modern OS)
-the progress of the current action.
+The copy / cut / paste is also present. A window opens indicating
+in real time (as in modern OS) the progress of the current action.
 
 #### Project Interface
 
-The project part have a project tree on the left, an overview of the center and a
-retail panel on the right. The copy / cut / paste into this and right click actions are implemented.
+The Project part provides a project tree on the left, an overview at the center and a retail panel on the right.
+The copy / cut / paste is also active well as the right click allowing more actions.
 
 <br/>
 <br/>
@@ -146,8 +145,8 @@ retail panel on the right. The copy / cut / paste into this and right click acti
 
 ### Main Search (spotlight)
 
-The main research is a kind of spotlight (Apple) and allows you to search
-any information in the application through a search window.
+The Main research is a kind of spotlight (spotlight apple) and allows
+to find any information in the application through a search window.
 
 <br/>
 <br/>
@@ -155,12 +154,9 @@ any information in the application through a search window.
 
 #### And After
 
-Other interfaces (database, administration, project manager)
-are under development and will features and existing visual on other interfaces.
+Other interfaces (database, administration, project manager) are under
+development and will take the functionalities already present in the existing interfaces.
 
 <br/>
 
 **Technology:** Ruby and Ruby on Rails / Javascript and Extjs / HTML and CSS
-
-
-

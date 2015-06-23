@@ -9,6 +9,7 @@ sur ce modèle."
 tags: []
 image:
   feature: portfolio/ui-bibz/logo.gif
+  first:   https://github.com/thooams/Ui-Bibz/raw/master/doc/images/ui-bibz-logo-without-border.gif
 date: 2015-06-23T14:06:54+02:00
 ---
 

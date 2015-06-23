@@ -11,12 +11,13 @@ La librairie comporte des élements simples (alert, button,...) mais aussi élé
 tags: [Ui Bibz, Ui Bibz installation]
 image:
   feature: portfolio/ui-bibz/logo.gif
+  first:   https://github.com/thooams/Ui-Bibz/raw/master/doc/images/ui-bibz-logo-without-border.gif
 date: 2015-06-23T00:22:03+02:00
 ---
 
 ## Préambule
 
-<img src="https://github.com/thooams/Ui-Bibz/raw/master/doc/images/ui-bibz-logo-without-border.gif" style="float: left; margin: 15px" />
+<img src="https://github.com/thooams/Ui-Bibz/raw/master/doc/images/ui-bibz-logo-without-border.gif" style="float: left; margin: 0px 15px 15px 0px" />
 Ui Bibz est un [framework d'interface](https://fr.wikipedia.org/wiki/Framework_d'interface)
 développé en [Ruby on Rails](http://rubyonrails.org/) permettant de créer une interface
 complète avec [Bootstrap](http://getbootstrap.com/) sans le moindre code HTML.

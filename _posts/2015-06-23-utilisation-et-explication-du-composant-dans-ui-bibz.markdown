@@ -22,7 +22,9 @@ Un ```component``` accepte en arguments :
 * les options du composant (hash)
 * les options html du composant (hash)
 
-Celui-ci se configure comme ci-dessous :
+## Utilisation
+
+Celui-ci se configure simplement comme ci-dessous :
 
 {% highlight ruby %}
   Component.new(content, options = {}, html_options = {}, &block)

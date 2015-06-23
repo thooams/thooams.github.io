@@ -9,16 +9,6 @@
 
 <body class="post">
 
-{% if page.image.first %}
-<img src=
-    {% if page.image.first contains 'http' %}
-      "{{ page.image.first }}"
-    {% else %}
-      "{{ site.url }}/images/{{ page.image.first }}"
-    {% endif %}
-  alt="{{ page.title }} feature image" style='display:none'>
-{% endif %}
-
 {% include _browser-upgrade.html %}
 
 {% include _navigation.html %}

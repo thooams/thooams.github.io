@@ -2,7 +2,7 @@
 layout: post
 title: "Premier Pas Avec Ui Bibz v1 : Installation"
 modified:
-categories: [Ui Bibz]
+categories: [Ui-Bibz]
 excerpt: "Ui Bibz est un framework d’interface développé en Ruby on Rails permettant de créer une
 interface complète avec Bootstrap sans le moindre code HTML.
 Cela permet de maintenir plus facilement son code en le mettant à jour plus

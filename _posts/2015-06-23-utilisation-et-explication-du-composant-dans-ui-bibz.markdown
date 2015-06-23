@@ -2,7 +2,7 @@
 layout: post
 title: "Utilisation Et Explication Du Composant Dans Ui Bibz"
 modified:
-categories: [Ui Bibz]
+categories: [Ui-Bibz]
 excerpt: "Le composant, dit Component, est au centre de l'expérience du
 framework Ui Bibz. Tous les éléments de la librairie sont basés et calqués
 sur ce modèle."

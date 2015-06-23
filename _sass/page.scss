@@ -242,6 +242,9 @@ $button-size: 1.5rem;
 			@include grid(12,4.5);
 		}
 	}
+  .post p+p {
+    text-indent: 0rem;
+  }
 }
 
 /* Index listing specific styling */

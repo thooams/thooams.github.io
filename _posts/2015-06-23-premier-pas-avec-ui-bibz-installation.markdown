@@ -37,6 +37,8 @@ l'ajouter dans votre fichier ```Gemfile```.
 
 Ensuite lancer la commande : ```bundle install```
 
+<br/>
+
 Une fois installée, nous devons ajouter les dépendences aux assets
 correspondantes à la librairie.
 
@@ -56,6 +58,8 @@ correspondantes à la librairie.
 Puis dans le layout principal, nous allons ajouter le helper ```ui_bibz_meta_links```. Celui-ci
 va placer les balises ```meta``` correspondantes à **Bootstrap 3** et **Font Awesome 4**.
 
+<br/>
+
 Concernant la version 1 de Ui Bibz, les librairies Boostrap et Font awesome sont chargées
 par CDN. Dans une prochaine version, le développeur aura le choix entre CDN ou
 librairie Interne. En attendant, vous devez placer cette ligne entre les balises ```<head>``` et ```</head>```.
@@ -69,6 +73,8 @@ librairie Interne. En attendant, vous devez placer cette ligne entre les balises
 
 And voilà !, il n'y a plus qu'à utiliser les composants de Ui Bibz afin de créer
 simplement un interface.
+
+<br/>
 
 Dans le prochain article, je vous montrerais comment
 appeler un composant dans une vue et je vous expliquerai la base du

@@ -160,4 +160,17 @@ development and will take the functionalities already present in the existing in
 
 <br/>
 
+## Resume
+
+Eime, it's:
+
+* more 20 servers running with
+  * a pubsub server Faye (ngnix)
+  * a background job server Delayed Job (thin)
+  * a postgres database
+
+* An strong application with Ruby on rails (Ruby) for the Core
+* A flexible application with Extjs (Javascript) for the View
+* A dynamique application with PubSub
+
 **Technology:** Ruby and Ruby on Rails / Javascript and Extjs / HTML and CSS

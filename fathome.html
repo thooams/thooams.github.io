@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FATHOME - REAL ESTATE ADS BY ROUTE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Thomas HUMMEL</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+										  <li><a href="index.html">Home</a></li>
+											<li><a href="fathome.html">Fathome (Real Estate Ads)</a></li>
+                      <!-- <li><a href="edc.html">EDC (EIME Data Collection)</a></li> -->
+                      <li><a href="ui-bibz.html">Ui Bibz (Framework)</a></li>
+                      <li><a href="harbour-crane.html">Harbour Crane (Docker)</a></li>
+											<li><a href="eime.html">EIME (Web App)</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Fathome</h2>
+              <p>Real Estate Ads by route</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+                <div class="section">
+                  <h3>Search an real estate ad by route, duration or distance</h3>
+	                <p>
+										<span class="image left">
+											<img src="images/portfolio/fathome/fathome-large.gif" alt="Fathome logo" />
+                    </span><strong>Fathome</strong>is a real estate advertisements website allowing you
+                      to find professional and private properties according to itinerary, duration and distance.
+                    </p><p>Fathome browse the largest French real estate ad sites and indexes each property
+                       in a database to provide an exhaustive list of results. When the user clicks on a link of an ad,
+                       he is directly brought to the site concerned. Fathome has the particularity of not hosting ads. 
+                       The ads viewed by the user are recorded in his browser and it is possible to share the list of selected properties in the bookmarks.
+                    </p>
+							  </div>
+
+								<h3 id="technology">Technology</h3>
+								<div class="section">
+									<p>Fathome is developed in <a
+                    href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>, <a
+                    href="https://ui-bibz-documentation.herokuapp.com/" target="_blank">Ui
+                    Bibz</a> and <a href="https://www.google.com/maps" target="_blank">Google maps</a> for FrontOffice.</p>
+								</div>
+                </div>
+                </section>
+                <section id="one" class="wrapper style1 special">
+                  <div class="inner">
+                    <header class="major">
+                    <h2>Scraper in background</h2>
+                    <p> Ruby Core programation</p>
+                    <p>A scraper is implemented in ruby and linked to a cron job to retrieve the thousands of ads on the largest sites of French classifieds.
+										</p>
+                    </header>
+                    </div>
+                </section>
+                <section class="wrapper style5">
+                    <div class="inner">
+
+                      <h3 id="resultats-recherche">Automation and adaptability</h3>
+								<div class="section">
+									<span class="image right"><img
+									  src="images/portfolio/fathome/multi-screen.jpg" alt="Fathome multi screen"></span>
+									<p>
+										Every day the Fathome site will scan all the ads from a dozen ad sites.
+                    All this data is stored in the database in order to be accessed more quickly later.
+                    I use the «<strong>decorator</strong>» pattern to scan the different pages of each website correctly.
+                  </p>
+									<p>
+                   «<strong>Rake</strong>» tasks are launched through several «<strong>crons</strong>» tasks in order to automatize
+                   the scrapping of sites as much as possible.
+                  </p>
+
+								</div>
+
+                </section>
+                <section class="wrapper style3 special">
+                  <div class="inner">
+                    <header class="major">
+                    <h2>Search by route, duration or distance</h2>
+                    <p>
+											Each ad is integrated into Fathome's database to interconnect the concept of distance and duration with the Google Map API.
+                    </p>
+                    </header>
+                    </div>
+                </section>
+                <section class="wrapper style5">
+                    <div class="inner">
+
+								<div class="section">
+                  <h3 id="analysisgraphscalculation-interface">Résultats de la recherche</h3>
+										<p>
+										When the user makes a search, he can specify:
+                     <ul>
+                       <li>The exact address</li>
+                       <li>The search area (in km)</li>
+                       <li>The type of property</li>
+                       <li>The type of sale</li>
+                       <li>The price</li>
+                     </ul>
+                    <span class="image left">
+                      <img src="images/portfolio/fathome/inside.gif" alt="Fathome Inside">
+                    </span>
+                     <p>
+                     Once the searching is done, the fathome site will request the <strong>Google Maps API</strong> in order to have the exact address details.
+                     Then these data will be included in the ads corresponding to the search. Once this data is collected, 
+                     the fathome site will request the Google Maps API for these results in order to complete the distance,
+                     itinerary and duration information and ultimately display them into a list on the website interface.
+                     </p><br/>
+                     <p>
+											This web interface is structured in 2 main parts:
+                     <ul>
+                       <li>A list of ads on the left side</li>
+                       <li>A map of the search location with interactive ad pointers on the right side</li>
+                      </ul>
+                      Each ad is interconnected between the right and left parts. The selected left-hand ads are also displayed on the map as "popin".
+                      Same if an ad is selected on the right part, the list on the left will then automatically be positioned at the level of the corresponding ad.
+                      </p>
+
+									</div>
+                  <hr/>
+									<h3 id="design-interface">Sharing and History</h3>
+									<div class="section">
+
+                    <span class="image right">
+                     <img src="images/portfolio/fathome/fathome-search.gif" alt="Design">
+                    </span>
+                    <p>
+										The user can put ads in his bookmarks without having to identify himself on the site.
+                    These actions are developed in <strong>javascript</strong> through browser «<strong>LocalStorage</strong>» variables, 
+                    which has the benefit of avoiding the user's connection to a server-side database.
+                    </p><p>
+										It is possible to share the list of ads as bookmark. A <strong>base64</strong> encoder url allows the sharing the favorites.
+                    <p>
+											During a search, the displayed ads become transparent during the visit to remind the user of the history of viewed ads.
+                      As such, it is possible to find them in a page dedicated to the history of visits.
+                    </p>
+								</div>
+
+                </div>
+                </section>
+                <section class="wrapper style2 special">
+                  <div class="inner">
+                    <header class="major">
+                    <h2>To Resume</h2>
+                    <p>Ruby and Javascript</p>
+                    <p>Fathome is a clever mix between a Ruby on Rails multi site scrapper and an ergonomic javascript interface allowing the setting of favorite ads, as well as a history.
+										</p><p>
+										Its strength is of course its powerful search that allows searching by area for all ads.
+                    </header>
+                    </div>
+                </section>
+                <section class="wrapper style5">
+                    <div class="inner">
+
+								<h3 id="resume">Fathome, it is</h3>
+								<div class="section">
+
+									<ul>
+									  <li>A strong application with Ruby on rails (Ruby) for the Core</li>
+									  <li>A flexible application with (Javascript) for the View</li>
+									  <li>An integration with the browser (save of ads, history)</li>
+									</ul>
+
+									<p><strong>Technology:</strong> Docker / Ruby on Rails / Javascript / Google Maps / Ui Bibz / HTML and CSS</p>
+								</div>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://twitter.com/thooams" class="icon fa-twitter"
+                  target="_blank"><span class="label">Twitter</span></a></li>
+							<li><a href="https://github.com/thooams" class="icon fa-github"
+                  target="_blank"><span class="label">Github</span></a></li>
+							<li><a href="https://fr.linkedin.com/in/thomas-hummel-68274117"
+              class="icon fa-linkedin" target="_blank"><span
+              class="label">Linkdin</span></a></li>
+							<li><a href="javascript:window.location.href = 'mailto:' +
+                  ['thomas','hummel.link'].join('@')" class="icon fa-envelope-o"
+                  target="_blank"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Thomas HUMMEL</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+
+			</div>
+
+		<!-- Scripts -->
+      <script src="https://use.fontawesome.com/715bfe93cb.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

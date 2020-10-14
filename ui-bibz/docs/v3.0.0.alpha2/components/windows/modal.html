@@ -1,0 +1,542 @@
+<html>
+<head>
+<title>Ui Bibz - Modal</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="NNdYvreuKDmqoWts4vyXc0Mm5XdPO0k4ldcKxKl9qgI1vW0zBdiCSEO3z879zcC/YNWeGEHOHoaIkAdq6PfTuw==" />
+
+<meta CONTENT='Ui Bibz is an Ui Framework that allows you to build an interface very quickly and simply using Bootstrap 5.0.0.alpha2.' name='Description'>
+<meta CONTENT='Thomas HUMMEL &lt;thomas@hummel.link&gt;' name='Author'>
+<meta CONTENT='bootstrap rails, bootstrap ruby, ui bibz, bibz bootstrap, bootstrap interface, bootstrap ui, bootstrap interface, ui framework, ui interface' name='Keywords'>
+<link href='../../favicon.ico' rel='shortcut icon' type='image/x-icon'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<style>
+  ".highlight table td { padding: 5px; }
+  .highlight table pre { margin: 0; }
+  .highlight .cm {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cp {
+    color: #999999;
+    font-weight: bold;
+  }
+  .highlight .c1 {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2;
+  }
+  .highlight .gd {
+    color: #000000;
+    background-color: #ffdddd;
+  }
+  .highlight .ge {
+    color: #000000;
+    font-style: italic;
+  }
+  .highlight .gr {
+    color: #aa0000;
+  }
+  .highlight .gh {
+    color: #999999;
+  }
+  .highlight .gi {
+    color: #000000;
+    background-color: #ddffdd;
+  }
+  .highlight .go {
+    color: #888888;
+  }
+  .highlight .gp {
+    color: #555555;
+  }
+  .highlight .gs {
+    font-weight: bold;
+  }
+  .highlight .gu {
+    color: #aaaaaa;
+  }
+  .highlight .gt {
+    color: #aa0000;
+  }
+  .highlight .kc {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kd {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kn {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kp {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kr {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kt {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .k, .highlight .kv {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .mf {
+    color: #009999;
+  }
+  .highlight .mh {
+    color: #009999;
+  }
+  .highlight .il {
+    color: #009999;
+  }
+  .highlight .mi {
+    color: #009999;
+  }
+  .highlight .mo {
+    color: #009999;
+  }
+  .highlight .m, .highlight .mb, .highlight .mx {
+    color: #009999;
+  }
+  .highlight .sb {
+    color: #d14;
+  }
+  .highlight .sc {
+    color: #d14;
+  }
+  .highlight .sd {
+    color: #d14;
+  }
+  .highlight .s2 {
+    color: #d14;
+  }
+  .highlight .se {
+    color: #d14;
+  }
+  .highlight .sh {
+    color: #d14;
+  }
+  .highlight .si {
+    color: #d14;
+  }
+  .highlight .sx {
+    color: #d14;
+  }
+  .highlight .sr {
+    color: #009926;
+  }
+  .highlight .s1 {
+    color: #d14;
+  }
+  .highlight .ss {
+    color: #990073;
+  }
+  .highlight .s, .highlight .sa, .highlight .dl {
+    color: #d14;
+  }
+  .highlight .na {
+    color: #008080;
+  }
+  .highlight .bp {
+    color: #999999;
+  }
+  .highlight .nb {
+    color: #0086B3;
+  }
+  .highlight .nc {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .no {
+    color: #008080;
+  }
+  .highlight .nd {
+    color: #3c5d5d;
+    font-weight: bold;
+  }
+  .highlight .ni {
+    color: #800080;
+  }
+  .highlight .ne {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nf, .highlight .fm {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nl {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nn {
+    color: #555555;
+  }
+  .highlight .nt {
+    color: #000080;
+  }
+  .highlight .vc {
+    color: #008080;
+  }
+  .highlight .vg {
+    color: #008080;
+  }
+  .highlight .vi {
+    color: #008080;
+  }
+  .highlight .nv, .highlight .vm {
+    color: #008080;
+  }
+  .highlight .ow {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .o {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .w {
+    color: #bbbbbb;
+  }
+  .highlight {
+    background-color: #f8f8f8;
+  }"
+</style>
+<script src="../../packs/js/application-c26aa622200f49f31834.js" data-turbolinks-track="reload"></script>
+
+</head>
+<body>
+<header>
+<nav class="bg-dark navbar navbar-dark fixed-top navbar-expand-lg"><div class="container"><a class="navbar-brand" href="../../index.html"><img alt="Ui Bibz logo" src="../../assets/brand-7e0071621be0284fcfc439aacb153ac93a9ed2e0b032dd060bda1a929d905399.png" /></a><button name="button" type="submit" class="navbar-toggler d-block d-md-none collapsed submenu-toggler"><i class="glyph fas fa-arrow-alt-circle-down"></i>
+</button><button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-id-53670">☰</button><div class="navbar-collapse collapse" id="navbar-id-53670"><ul class="navbar-nav  mr-auto"><li class="nav-item"><a class="nav-link" href="../../getting_started.html">Get started</a></li><li class="nav-item"><a class="active nav-link" href="../boxes/card.html">Components</a></li><li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="modal.html#">Component</a><div class="dropdown-menu" arial-labelledby="dropdown-35625"><a class="dropdown-item" href="../../component.html">Base</a><a class="dropdown-item" href="../../custom_component.html">Custom</a></div></li><li class="nav-item"><a class="nav-link" href="../../simple_form.html">Simple form</a></li><li class="nav-item"><a class="nav-link" href="../../theme.html">Theme</a></li></ul><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="../../about.html"><i class="glyph fas fa-info-circle"></i><span class="empty-space"> </span></a></li><li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/thooams/Ui-Bibz"><i class="glyph fab fa-github"></i><span class="empty-space"> </span></a></li><li class="nav-item"><a class="nav-link" target="_blank" href="https://rubygems.org/gems/ui_bibz"><i class="glyph fas fa-gem"></i><span class="empty-space"> </span></a></li><li class="nav-item"><a class="nav-link" target="_blank" href="https://www.npmjs.com/package/ui-bibz-js"><i class="glyph fab fa-npm"></i><span class="empty-space"> </span></a></li></ul></div></div></nav></header>
+
+<div class="container-fluid"><div class="row-fluid row"><a name='top'></a>
+<div class="left-nav d-none d-md-block col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12"><div class='sidebar'>
+<ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Boxes</span></li><li class="nav-item"><a class="nav-link" href="../boxes/card.html">Card</a></li><li class="nav-item"><a class="nav-link" href="../boxes/card-accordion.html">Card accordion</a></li><li class="nav-item"><a class="nav-link" href="../boxes/card-column.html">Card column</a></li><li class="nav-item"><a class="nav-link" href="../boxes/card-grid.html">Card grid</a></li><li class="nav-item"><a class="nav-link" href="../boxes/card-group.html">Card group</a></li><li class="nav-item"><a class="nav-link" href="../boxes/jumbotron.html">Jumbotron</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Containers</span></li><li class="nav-item"><a class="nav-link" href="../containers/panel.html">Panel</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Icons</span></li><li class="nav-item"><a class="nav-link" href="../icons/glyph.html">Glyph</a></li><li class="nav-item"><a class="nav-link" href="../icons/star.html">Star</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Layouts</span></li><li class="nav-item"><a class="nav-link" href="../layouts/col.html">Col</a></li><li class="nav-item"><a class="nav-link" href="../layouts/container.html">Container</a></li><li class="nav-item"><a class="nav-link" href="../layouts/row.html">Row</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Lists</span></li><li class="nav-item"><a class="nav-link" href="../lists/list.html">List</a></li><li class="nav-item"><a class="nav-link" href="../lists/list_group.html">List group</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Navigations</span></li><li class="nav-item"><a class="nav-link" href="../navigations/breadcrumb.html">Breadcrumb</a></li><li class="nav-item"><a class="nav-link" href="../navigations/link.html">Link</a></li><li class="nav-item"><a class="nav-link" href="../navigations/nav.html">Nav</a></li><li class="nav-item"><a class="nav-link" href="http://localhost:3000/components/navigations/navbar">Navbar</a></li><li class="nav-item"><a class="nav-link" href="../navigations/pagination.html">Pagination</a></li><li class="nav-item"><a class="nav-link" href="../navigations/tab_group.html">Tab group</a></li><li class="nav-item"><a class="nav-link" href="../navigations/toolbar.html">Toolbar</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Notifications</span></li><li class="nav-item"><a class="nav-link" href="../notifications/alert.html">Alert</a></li><li class="nav-item"><a class="nav-link" href="../notifications/badge.html">Badge</a></li><li class="nav-item"><a class="nav-link" href="../../component.html#popover">Popover</a></li><li class="nav-item"><a class="nav-link" href="../notifications/progress_bar.html">Progress bar</a></li><li class="nav-item"><a class="nav-link" href="../notifications/spinner.html">Spinner</a></li><li class="nav-item"><a class="nav-link" href="../../component.html#tooltip">Tooltip</a></li><li class="nav-item"><a class="nav-link" href="../notifications/toast.html">Toast</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Tables</span></li><li class="nav-item"><a class="nav-link" href="../tables/table.html">Table</a></li><li class="nav-item"><a class="nav-link" href="../tables/table_card.html">Table card</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Forms</span></li><ul class="nav"><li class="nav-item nav-text"><span class="nav-link">Buttons</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/buttons/button.html">Button</a></li><li class="nav-item"><a class="nav-link" href="../forms/buttons/button-group.html">Button group</a></li><li class="nav-item"><a class="nav-link" href="../forms/buttons/button-link.html">Button link</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Choices</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/choices/box-switch-field.html">Box Switch field</a></li><li class="nav-item"><a class="nav-link" href="../forms/choices/checkbox-field.html">Checkbox field</a></li><li class="nav-item"><a class="nav-link" href="../forms/choices/choice-group.html">Choice group</a></li><li class="nav-item"><a class="nav-link" href="../forms/choices/radio-field.html">Radio field</a></li><li class="nav-item"><a class="nav-link" href="../forms/choices/switch-field.html">Switch field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dates</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/dates/date-picker-field.html">Date picker field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dropdowns</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/dropdowns/dropdown.html">Dropdown</a></li><li class="nav-item"><a class="nav-link" href="../forms/dropdowns/split_dropdown.html">Split Dropdown</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Files</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/files/file-field.html">File</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Numbers</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/numbers/formula-field.html">Formula field</a></li><li class="nav-item"><a class="nav-link" href="../forms/numbers/number-field.html">Number field</a></li><li class="nav-item"><a class="nav-link" href="../forms/numbers/range-field.html">Range field</a></li><li class="nav-item"><a class="nav-link" href="../forms/numbers/slider-field.html">Slider field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Selects</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/selects/dropdown-select-field.html">Dropdown select field</a></li><li class="nav-item"><a class="nav-link" href="../forms/selects/select-field.html">Select field</a></li><li class="nav-item"><a class="nav-link" href="../forms/selects/multi-column-field.html">Multi column field</a></li><li class="nav-item"><a class="nav-link" href="../forms/selects/multi-select-field.html">Multi select field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Surrounds</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/surrounds/surround-field.html">Surround field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Textareas</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/textareas/markdown-editor-field.html">Markdown editor field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Texts</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/texts/auto-complete-field.html">Auto complete field</a></li><li class="nav-item"><a class="nav-link" href="../forms/texts/text-field.html">Text field</a></li></ul></ul></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Windows</span></li><li class="nav-item"><a class="active nav-link" href="modal.html">Modal</a></li></ul>
+</div>
+
+</div><div class="content col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12"><h2><i class="glyph fas fa-gem"></i> Modal<span>(ui_modal)</span><a target="_blank" title="See original component documentation" href="http://localhost:3000/components/windows/components/modal/"><img class="icon-indicator" src="../../assets/bootstrap-icon-3c530dcc8b86429e814948a60a17ef9d77f756308ce5c7055dd2d2318e003780.png" /></a></h2>
+<blockquote>UiBibz::Ui::Core::Windows::Modal</blockquote>
+<p class='bd-callout'>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+<div class="usage"><h2><i class="glyph fas fa-book"></i> Usage</h2><div>This component is an extension of <a href="../../component.html">component</a> element. A Ui Bibz component consists of 3 arguments:<ul class="list-options"><li><span class="option-name">content</span><span class="option-types">[value/block]</span></li><li><span class="option-name">options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li><li><span class="option-name">html_options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li></ul></div><div class="highlight code card"><div class="card-body"><div class="highlight"><pre class="codehilite"><code>
+<span class="n">ui_modal</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span> <span class="o">|</span><span class="n">m</span><span class="o">|</span>
+  <span class="c1"># by variable</span>
+  <span class="n">m</span><span class="p">.</span><span class="nf">header</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span>
+  <span class="c1"># or by block</span>
+  <span class="n">m</span><span class="p">.</span><span class="nf">header</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span>
+    <span class="n">content</span>
+  <span class="k">end</span>
+
+  <span class="c1"># by variable</span>
+  <span class="n">m</span><span class="p">.</span><span class="nf">body</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span>
+  <span class="c1"># or by block</span>
+  <span class="n">m</span><span class="p">.</span><span class="nf">body</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span>
+    <span class="n">content</span>
+  <span class="k">end</span>
+
+  <span class="c1"># by variable</span>
+  <span class="n">m</span><span class="p">.</span><span class="nf">footer</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span>
+  <span class="c1"># or by block</span>
+  <span class="n">m</span><span class="p">.</span><span class="nf">footer</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span>
+    <span class="n">content</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div></div></div><div class="component-options" id="component-options"><h2><i class="glyph fas fa-sliders-h"></i> Options</h2>The specific options for this component are:<ul class="list-options"><li><span class="option-name">effect</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:fade</code>)</span></li><li><span class="option-name">position</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:centered</code>)</span></li><li><span class="option-name">backdrop</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:static</code>)</span></li><li><span class="option-name">scrollable</span><span class="option-types">[boolean]</span></li><li><span class="option-name">size</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:lg, :md, :sm</code>)</span><span class="option-description">(use component <a href="../../component.html#size">size</a> method)</span></li><li><span class="option-name">cache</span><span class="option-types">[string]</span><span class="option-description">(use to <a href="../../component.html#cache">cache</a> your component)</span></li><li><span class="option-name">controller</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">action</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">target</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../component.html#stimulus-options">stimulus-options</a> method)</span></li></ul></div><div class="component-options" id="component-items"><h2><i class="glyph fas fa-list"></i> Items</h2>The allowed items for this component are:<ul class="list-options"><li><span class="option-name">header</span><span class="option-description">(inherit of <a href="../../component.html">component</a>)</span></li><li><span class="option-name">body</span><span class="option-description">(inherit of <a href="../../component.html">component</a>)</span></li><li><span class="option-name">footer</span><span class="option-description">(inherit of <a href="../../component.html">component</a>)</span></li></ul></div><div><h2><i class="glyph fas fa-code"></i> Examples</h2>Some examples explain how to use the options present in the component.<section class="section"><a name="modal"></a><h3>Modal</h3><div class="card-code card"><div class="card-header"><div class="modal-example modal" tabindex="-1" aria-labelledby="Modal title" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title"><b>Modal title</b></h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">One fine body</div><div class="modal-footer"><button class="btn-danger btn">Close</button>
+<button class="btn-success btn">Save changes</button>
+</div></div></div></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="modal.html#ruby-91657c6f-e8c6-4961-becc-90e7e39aa5ce">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="modal.html#html-51018059-3e24-4a00-b5c7-76092d4db70c">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-91657c6f-e8c6-4961-becc-90e7e39aa5ce"><pre>
+<span class="n">ui_modal</span> <span class="ss">class: </span><span class="s2">"modal-example"</span> <span class="k">do</span> <span class="o">|</span><span class="n">m</span><span class="o">|</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"&lt;b&gt;Modal title&lt;/b&gt;"</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">body</span> <span class="s2">"One fine body"</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">footer</span> <span class="k">do</span>
+<span class="err">    </span><span class="n">button</span> <span class="s2">"Close"</span><span class="p">,</span> <span class="ss">status: :secondary</span>
+<span class="err">    </span><span class="n">button</span> <span class="s2">"Save changes"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-51018059-3e24-4a00-b5c7-76092d4db70c"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-example modal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-labelledby=</span><span class="s">"Modal title"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;&lt;b&gt;</span>Modal title<span class="nt">&lt;/b&gt;&lt;/h5&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>One fine body<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;&lt;button</span> <span class="na">class=</span><span class="s">"btn-danger btn"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-success btn"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="size"></a><h3>Size</h3><div>The <code>size</code> option has following symbols for argument:<ul><li>:lg</li><li>:md</li><li>:sm</li></ul></div>
+<div class="card-code card"><div class="card-header"><div class="modal-example modal" tabindex="-1" aria-labelledby="Sm Modal title
+" aria-hidden="true"><div class="modal-dialog modal-sm"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Sm Modal title
+</h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">One fine body
+</div></div></div></div><div class="modal-example modal" tabindex="-1" aria-labelledby="Md Modal title
+" aria-hidden="true"><div class="modal-dialog modal-md"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Md Modal title
+</h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">One fine body
+</div></div></div></div><div class="modal-example modal" tabindex="-1" aria-labelledby="Lg Modal title
+" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Lg Modal title
+</h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">One fine body
+</div></div></div></div><div class="modal-example modal" tabindex="-1" aria-labelledby="Xl Modal title
+" aria-hidden="true"><div class="modal-dialog modal-xl"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Xl Modal title
+</h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">One fine body
+</div></div></div></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="modal.html#ruby-533dfadb-e4d9-4151-9023-6b6c0915b161">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="modal.html#html-ea4e2e21-0571-4e1d-81da-80fdc3812f3f">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-533dfadb-e4d9-4151-9023-6b6c0915b161"><pre>
+<span class="n">ui_modal</span> <span class="ss">class: </span><span class="s2">"modal-example"</span><span class="p">,</span> <span class="ss">size: :sm</span> <span class="k">do</span> <span class="o">|</span><span class="n">m</span><span class="o">|</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">header</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Modal itle"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">body</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"One fine body"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-ea4e2e21-0571-4e1d-81da-80fdc3812f3f"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-example modal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-labelledby=</span><span class="s">"Sm Modal title"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-sm"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Sm Modal title<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>One fine body<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="backdrop-static"></a><h3>Backdrop static</h3><div class="card-code card"><div class="card-header"><a data-toggle="modal" data-target="#backdrop-modal" class="btn-secondary btn" role="button" href="modal.html#">Static Backdrop modal</a>
+<div id="backdrop-modal" data-backdrop="static" data-keyboard="false" class="fade modal" tabindex="-1" aria-labelledby="Backdrop Modal title
+" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Backdrop Modal title
+</h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">One fine body
+</div><div class="modal-footer"><button data-dismiss="modal" class="btn-secondary btn">Close</button>
+<button class="btn-primary btn">Understood</button>
+</div></div></div></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="modal.html#ruby-63c06ca4-c863-402e-a5e3-ff2fb5fbb4d0">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="modal.html#html-02b355ad-b4a6-46a6-aab4-461d3d1e3499">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-63c06ca4-c863-402e-a5e3-ff2fb5fbb4d0"><pre>
+<span class="n">ui_button_link</span> <span class="s1">'Static Backdrop modal'</span><span class="p">,</span> <span class="p">{</span> <span class="ss">url: </span><span class="s1">'#'</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">data: </span><span class="p">{</span> <span class="ss">toggle: </span><span class="s1">'modal'</span><span class="p">,</span> <span class="ss">target: </span><span class="s1">'#backdrop-modal'</span> <span class="p">}}</span>
+<span class="n">ui_modal</span><span class="p">({</span> <span class="ss">effect: :fade</span><span class="p">,</span> <span class="ss">backdrop: :static</span><span class="p">},</span> <span class="p">{</span><span class="ss">id: </span><span class="s2">"backdrop-modal"</span><span class="p">})</span> <span class="k">do</span> <span class="o">|</span><span class="n">m</span><span class="o">|</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">header</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Backdrop Modal title"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">body</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"One fine body"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">footer</span> <span class="k">do</span>
+<span class="err">    </span><span class="n">ui_button</span> <span class="s2">"Close"</span><span class="p">,</span> <span class="p">{</span> <span class="ss">status: :secondary</span> <span class="p">},</span> <span class="ss">data: </span><span class="p">{</span> <span class="ss">dismiss: </span><span class="s2">"modal"</span> <span class="p">}</span>
+<span class="err">    </span><span class="n">ui_button</span> <span class="s2">"Understood"</span><span class="p">,</span> <span class="ss">status: :primary</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-02b355ad-b4a6-46a6-aab4-461d3d1e3499"><pre>
+<span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#backdrop-modal"</span> <span class="na">class=</span><span class="s">"btn-secondary btn"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Static Backdrop modal<span class="nt">&lt;/a&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"backdrop-modal"</span> <span class="na">data-backdrop=</span><span class="s">"static"</span> <span class="na">data-keyboard=</span><span class="s">"false"</span> <span class="na">class=</span><span class="s">"fade modal show"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-labelledby=</span><span class="s">"Backdrop Modal title
+  "</span> <span class="na">aria-modal=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">style=</span><span class="s">"display: block; padding-right: 15px;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Backdrop Modal title<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>One fine body<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;&lt;button</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">class=</span><span class="s">"btn-secondary btn"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Understood<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="scrolling-long-content"></a><h3>Scrolling long content</h3><p>Modal must be inserted outside a card.</p>
+<div class="card-code card"><div class="card-header"><a data-toggle="modal" data-target="#scrollable-modal" class="btn-secondary btn" role="button" href="modal.html#">Scrollable modal</a>
+</div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="modal.html#ruby-c1dff91b-3bf4-4a26-8d49-6c5101fa274b">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="modal.html#html-e3cd8f11-7c36-40ce-8f51-c2f6b082c3c1">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-c1dff91b-3bf4-4a26-8d49-6c5101fa274b"><pre>
+<span class="n">ui_button_link</span> <span class="s1">'Scrollable modal'</span><span class="p">,</span> <span class="p">{</span> <span class="ss">url: </span><span class="s1">'#'</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">data: </span><span class="p">{</span> <span class="ss">toggle: </span><span class="s1">'modal'</span><span class="p">,</span> <span class="ss">target: </span><span class="s1">'#scrollable-modal'</span> <span class="p">}}</span>
+<span class="n">ui_modal</span><span class="p">({</span> <span class="ss">scrollable: </span><span class="kp">true</span> <span class="p">},</span> <span class="p">{</span><span class="ss">id: </span><span class="s2">"backdrop-modal"</span><span class="p">})</span> <span class="k">do</span> <span class="o">|</span><span class="n">m</span><span class="o">|</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">header</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Scrollable Modal title"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">body</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"..."</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">footer</span> <span class="k">do</span>
+<span class="err">    </span><span class="n">ui_button</span> <span class="s2">"Close"</span><span class="p">,</span> <span class="p">{</span> <span class="ss">status: :secondary</span> <span class="p">},</span> <span class="ss">data: </span><span class="p">{</span> <span class="ss">dismiss: </span><span class="s2">"modal"</span> <span class="p">}</span>
+<span class="err">    </span><span class="n">ui_button</span> <span class="s2">"Understood"</span><span class="p">,</span> <span class="ss">status: :primary</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-e3cd8f11-7c36-40ce-8f51-c2f6b082c3c1"><pre>
+<span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#scrollable-modal"</span> <span class="na">class=</span><span class="s">"btn-secondary btn"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Scrollable modal<span class="nt">&lt;/a&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"scrollable-modal"</span> <span class="na">class=</span><span class="s">"modal show"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-labelledby=</span><span class="s">"Scrollable Modal title"</span> <span class="na">aria-modal=</span><span class="s">"true"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">style=</span><span class="s">"padding-right: 15px; display: block;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog-scrollable"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Scrollable Modal title<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;&lt;button</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">class=</span><span class="s">"btn-secondary btn"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Understood<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="position"></a><h3>Position</h3><p>Modal must be inserted outside a card.</p>
+<div class="card-code card"><div class="card-header"><a data-toggle="modal" data-target="#centered-modal" class="btn-secondary btn" role="button" href="modal.html#">Vertical centered modal</a>
+</div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="modal.html#ruby-3346bfbb-6565-4902-be79-f53ca78b2a5b">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="modal.html#html-cd8aca95-5971-419b-ba01-26dc58b270f1">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-3346bfbb-6565-4902-be79-f53ca78b2a5b"><pre>
+<span class="n">ui_button_link</span> <span class="s1">'Vertical centered modal'</span><span class="p">,</span> <span class="p">{</span> <span class="ss">url: </span><span class="s1">'#'</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">data: </span><span class="p">{</span> <span class="ss">toggle: </span><span class="s1">'modal'</span><span class="p">,</span> <span class="ss">target: </span><span class="s1">'#centered-modal'</span> <span class="p">}}</span>
+<span class="n">ui_modal</span><span class="p">({</span> <span class="ss">position: </span><span class="n">centered</span> <span class="p">},</span> <span class="p">{</span><span class="ss">id: </span><span class="s2">"backdrop-modal"</span><span class="p">})</span> <span class="k">do</span> <span class="o">|</span><span class="n">m</span><span class="o">|</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">header</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Centered Modal title"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">body</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"One fine body"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-cd8aca95-5971-419b-ba01-26dc58b270f1"><pre>
+<span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#centered-modal"</span> <span class="na">class=</span><span class="s">"btn-secondary btn"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Vertical centered modal<span class="nt">&lt;/a&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog-centered"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Vertical Centered Modal title<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>One fine body<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;&lt;button</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">class=</span><span class="s">"btn-secondary btn"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Understood<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="fullscreen"></a><h3>fullscreen</h3><p>Modal must be inserted outside a card.</p>
+<div class="card-code card"><div class="card-header"><a data-toggle="modal" data-target="#modal-test1" class="btn-secondary btn" role="button" href="modal.html#">fullscreen</a>
+<a data-toggle="modal" data-target="#modal-test-lg" class="btn-secondary btn" role="button" href="modal.html#">fullscreen below lg</a>
+<a data-toggle="modal" data-target="#modal-test-md" class="btn-secondary btn" role="button" href="modal.html#">fullscreen below md</a>
+<a data-toggle="modal" data-target="#modal-test-sm" class="btn-secondary btn" role="button" href="modal.html#">fullscreen below sm</a>
+</div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="modal.html#ruby-adb38c49-13db-4a0b-93c7-7f54512805a4">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="modal.html#html-631d1b04-1b6f-4a54-8ea8-b15c957077cd">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-adb38c49-13db-4a0b-93c7-7f54512805a4"><pre>
+<span class="n">ui_button_link</span> <span class="s1">'fullscreen'</span><span class="p">,</span> <span class="p">{</span> <span class="ss">url: </span><span class="s1">'#'</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">data: </span><span class="p">{</span> <span class="ss">toggle: </span><span class="s1">'modal'</span><span class="p">,</span> <span class="ss">target: </span><span class="s1">'#modal-test1'</span> <span class="p">}}</span>
+<span class="n">ui_modal</span> <span class="ss">class: </span><span class="s2">"modal-example"</span><span class="p">,</span> <span class="ss">size: :sm</span> <span class="k">do</span> <span class="o">|</span><span class="n">m</span><span class="o">|</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">header</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Fullscreen title"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">body</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"One fine body"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-631d1b04-1b6f-4a54-8ea8-b15c957077cd"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-example ui_modal"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog ui_modal-sm"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>One fine body<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="effect"></a><h3>Effect</h3><div class="card-code card"><div class="card-header"><a data-toggle="modal" data-target="#modal-test" class="btn-secondary btn" role="button" href="modal.html#">click here</a>
+<div id="modal-test" class="fade modal" tabindex="-1" aria-labelledby="Modal title
+" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Modal title
+</h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">One fine body
+</div></div></div></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="modal.html#ruby-1136a63f-bb00-4c82-b9ad-3a0ade768124">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="modal.html#html-3f3954ab-cfb2-4850-9368-c678af5cb5d3">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-1136a63f-bb00-4c82-b9ad-3a0ade768124"><pre>
+<span class="n">ui_button_link</span> <span class="s2">"click here"</span><span class="p">,</span> <span class="p">{</span> <span class="ss">url: </span><span class="s2">"#"</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">data: </span><span class="p">{</span> <span class="ss">toggle: </span><span class="s2">"modal"</span><span class="p">,</span> <span class="ss">target: </span><span class="s2">"#modal-test"</span> <span class="p">}}</span>
+<span class="n">ui_modal</span><span class="p">({</span> <span class="ss">effect: :fade</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">id: </span><span class="s2">"modal-test"</span> <span class="p">})</span> <span class="k">do</span> <span class="o">|</span><span class="n">m</span><span class="o">|</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">header</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Modal itle"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">m</span><span class="p">.</span><span class="nf">body</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"One fine body"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-3f3954ab-cfb2-4850-9368-c678af5cb5d3"><pre>
+<span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#modal-test"</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>click here<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"modal-test"</span> <span class="na">class=</span><span class="s">"fade ui_modal"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog "</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>One fine body<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section></div>
+<div id="modal-test1" class="modal" tabindex="-1" aria-labelledby="Fullscreen Modal
+" aria-hidden="true"><div class="modal-dialog modal-fullscreen"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Fullscreen Modal
+</h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">One fine body
+</div><div class="modal-footer"><button class="btn-primary btn">save</button>
+</div></div></div></div><div id="modal-test-lg" class="modal" tabindex="-1" aria-labelledby="Modal title
+" aria-hidden="true"><div class="modal-dialog modal-fullscreen-lg-down"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Modal title
+</h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">One fine body
+</div><div class="modal-footer"><button class="btn-primary btn">save</button>
+</div></div></div></div><div id="modal-test-md" class="modal" tabindex="-1" aria-labelledby="Modal title
+" aria-hidden="true"><div class="modal-dialog modal-fullscreen-md-down"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Modal title
+</h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">One fine body
+</div><div class="modal-footer"><button class="btn-primary btn">save</button>
+</div></div></div></div><div id="modal-test-sm" class="modal" tabindex="-1" aria-labelledby="Modal title
+" aria-hidden="true"><div class="modal-dialog modal-fullscreen-sm-down"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Modal title
+</h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">One fine body
+</div><div class="modal-footer"><button class="btn-primary btn">save</button>
+</div></div></div></div><div id="centered-modal" class="fade modal" tabindex="-1" aria-labelledby="Vertical Centered Modal title
+" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Vertical Centered Modal title
+</h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">One fine body
+</div><div class="modal-footer"><button data-dismiss="modal" class="btn-secondary btn">Close</button>
+<button class="btn-primary btn">Understood</button>
+</div></div></div></div><div id="scrollable-modal" class="modal" tabindex="-1" aria-labelledby="Scrollable Modal title
+" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Scrollable Modal title
+</h5><button class="btn-close" data-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+</div><div class="modal-footer"><button data-dismiss="modal" class="btn-secondary btn">Close</button>
+<button class="btn-primary btn">Understood</button>
+</div></div></div></div>
+</div><div class="secondary-nav d-md-none d-lg-block col-xl-2 col-lg-2"><div class='sticky'>
+<h3>Contents</h3>
+<ul class="nav"><li class="nav-item"><a href="modal.html#modal">Modal</a></li><li class="nav-item"><a href="modal.html#size">Size</a></li><li class="nav-item"><a href="modal.html#backdrop-static">Backdrop static</a></li><li class="nav-item"><a href="modal.html#scrolling-long-content">Scrolling long content</a></li><li class="nav-item"><a href="modal.html#position">Position</a></li><li class="nav-item"><a href="modal.html#fullscreen">fullscreen</a></li><li class="nav-item"><a href="modal.html#effect">Effect</a></li></ul></div>
+</div></div><div class='scroll-to-top'>
+<a class="back-top btn-primary btn btn-lg" role="button" href="modal.html#top"><i class="glyph fas fa-arrow-circle-up"></i>  </a>
+</div>
+</div><footer class='mt-auto'>
+<nav class="nav nav-links justify-content-center"><a class="nav-link" href="https://github.com/thooams/Ui-Bibz"><i class="glyph fab fa-github-alt"></i> Github</a><a class="nav-link" href="../../about.html"><i class="glyph fas fa-book"></i> About</a><a class="nav-link" href="https://rubygems.org/gems/ui_bibz"><i class="glyph fas fa-gem"></i> Gem</a></nav><p>Ui Bibz Framework is designed and created by Thomas HUMMEL (<a href="https://github.com/thooams">@thooams</a>)<br />
+This theme is inspired by <a href="http://getbootstrap.com">Bootstrap theme documentation</a><br />
+Currently v3.0.0.alpha2. Code licensed MIT</p>
+
+</footer>
+
+</body>
+</html>

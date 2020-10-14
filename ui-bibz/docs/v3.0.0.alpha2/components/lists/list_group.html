@@ -1,0 +1,450 @@
+<html>
+<head>
+<title>Ui Bibz - List group</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="02p2tQNPJ6VtPxtRlHz1grVjSFpq/zSFaMeFy0T7LEbSAEM4sTmN1IQpv/OLTaJOlpAzNWQKYzt1gIhlBXFV/w==" />
+
+<meta CONTENT='Ui Bibz is an Ui Framework that allows you to build an interface very quickly and simply using Bootstrap 5.0.0.alpha2.' name='Description'>
+<meta CONTENT='Thomas HUMMEL &lt;thomas@hummel.link&gt;' name='Author'>
+<meta CONTENT='bootstrap rails, bootstrap ruby, ui bibz, bibz bootstrap, bootstrap interface, bootstrap ui, bootstrap interface, ui framework, ui interface' name='Keywords'>
+<link href='../../favicon.ico' rel='shortcut icon' type='image/x-icon'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<style>
+  ".highlight table td { padding: 5px; }
+  .highlight table pre { margin: 0; }
+  .highlight .cm {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cp {
+    color: #999999;
+    font-weight: bold;
+  }
+  .highlight .c1 {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2;
+  }
+  .highlight .gd {
+    color: #000000;
+    background-color: #ffdddd;
+  }
+  .highlight .ge {
+    color: #000000;
+    font-style: italic;
+  }
+  .highlight .gr {
+    color: #aa0000;
+  }
+  .highlight .gh {
+    color: #999999;
+  }
+  .highlight .gi {
+    color: #000000;
+    background-color: #ddffdd;
+  }
+  .highlight .go {
+    color: #888888;
+  }
+  .highlight .gp {
+    color: #555555;
+  }
+  .highlight .gs {
+    font-weight: bold;
+  }
+  .highlight .gu {
+    color: #aaaaaa;
+  }
+  .highlight .gt {
+    color: #aa0000;
+  }
+  .highlight .kc {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kd {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kn {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kp {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kr {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kt {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .k, .highlight .kv {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .mf {
+    color: #009999;
+  }
+  .highlight .mh {
+    color: #009999;
+  }
+  .highlight .il {
+    color: #009999;
+  }
+  .highlight .mi {
+    color: #009999;
+  }
+  .highlight .mo {
+    color: #009999;
+  }
+  .highlight .m, .highlight .mb, .highlight .mx {
+    color: #009999;
+  }
+  .highlight .sb {
+    color: #d14;
+  }
+  .highlight .sc {
+    color: #d14;
+  }
+  .highlight .sd {
+    color: #d14;
+  }
+  .highlight .s2 {
+    color: #d14;
+  }
+  .highlight .se {
+    color: #d14;
+  }
+  .highlight .sh {
+    color: #d14;
+  }
+  .highlight .si {
+    color: #d14;
+  }
+  .highlight .sx {
+    color: #d14;
+  }
+  .highlight .sr {
+    color: #009926;
+  }
+  .highlight .s1 {
+    color: #d14;
+  }
+  .highlight .ss {
+    color: #990073;
+  }
+  .highlight .s, .highlight .sa, .highlight .dl {
+    color: #d14;
+  }
+  .highlight .na {
+    color: #008080;
+  }
+  .highlight .bp {
+    color: #999999;
+  }
+  .highlight .nb {
+    color: #0086B3;
+  }
+  .highlight .nc {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .no {
+    color: #008080;
+  }
+  .highlight .nd {
+    color: #3c5d5d;
+    font-weight: bold;
+  }
+  .highlight .ni {
+    color: #800080;
+  }
+  .highlight .ne {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nf, .highlight .fm {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nl {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nn {
+    color: #555555;
+  }
+  .highlight .nt {
+    color: #000080;
+  }
+  .highlight .vc {
+    color: #008080;
+  }
+  .highlight .vg {
+    color: #008080;
+  }
+  .highlight .vi {
+    color: #008080;
+  }
+  .highlight .nv, .highlight .vm {
+    color: #008080;
+  }
+  .highlight .ow {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .o {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .w {
+    color: #bbbbbb;
+  }
+  .highlight {
+    background-color: #f8f8f8;
+  }"
+</style>
+<script src="../../packs/js/application-c26aa622200f49f31834.js" data-turbolinks-track="reload"></script>
+
+</head>
+<body>
+<header>
+<nav class="bg-dark navbar navbar-dark fixed-top navbar-expand-lg"><div class="container"><a class="navbar-brand" href="../../index.html"><img alt="Ui Bibz logo" src="../../assets/brand-7e0071621be0284fcfc439aacb153ac93a9ed2e0b032dd060bda1a929d905399.png" /></a><button name="button" type="submit" class="navbar-toggler d-block d-md-none collapsed submenu-toggler"><i class="glyph fas fa-arrow-alt-circle-down"></i>
+</button><button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-id-98367">☰</button><div class="navbar-collapse collapse" id="navbar-id-98367"><ul class="navbar-nav  mr-auto"><li class="nav-item"><a class="nav-link" href="../../getting_started.html">Get started</a></li><li class="nav-item"><a class="active nav-link" href="../boxes/card.html">Components</a></li><li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="list_group.html#">Component</a><div class="dropdown-menu" arial-labelledby="dropdown-65497"><a class="dropdown-item" href="../../component.html">Base</a><a class="dropdown-item" href="../../custom_component.html">Custom</a></div></li><li class="nav-item"><a class="nav-link" href="../../simple_form.html">Simple form</a></li><li class="nav-item"><a class="nav-link" href="../../theme.html">Theme</a></li></ul><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="../../about.html"><i class="glyph fas fa-info-circle"></i><span class="empty-space"> </span></a></li><li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/thooams/Ui-Bibz"><i class="glyph fab fa-github"></i><span class="empty-space"> </span></a></li><li class="nav-item"><a class="nav-link" target="_blank" href="https://rubygems.org/gems/ui_bibz"><i class="glyph fas fa-gem"></i><span class="empty-space"> </span></a></li><li class="nav-item"><a class="nav-link" target="_blank" href="https://www.npmjs.com/package/ui-bibz-js"><i class="glyph fab fa-npm"></i><span class="empty-space"> </span></a></li></ul></div></div></nav></header>
+
+<div class="container-fluid"><div class="row-fluid row"><a name='top'></a>
+<div class="left-nav d-none d-md-block col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12"><div class='sidebar'>
+<ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Boxes</span></li><li class="nav-item"><a class="nav-link" href="../boxes/card.html">Card</a></li><li class="nav-item"><a class="nav-link" href="../boxes/card-accordion.html">Card accordion</a></li><li class="nav-item"><a class="nav-link" href="../boxes/card-column.html">Card column</a></li><li class="nav-item"><a class="nav-link" href="../boxes/card-grid.html">Card grid</a></li><li class="nav-item"><a class="nav-link" href="../boxes/card-group.html">Card group</a></li><li class="nav-item"><a class="nav-link" href="../boxes/jumbotron.html">Jumbotron</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Containers</span></li><li class="nav-item"><a class="nav-link" href="../containers/panel.html">Panel</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Icons</span></li><li class="nav-item"><a class="nav-link" href="../icons/glyph.html">Glyph</a></li><li class="nav-item"><a class="nav-link" href="../icons/star.html">Star</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Layouts</span></li><li class="nav-item"><a class="nav-link" href="../layouts/col.html">Col</a></li><li class="nav-item"><a class="nav-link" href="../layouts/container.html">Container</a></li><li class="nav-item"><a class="nav-link" href="../layouts/row.html">Row</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Lists</span></li><li class="nav-item"><a class="nav-link" href="list.html">List</a></li><li class="nav-item"><a class="active nav-link" href="list_group.html">List group</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Navigations</span></li><li class="nav-item"><a class="nav-link" href="../navigations/breadcrumb.html">Breadcrumb</a></li><li class="nav-item"><a class="nav-link" href="../navigations/link.html">Link</a></li><li class="nav-item"><a class="nav-link" href="../navigations/nav.html">Nav</a></li><li class="nav-item"><a class="nav-link" href="http://localhost:3000/components/navigations/navbar">Navbar</a></li><li class="nav-item"><a class="nav-link" href="../navigations/pagination.html">Pagination</a></li><li class="nav-item"><a class="nav-link" href="../navigations/tab_group.html">Tab group</a></li><li class="nav-item"><a class="nav-link" href="../navigations/toolbar.html">Toolbar</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Notifications</span></li><li class="nav-item"><a class="nav-link" href="../notifications/alert.html">Alert</a></li><li class="nav-item"><a class="nav-link" href="../notifications/badge.html">Badge</a></li><li class="nav-item"><a class="nav-link" href="../../component.html#popover">Popover</a></li><li class="nav-item"><a class="nav-link" href="../notifications/progress_bar.html">Progress bar</a></li><li class="nav-item"><a class="nav-link" href="../notifications/spinner.html">Spinner</a></li><li class="nav-item"><a class="nav-link" href="../../component.html#tooltip">Tooltip</a></li><li class="nav-item"><a class="nav-link" href="../notifications/toast.html">Toast</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Tables</span></li><li class="nav-item"><a class="nav-link" href="../tables/table.html">Table</a></li><li class="nav-item"><a class="nav-link" href="../tables/table_card.html">Table card</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Forms</span></li><ul class="nav"><li class="nav-item nav-text"><span class="nav-link">Buttons</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/buttons/button.html">Button</a></li><li class="nav-item"><a class="nav-link" href="../forms/buttons/button-group.html">Button group</a></li><li class="nav-item"><a class="nav-link" href="../forms/buttons/button-link.html">Button link</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Choices</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/choices/box-switch-field.html">Box Switch field</a></li><li class="nav-item"><a class="nav-link" href="../forms/choices/checkbox-field.html">Checkbox field</a></li><li class="nav-item"><a class="nav-link" href="../forms/choices/choice-group.html">Choice group</a></li><li class="nav-item"><a class="nav-link" href="../forms/choices/radio-field.html">Radio field</a></li><li class="nav-item"><a class="nav-link" href="../forms/choices/switch-field.html">Switch field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dates</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/dates/date-picker-field.html">Date picker field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dropdowns</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/dropdowns/dropdown.html">Dropdown</a></li><li class="nav-item"><a class="nav-link" href="../forms/dropdowns/split_dropdown.html">Split Dropdown</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Files</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/files/file-field.html">File</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Numbers</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/numbers/formula-field.html">Formula field</a></li><li class="nav-item"><a class="nav-link" href="../forms/numbers/number-field.html">Number field</a></li><li class="nav-item"><a class="nav-link" href="../forms/numbers/range-field.html">Range field</a></li><li class="nav-item"><a class="nav-link" href="../forms/numbers/slider-field.html">Slider field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Selects</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/selects/dropdown-select-field.html">Dropdown select field</a></li><li class="nav-item"><a class="nav-link" href="../forms/selects/select-field.html">Select field</a></li><li class="nav-item"><a class="nav-link" href="../forms/selects/multi-column-field.html">Multi column field</a></li><li class="nav-item"><a class="nav-link" href="../forms/selects/multi-select-field.html">Multi select field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Surrounds</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/surrounds/surround-field.html">Surround field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Textareas</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/textareas/markdown-editor-field.html">Markdown editor field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Texts</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/texts/auto-complete-field.html">Auto complete field</a></li><li class="nav-item"><a class="nav-link" href="../forms/texts/text-field.html">Text field</a></li></ul></ul></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Windows</span></li><li class="nav-item"><a class="nav-link" href="../windows/modal.html">Modal</a></li></ul>
+</div>
+
+</div><div class="content col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12"><h2><i class="glyph fas fa-gem"></i> List group<span>(ui_list_group)</span><a target="_blank" title="See original component documentation" href="http://localhost:3000/components/lists/components/list-group/"><img class="icon-indicator" src="../../assets/bootstrap-icon-3c530dcc8b86429e814948a60a17ef9d77f756308ce5c7055dd2d2318e003780.png" /></a></h2>
+<blockquote>UiBibz::Ui::Core::Lists::ListGroup</blockquote>
+<p class='bd-callout'>List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.</p>
+<div class="usage"><h2><i class="glyph fas fa-book"></i> Usage</h2><div>This component is an extension of <a href="../../component.html">component</a> element. A Ui Bibz component consists of 3 arguments:<ul class="list-options"><li><span class="option-name">content</span><span class="option-types">[value/block]</span></li><li><span class="option-name">options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li><li><span class="option-name">html_options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li></ul></div><div class="highlight code card"><div class="card-body"><div class="highlight"><pre class="codehilite"><code>
+<span class="n">ui_list_group</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span> <span class="o">|</span><span class="n">lg</span><span class="o">|</span>
+  <span class="c1"># by variable</span>
+  <span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span>
+
+  <span class="c1"># or by block</span>
+  <span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span>
+    <span class="n">content</span>
+  <span class="k">end</span>
+
+  <span class="c1"># or by block tapped</span>
+  <span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span> <span class="o">|</span><span class="n">l</span><span class="o">|</span>
+    <span class="n">l</span><span class="p">.</span><span class="nf">header</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span>
+    <span class="c1"># or</span>
+    <span class="n">l</span><span class="p">.</span><span class="nf">header</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span>
+      <span class="n">content</span>
+    <span class="k">end</span>
+
+    <span class="n">l</span><span class="p">.</span><span class="nf">body</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span>
+    <span class="c1"># or</span>
+    <span class="n">l</span><span class="p">.</span><span class="nf">body</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span>
+      <span class="n">content</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div></div></div><div class="component-options" id="component-options"><h2><i class="glyph fas fa-sliders-h"></i> Options</h2>The specific options for this component are:<ul class="list-options"><li><span class="option-name">tag_type</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:a, :button, :li</code>)</span></li><li><span class="option-name">flush</span><span class="option-types">[boolean]</span></li><li><span class="option-name">cache</span><span class="option-types">[string]</span><span class="option-description">(use to <a href="../../component.html#cache">cache</a> your component)</span></li><li><span class="option-name">controller</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">action</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">target</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../component.html#stimulus-options">stimulus-options</a> method)</span></li></ul></div><div class="component-options" id="component-items"><h2><i class="glyph fas fa-list"></i> Items</h2>The allowed items for this component are:<ul class="list-options"><li><span class="option-name">list</span><span class="option-description">(inherit of <a href="../../component.html">component</a>)</span></li><li><span class="option-name">html</span><span class="option-types">[html/string]</span><span class="option-description">Insert html as a component</span></li></ul></div><div><h2><i class="glyph fas fa-code"></i> Examples</h2>Some examples explain how to use the options present in the component.<section class="section"><a name="list-group"></a><h3>List group</h3><div class="card-code card"><div class="card-header"><ul class="list-group"><li class="list-group-item">Cras justo odio</li><li class="list-group-item">Dapibus ac facilisis in</li><li class="list-group-item">Morbi leo risus</li><li class="list-group-item">Porta ac consectetur ac</li><li class="list-group-item">Vestibulum at eros</li></ul></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="list_group.html#ruby-e2df284d-fa65-41e7-87ad-e27f46b498e5">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="list_group.html#html-6b87c8bf-86b9-48c9-995f-3de95e3cfa78">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-e2df284d-fa65-41e7-87ad-e27f46b498e5"><pre>
+<span class="n">ui_list_group</span> <span class="k">do</span> <span class="o">|</span><span class="n">lg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Cras justo odio"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Dapibus ac facilisis in"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Morbi leo risus"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Porta ac consectetur ac"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Vestibulum at eros"</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-6b87c8bf-86b9-48c9-995f-3de95e3cfa78"><pre>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="flush"></a><h3>Flush</h3><div class="card-code card"><div class="card-header"><ul class="list-group list-group-flush"><li class="list-group-item">Cras justo odio</li><li class="list-group-item">Dapibus ac facilisis in</li><li class="list-group-item">Morbi leo risus</li><li class="list-group-item">Porta ac consectetur ac</li><li class="list-group-item">Vestibulum at eros</li></ul></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="list_group.html#ruby-07abc3fc-9180-434a-8f25-0753e3fb3121">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="list_group.html#html-82db43b5-ff9d-471c-a13b-027b3a296f49">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-07abc3fc-9180-434a-8f25-0753e3fb3121"><pre>
+<span class="n">ui_list_group</span> <span class="ss">flush: </span><span class="kp">true</span> <span class="k">do</span> <span class="o">|</span><span class="n">lg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Cras justo odio"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Dapibus ac facilisis in"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Morbi leo risus"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Porta ac consectetur ac"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Vestibulum at eros"</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-82db43b5-ff9d-471c-a13b-027b3a296f49"><pre>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group list-group-flush"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="badges"></a><h3>badges</h3><div class="card-code card"><div class="card-header"><ul class="list-group"><li class="list-group-item d-flex justify-content-between align-items-center">Cras justo odio<span class="bg-secondary badge rounded-pill">14</span></li><li class="list-group-item d-flex justify-content-between align-items-center">Dapibus ac facilisis in<span class="bg-secondary badge">2</span></li></ul></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="list_group.html#ruby-5c9a6ce5-e17c-4ab5-92e7-eee568a401e7">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="list_group.html#html-e0b0bc07-cf62-4df4-83e8-59b8664eccb6">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-5c9a6ce5-e17c-4ab5-92e7-eee568a401e7"><pre>
+<span class="n">ui_list_group</span> <span class="k">do</span> <span class="o">|</span><span class="n">lg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Cras justo odio"</span><span class="p">,</span> <span class="ss">badge: </span><span class="mi">14</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Dapibus ac facilisis in"</span><span class="p">,</span> <span class="ss">badge: </span><span class="p">{</span> <span class="ss">content: </span><span class="mi">2</span><span class="p">,</span> <span class="ss">type: :square</span> <span class="p">}</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-e0b0bc07-cf62-4df4-83e8-59b8664eccb6"><pre>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item d-flex justify-content-between align-items-center"</span><span class="nt">&gt;</span>
+    Cras justo odio
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge-secondary badge badge-pill"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item d-flex justify-content-between align-items-center"</span><span class="nt">&gt;</span>
+    Dapibus ac facilisis in
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge-secondary badge"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="linked-items"></a><h3>Linked items</h3><div class="card-code card"><div class="card-header"><div class="list-group"><a href="list_group.html#1" class="active list-group-item list-group-item-action">Cras justo odio</a><a href="list_group.html#2" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a><a href="list_group.html#3" class="list-group-item list-group-item-action">Morbi leo risus</a><a href="list_group.html#4" class="list-group-item list-group-item-action">Porta ac consectetur ac</a><a href="list_group.html#5" class="list-group-item list-group-item-action">Vestibulum at eros</a></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="list_group.html#ruby-2b44ad21-22c8-4d4c-ba90-be1b942a9177">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="list_group.html#html-03542fcf-d3b7-4ab5-96af-f32999619396">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-2b44ad21-22c8-4d4c-ba90-be1b942a9177"><pre>
+<span class="n">ui_list_group</span> <span class="ss">tag_type: :a</span> <span class="k">do</span> <span class="o">|</span><span class="n">lg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Cras justo odio"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#1"</span><span class="p">,</span><span class="ss">state: :active</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Dapibus ac facilisis in"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#2"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Morbi leo risus"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#3"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Porta ac consectetur ac"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#4"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Vestibulum at eros"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#5"</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-03542fcf-d3b7-4ab5-96af-f32999619396"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"active list-group-item"</span> <span class="na">href=</span><span class="s">"#1"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span> <span class="na">href=</span><span class="s">"#2"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span> <span class="na">href=</span><span class="s">"#3"</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span> <span class="na">href=</span><span class="s">"#4"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-group-item"</span> <span class="na">href=</span><span class="s">"#5"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="button-items"></a><h3>Button items</h3><div class="card-code card"><div class="card-header"><div class="list-group"><button class="active list-group-item list-group-item-action">Cras justo odio</button><button class="list-group-item list-group-item-action">Dapibus ac facilisis in</button><button class="list-group-item list-group-item-action">Morbi leo risus</button><button class="list-group-item list-group-item-action">Porta ac consectetur ac</button><button class="list-group-item list-group-item-action">Vestibulum at eros</button></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="list_group.html#ruby-ea676b38-5fea-43ce-9057-8ad2002d011b">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="list_group.html#html-b3b29c93-3e1b-4d4f-ae68-5c807c1497b1">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-ea676b38-5fea-43ce-9057-8ad2002d011b"><pre>
+<span class="n">ui_list_group</span> <span class="ss">tag_type: :button</span> <span class="k">do</span> <span class="o">|</span><span class="n">lg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Cras justo odio"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Dapibus ac facilisis in"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Morbi leo risus"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Porta ac consectetur ac"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Vestibulum at eros"</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-b3b29c93-3e1b-4d4f-ae68-5c807c1497b1"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"active list-group-item"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="disabled-items"></a><h3>Disabled items</h3><div class="card-code card"><div class="card-header"><ul class="list-group"><li class="disabled list-group-item">Cras justo odio</li><li class="list-group-item">Dapibus ac facilisis in</li><li class="list-group-item">Morbi leo risus</li><li class="list-group-item">Porta ac consectetur ac</li><li class="list-group-item">Vestibulum at eros</li></ul></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="list_group.html#ruby-f6cfe085-7ab0-4613-91c2-5df000fc1f63">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="list_group.html#html-2ea40dd8-2034-46bb-865d-574efac21a14">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-f6cfe085-7ab0-4613-91c2-5df000fc1f63"><pre>
+<span class="n">ui_list_group</span> <span class="k">do</span> <span class="o">|</span><span class="n">lg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Cras justo odio"</span><span class="p">,</span> <span class="ss">state: :disabled</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Dapibus ac facilisis in"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Morbi leo risus"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Porta ac consectetur ac"</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Vestibulum at eros"</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-2ea40dd8-2034-46bb-865d-574efac21a14"><pre>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"disabled list-group-item"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="status"></a><h3>Status</h3><div class="card-code card"><div class="card-header"><ul class="list-group"><li class="list-group-item">This is a normal list group item</li><li class="list-group-item-primary list-group-item">This is a primary list group item</li><li class="list-group-item-secondary list-group-item">This is a secondary list group item</li><li class="list-group-item-success list-group-item">This is a success list group item</li><li class="list-group-item-danger list-group-item">This is a danger list group item</li><li class="list-group-item-warning list-group-item">This is a warning list group item</li><li class="list-group-item-info list-group-item">This is a info list group item</li><li class="list-group-item-light list-group-item">This is a light list group item</li><li class="list-group-item-dark list-group-item">This is a dark list group item</li></ul></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="list_group.html#ruby-45cba03b-acb2-4820-ae6e-6965c60ad916">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="list_group.html#html-26ac6642-9684-44e0-b819-26561444eed0">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-45cba03b-acb2-4820-ae6e-6965c60ad916"><pre>
+<span class="n">ui_list_group</span> <span class="k">do</span> <span class="o">|</span><span class="n">lg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"This is a normal list group item"</span>
+  <span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"This is a primary list group item"</span><span class="p">,</span> <span class="ss">status: :primary</span>
+  <span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"This is a secondary list group item"</span><span class="p">,</span> <span class="ss">status: :secondary</span>
+  <span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"This is a success list group item"</span><span class="p">,</span> <span class="ss">status: :success</span>
+  <span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"This is a danger list group item"</span><span class="p">,</span> <span class="ss">status: :danger</span>
+  <span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"This is a warning list group item"</span><span class="p">,</span> <span class="ss">status: :warning</span>
+  <span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"This is a info list group item"</span><span class="p">,</span> <span class="ss">status: :info</span>
+  <span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"This is a light list group item"</span><span class="p">,</span> <span class="ss">status: :light</span>
+  <span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"This is a dark list group item"</span><span class="p">,</span> <span class="ss">status: :dark</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-26ac6642-9684-44e0-b819-26561444eed0"><pre>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item-danger list-group-item"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item-info list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item-warning list-group-item"</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item-success list-group-item"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item-primary list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="custom-content"></a><h3>Custom content</h3><p>List group list has several block type:</p>
+
+<ul>
+<li>header (inherit of <a href="../../component.html">component</a>)</li>
+<li>body (inherit of <a href="../../component.html">component</a>)</li>
+</ul>
+
+<div class="card-code card"><div class="card-header"><div class="list-group"><li href="#" class="active list-group-item flex-column align-items-start"><div class="d-flex w-100 justify-content-between"><h5 class="mb-1">List group item heading</h5><small>3 days ago</small></div><p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>Donec id elit non mi porta</small></li><li href="#" class="list-group-item flex-column align-items-start"><div class="my-header d-flex w-100 justify-content-between"><h5 class="mb-1">List group item heading
+</h5><small>3 days ago</small></div><p class="my-body mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+</p><small>Donec id elit non mi porta</small></li><li href="#" class="list-group-item flex-column align-items-start"><div class="d-flex w-100 justify-content-between"><h5 class="mb-1">List group item heading</h5><small>3 days ago</small></div><p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>Donec id elit non mi porta</small></li></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="list_group.html#ruby-b8104963-72b0-4881-8404-8ffc9c96a6a3">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="list_group.html#html-acd3fc44-6db7-4021-a34b-4e708822f445">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-b8104963-72b0-4881-8404-8ffc9c96a6a3"><pre>
+<span class="n">ui_list_group</span> <span class="ss">tag_type: :a</span> <span class="k">do</span> <span class="o">|</span><span class="n">lg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="ss">state: :active</span> <span class="k">do</span> <span class="o">|</span><span class="n">l</span><span class="o">|</span>
+<span class="err">    </span><span class="n">l</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"List group item heading"</span><span class="p">,</span> <span class="ss">extra: </span><span class="s2">"3 days ago"</span>
+<span class="err">    </span><span class="n">l</span><span class="p">.</span><span class="nf">body</span> <span class="s2">"Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit."</span><span class="p">,</span> <span class="ss">extra: </span><span class="s2">"Donec id elit non mi porta"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="k">do</span> <span class="o">|</span><span class="n">l</span><span class="o">|</span>
+<span class="err">    </span><span class="n">l</span><span class="p">.</span><span class="nf">header</span> <span class="ss">class: </span><span class="s2">"my-header"</span><span class="p">,</span> <span class="ss">extra: </span><span class="s2">"3 days ago"</span> <span class="k">do</span>
+<span class="err">      </span><span class="s2">"List group item heading"</span>
+<span class="err">    </span><span class="k">end</span>
+<span class="err">    </span><span class="n">l</span><span class="p">.</span><span class="nf">body</span> <span class="ss">class: </span><span class="s2">"my-body"</span><span class="p">,</span> <span class="ss">extra: </span><span class="s2">"Donec id elit non mi porta"</span> <span class="k">do</span>
+<span class="err">      </span><span class="s2">"Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit."</span>
+<span class="err">    </span><span class="k">end</span>
+<span class="err">  </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="k">do</span> <span class="o">|</span><span class="n">l</span><span class="o">|</span>
+<span class="err">    </span><span class="n">l</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"List group item heading"</span><span class="p">,</span> <span class="ss">extra: </span><span class="s2">"3 days ago"</span>
+<span class="err">    </span><span class="n">l</span><span class="p">.</span><span class="nf">body</span> <span class="s2">"Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit."</span><span class="p">,</span> <span class="ss">extra: </span><span class="s2">"Donec id elit non mi porta"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-acd3fc44-6db7-4021-a34b-4e708822f445"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"active list-group-item list-group-item-action flex-column align-items-start"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex w-100 justify-content-between"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;small&gt;</span>3 days ago<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;small&gt;</span>Donec id elit non mi porta<span class="nt">&lt;/small&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action flex-column align-items-start"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"my-header d-flex w-100 justify-content-between"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;small&gt;</span>3 days ago<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"my-body mb-1"</span><span class="nt">&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;small&gt;</span>Donec id elit non mi porta<span class="nt">&lt;/small&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action flex-column align-items-start"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex w-100 justify-content-between"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;small&gt;</span>3 days ago<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;small&gt;</span>Donec id elit non mi porta<span class="nt">&lt;/small&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section></div>
+
+</div><div class="secondary-nav d-md-none d-lg-block col-xl-2 col-lg-2"><div class='sticky'>
+<h3>Contents</h3>
+<ul class="nav"><li class="nav-item"><a href="list_group.html#list-group">List group</a></li><li class="nav-item"><a href="list_group.html#flush">Flush</a></li><li class="nav-item"><a href="list_group.html#badges">badges</a></li><li class="nav-item"><a href="list_group.html#linked-items">Linked items</a></li><li class="nav-item"><a href="list_group.html#button-items">Button items</a></li><li class="nav-item"><a href="list_group.html#disabled-items">Disabled items</a></li><li class="nav-item"><a href="list_group.html#status">Status</a></li><li class="nav-item"><a href="list_group.html#custom-content">Custom content</a></li></ul></div>
+</div></div><div class='scroll-to-top'>
+<a class="back-top btn-primary btn btn-lg" role="button" href="list_group.html#top"><i class="glyph fas fa-arrow-circle-up"></i>  </a>
+</div>
+</div><footer class='mt-auto'>
+<nav class="nav nav-links justify-content-center"><a class="nav-link" href="https://github.com/thooams/Ui-Bibz"><i class="glyph fab fa-github-alt"></i> Github</a><a class="nav-link" href="../../about.html"><i class="glyph fas fa-book"></i> About</a><a class="nav-link" href="https://rubygems.org/gems/ui_bibz"><i class="glyph fas fa-gem"></i> Gem</a></nav><p>Ui Bibz Framework is designed and created by Thomas HUMMEL (<a href="https://github.com/thooams">@thooams</a>)<br />
+This theme is inspired by <a href="http://getbootstrap.com">Bootstrap theme documentation</a><br />
+Currently v3.0.0.alpha2. Code licensed MIT</p>
+
+</footer>
+
+</body>
+</html>

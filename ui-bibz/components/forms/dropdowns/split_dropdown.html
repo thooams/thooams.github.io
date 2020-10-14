@@ -1,0 +1,869 @@
+<html>
+<head>
+<title>Ui Bibz - Split dropdown</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="OuU4yZTm6yas2jH4aVqmiUTPWg0EaVtJ4mMCJ01EgO07jw1EJpBBV0XMlVp2a/FFZzwhYgqcDPf/JA+JDM75VA==" />
+
+<meta CONTENT='Ui Bibz is an Ui Framework that allows you to build an interface very quickly and simply using Bootstrap 5.0.0.alpha2.' name='Description'>
+<meta CONTENT='Thomas HUMMEL &lt;thomas@hummel.link&gt;' name='Author'>
+<meta CONTENT='bootstrap rails, bootstrap ruby, ui bibz, bibz bootstrap, bootstrap interface, bootstrap ui, bootstrap interface, ui framework, ui interface' name='Keywords'>
+<link href='../../../favicon.ico' rel='shortcut icon' type='image/x-icon'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<style>
+  ".highlight table td { padding: 5px; }
+  .highlight table pre { margin: 0; }
+  .highlight .cm {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cp {
+    color: #999999;
+    font-weight: bold;
+  }
+  .highlight .c1 {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2;
+  }
+  .highlight .gd {
+    color: #000000;
+    background-color: #ffdddd;
+  }
+  .highlight .ge {
+    color: #000000;
+    font-style: italic;
+  }
+  .highlight .gr {
+    color: #aa0000;
+  }
+  .highlight .gh {
+    color: #999999;
+  }
+  .highlight .gi {
+    color: #000000;
+    background-color: #ddffdd;
+  }
+  .highlight .go {
+    color: #888888;
+  }
+  .highlight .gp {
+    color: #555555;
+  }
+  .highlight .gs {
+    font-weight: bold;
+  }
+  .highlight .gu {
+    color: #aaaaaa;
+  }
+  .highlight .gt {
+    color: #aa0000;
+  }
+  .highlight .kc {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kd {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kn {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kp {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kr {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kt {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .k, .highlight .kv {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .mf {
+    color: #009999;
+  }
+  .highlight .mh {
+    color: #009999;
+  }
+  .highlight .il {
+    color: #009999;
+  }
+  .highlight .mi {
+    color: #009999;
+  }
+  .highlight .mo {
+    color: #009999;
+  }
+  .highlight .m, .highlight .mb, .highlight .mx {
+    color: #009999;
+  }
+  .highlight .sb {
+    color: #d14;
+  }
+  .highlight .sc {
+    color: #d14;
+  }
+  .highlight .sd {
+    color: #d14;
+  }
+  .highlight .s2 {
+    color: #d14;
+  }
+  .highlight .se {
+    color: #d14;
+  }
+  .highlight .sh {
+    color: #d14;
+  }
+  .highlight .si {
+    color: #d14;
+  }
+  .highlight .sx {
+    color: #d14;
+  }
+  .highlight .sr {
+    color: #009926;
+  }
+  .highlight .s1 {
+    color: #d14;
+  }
+  .highlight .ss {
+    color: #990073;
+  }
+  .highlight .s, .highlight .sa, .highlight .dl {
+    color: #d14;
+  }
+  .highlight .na {
+    color: #008080;
+  }
+  .highlight .bp {
+    color: #999999;
+  }
+  .highlight .nb {
+    color: #0086B3;
+  }
+  .highlight .nc {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .no {
+    color: #008080;
+  }
+  .highlight .nd {
+    color: #3c5d5d;
+    font-weight: bold;
+  }
+  .highlight .ni {
+    color: #800080;
+  }
+  .highlight .ne {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nf, .highlight .fm {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nl {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nn {
+    color: #555555;
+  }
+  .highlight .nt {
+    color: #000080;
+  }
+  .highlight .vc {
+    color: #008080;
+  }
+  .highlight .vg {
+    color: #008080;
+  }
+  .highlight .vi {
+    color: #008080;
+  }
+  .highlight .nv, .highlight .vm {
+    color: #008080;
+  }
+  .highlight .ow {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .o {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .w {
+    color: #bbbbbb;
+  }
+  .highlight {
+    background-color: #f8f8f8;
+  }"
+</style>
+<script src="../../../packs/js/application-c26aa622200f49f31834.js" data-turbolinks-track="reload"></script>
+
+</head>
+<body>
+<header>
+<nav class="bg-dark navbar navbar-dark fixed-top navbar-expand-lg"><div class="container"><a class="navbar-brand" href="../../../index.html"><img alt="Ui Bibz logo" src="../../../assets/brand-7e0071621be0284fcfc439aacb153ac93a9ed2e0b032dd060bda1a929d905399.png" /></a><button name="button" type="submit" class="navbar-toggler d-block d-md-none collapsed submenu-toggler"><i class="glyph fas fa-arrow-alt-circle-down"></i>
+</button><button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-id-95490">☰</button><div class="navbar-collapse collapse" id="navbar-id-95490"><ul class="navbar-nav  mr-auto"><li class="nav-item"><a class="nav-link" href="../../../getting_started.html">Get started</a></li><li class="nav-item"><a class="active nav-link" href="../../boxes/card.html">Components</a></li><li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="split_dropdown.html#">Component</a><div class="dropdown-menu" arial-labelledby="dropdown-28974"><a class="dropdown-item" href="../../../component.html">Base</a><a class="dropdown-item" href="../../../custom_component.html">Custom</a></div></li><li class="nav-item"><a class="nav-link" href="../../../simple_form.html">Simple form</a></li><li class="nav-item"><a class="nav-link" href="../../../theme.html">Theme</a></li></ul><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="../../../about.html"><i class="glyph fas fa-info-circle"></i><span class="empty-space"> </span></a></li><li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/thooams/Ui-Bibz"><i class="glyph fab fa-github"></i><span class="empty-space"> </span></a></li><li class="nav-item"><a class="nav-link" target="_blank" href="https://rubygems.org/gems/ui_bibz"><i class="glyph fas fa-gem"></i><span class="empty-space"> </span></a></li><li class="nav-item"><a class="nav-link" target="_blank" href="https://www.npmjs.com/package/ui-bibz-js"><i class="glyph fab fa-npm"></i><span class="empty-space"> </span></a></li></ul></div></div></nav></header>
+
+<div class="container-fluid"><div class="row-fluid row"><a name='top'></a>
+<div class="left-nav d-none d-md-block col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12"><div class='sidebar'>
+<ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Boxes</span></li><li class="nav-item"><a class="nav-link" href="../../boxes/card.html">Card</a></li><li class="nav-item"><a class="nav-link" href="../../boxes/card-accordion.html">Card accordion</a></li><li class="nav-item"><a class="nav-link" href="../../boxes/card-column.html">Card column</a></li><li class="nav-item"><a class="nav-link" href="../../boxes/card-grid.html">Card grid</a></li><li class="nav-item"><a class="nav-link" href="../../boxes/card-group.html">Card group</a></li><li class="nav-item"><a class="nav-link" href="../../boxes/jumbotron.html">Jumbotron</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Containers</span></li><li class="nav-item"><a class="nav-link" href="../../containers/panel.html">Panel</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Icons</span></li><li class="nav-item"><a class="nav-link" href="../../icons/glyph.html">Glyph</a></li><li class="nav-item"><a class="nav-link" href="../../icons/star.html">Star</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Layouts</span></li><li class="nav-item"><a class="nav-link" href="../../layouts/col.html">Col</a></li><li class="nav-item"><a class="nav-link" href="../../layouts/container.html">Container</a></li><li class="nav-item"><a class="nav-link" href="../../layouts/row.html">Row</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Lists</span></li><li class="nav-item"><a class="nav-link" href="../../lists/list.html">List</a></li><li class="nav-item"><a class="nav-link" href="../../lists/list_group.html">List group</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Navigations</span></li><li class="nav-item"><a class="nav-link" href="../../navigations/breadcrumb.html">Breadcrumb</a></li><li class="nav-item"><a class="nav-link" href="../../navigations/link.html">Link</a></li><li class="nav-item"><a class="nav-link" href="../../navigations/nav.html">Nav</a></li><li class="nav-item"><a class="nav-link" href="http://localhost:3000/components/navigations/navbar">Navbar</a></li><li class="nav-item"><a class="nav-link" href="../../navigations/pagination.html">Pagination</a></li><li class="nav-item"><a class="nav-link" href="../../navigations/tab_group.html">Tab group</a></li><li class="nav-item"><a class="nav-link" href="../../navigations/toolbar.html">Toolbar</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Notifications</span></li><li class="nav-item"><a class="nav-link" href="../../notifications/alert.html">Alert</a></li><li class="nav-item"><a class="nav-link" href="../../notifications/badge.html">Badge</a></li><li class="nav-item"><a class="nav-link" href="../../../component.html#popover">Popover</a></li><li class="nav-item"><a class="nav-link" href="../../notifications/progress_bar.html">Progress bar</a></li><li class="nav-item"><a class="nav-link" href="../../notifications/spinner.html">Spinner</a></li><li class="nav-item"><a class="nav-link" href="../../../component.html#tooltip">Tooltip</a></li><li class="nav-item"><a class="nav-link" href="../../notifications/toast.html">Toast</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Tables</span></li><li class="nav-item"><a class="nav-link" href="../../tables/table.html">Table</a></li><li class="nav-item"><a class="nav-link" href="../../tables/table_card.html">Table card</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Forms</span></li><ul class="nav"><li class="nav-item nav-text"><span class="nav-link">Buttons</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../buttons/button.html">Button</a></li><li class="nav-item"><a class="nav-link" href="../buttons/button-group.html">Button group</a></li><li class="nav-item"><a class="nav-link" href="../buttons/button-link.html">Button link</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Choices</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../choices/box-switch-field.html">Box Switch field</a></li><li class="nav-item"><a class="nav-link" href="../choices/checkbox-field.html">Checkbox field</a></li><li class="nav-item"><a class="nav-link" href="../choices/choice-group.html">Choice group</a></li><li class="nav-item"><a class="nav-link" href="../choices/radio-field.html">Radio field</a></li><li class="nav-item"><a class="nav-link" href="../choices/switch-field.html">Switch field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dates</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../dates/date-picker-field.html">Date picker field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dropdowns</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="dropdown.html">Dropdown</a></li><li class="nav-item"><a class="active nav-link" href="split_dropdown.html">Split Dropdown</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Files</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../files/file-field.html">File</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Numbers</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../numbers/formula-field.html">Formula field</a></li><li class="nav-item"><a class="nav-link" href="../numbers/number-field.html">Number field</a></li><li class="nav-item"><a class="nav-link" href="../numbers/range-field.html">Range field</a></li><li class="nav-item"><a class="nav-link" href="../numbers/slider-field.html">Slider field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Selects</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../selects/dropdown-select-field.html">Dropdown select field</a></li><li class="nav-item"><a class="nav-link" href="../selects/select-field.html">Select field</a></li><li class="nav-item"><a class="nav-link" href="../selects/multi-column-field.html">Multi column field</a></li><li class="nav-item"><a class="nav-link" href="../selects/multi-select-field.html">Multi select field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Surrounds</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../surrounds/surround-field.html">Surround field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Textareas</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../textareas/markdown-editor-field.html">Markdown editor field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Texts</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../texts/auto-complete-field.html">Auto complete field</a></li><li class="nav-item"><a class="nav-link" href="../texts/text-field.html">Text field</a></li></ul></ul></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Windows</span></li><li class="nav-item"><a class="nav-link" href="../../windows/modal.html">Modal</a></li></ul>
+</div>
+<ul class="secondary-nav nav"><li class="nav-item"><a class="nav-link" href="split_dropdown.html#split-dropdown">Split dropdown</a></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="split_dropdown.html#button-dropdown-options">Split dropdown options</a></li></ul></ul>
+</div><div class="content col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12"><h2><i class="glyph fas fa-gem"></i> Split Dropdown<span>(ui_split_dropdown)</span><a target="_blank" title="See original component documentation" href="https://getbootstrap.com/docs/5.0/components/dropdowns/#single-button"><img class="icon-indicator" src="../../../assets/bootstrap-icon-3c530dcc8b86429e814948a60a17ef9d77f756308ce5c7055dd2d2318e003780.png" /></a></h2>
+<blockquote>UiBibz::Ui::Core::Forms::Dropdowns::SplitDropdown</blockquote>
+<p class='bd-callout'>Use any button to trigger a dropdown menu by providing the proper menu markup.</p>
+<div class="usage"><h2><i class="glyph fas fa-book"></i> Usage</h2><div>This component is an extension of <a href="../../../component.html">component</a> element. A Ui Bibz component consists of 3 arguments:<ul class="list-options"><li><span class="option-name">content</span><span class="option-types">[value/block]</span></li><li><span class="option-name">options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li><li><span class="option-name">html_options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li></ul></div><div class="highlight code card"><div class="card-body"><div class="highlight"><pre class="codehilite"><code>
+<span class="n">ui_split_dropdown</span> <span class="nb">name</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span> <span class="o">|</span><span class="n">d</span><span class="o">|</span>
+  <span class="c1"># by variable</span>
+  <span class="n">d</span><span class="p">.</span><span class="nf">link</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span>
+  <span class="c1"># or block</span>
+  <span class="n">d</span><span class="p">.</span><span class="nf">link</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span>
+    <span class="n">content</span>
+  <span class="k">end</span>
+
+  <span class="n">d</span><span class="p">.</span><span class="nf">divider</span>
+
+  <span class="c1"># by variable</span>
+  <span class="n">d</span><span class="p">.</span><span class="nf">header</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span>
+  <span class="c1"># or block</span>
+  <span class="n">d</span><span class="p">.</span><span class="nf">header</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span>
+    <span class="n">content</span>
+  <span class="k">end</span>
+
+  <span class="c1"># by variable</span>
+  <span class="n">d</span><span class="p">.</span><span class="nf">html</span> <span class="n">content</span>
+  <span class="c1"># or block</span>
+  <span class="n">d</span><span class="p">.</span><span class="nf">html</span> <span class="k">do</span>
+    <span class="n">content</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div></div></div><div class="component-options" id="component-options"><h2><i class="glyph fas fa-sliders-h"></i> Options</h2>The specific options for this component are:<ul class="list-options"><li><span class="option-name">status</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:primary, :secondary, :success, :danger, :warning, :info, :light, :dark</code>)</span><span class="option-description">(use component <a href="../../../component.html#status">status</a> method)</span></li><li><span class="option-name">glyph</span><span class="option-types">[string/hash]</span><span class="option-description">(use component <a href="../../../component.html#glyph">glyph</a> method)</span></li><li><span class="option-name">state</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:disabled, :active</code>)</span><span class="option-description">(use component <a href="../../../component.html#state">state</a> method)</span></li><li><span class="option-name">size</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:lg, :md, :sm</code>)</span><span class="option-description">(use component <a href="../../../component.html#size">size</a> method)</span></li><li><span class="option-name">inline</span><span class="option-types">[boolean]</span><span class="option-values">(<code>true, false</code>)</span></li><li><span class="option-name">outline</span><span class="option-types">[boolean]</span><span class="option-values">(<code>true, false</code>)</span></li><li><span class="option-name">position</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:right, :left</code>)</span></li><li><span class="option-name">type</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:dropup, :dropdown</code>)</span><span class="option-default">&lt;default: :dropdown&gt;</span></li><li><span class="option-name">tag</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:a, :button</code>)</span><span class="option-default">&lt;default: :button&gt;</span></li><li><span class="option-name">popover</span><span class="option-types">[string/hash]</span><span class="option-description">(use component <a href="../../../component.html#popover">popover</a> method)</span></li><li><span class="option-name">cache</span><span class="option-types">[string]</span><span class="option-description">(use to <a href="../../../component.html#cache">cache</a> your component)</span></li><li><span class="option-name">controller</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">action</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">target</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../../component.html#stimulus-options">stimulus-options</a> method)</span></li></ul></div><div><h2><i class="glyph fas fa-code"></i> Examples</h2>Some examples explain how to use the options present in the component.<section class="section"><a name="split-dropdown"></a><h3>Split dropdown</h3><p>Split Dropdown has several block type:</p>
+
+<ul>
+<li>Link</li>
+<li>Divider</li>
+<li>Header</li>
+<li>Html</li>
+</ul>
+<p>The <code>status</code> option for agument the following symbols :</p>
+<ul>
+<li>:primary</li>
+<li>:secondary</li>
+<li>:success</li>
+<li>:danger</li>
+<li>:warning</li>
+<li>:info</li>
+<li>:light</li>
+<li>:dark</li>
+<li>:link</li>
+</ul>
+<div class="card-code card"><div class="card-header"><div class="btn-group dropdown"><button class="btn btn-primary">Primary</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-84374"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-secondary">Secondary</button><button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-41375"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-success">Success</button><button class="btn btn-success dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-42516"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-danger">Danger</button><button class="btn btn-danger dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-15051"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-warning">Warning</button><button class="btn btn-warning dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-70511"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-info">Info</button><button class="btn btn-info dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-70973"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-light">Light</button><button class="btn btn-light dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-77946"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-dark">Dark</button><button class="btn btn-dark dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-43464"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="split_dropdown.html#ruby-d8215ab0-8a0b-4feb-8766-6fb0bca0f7e7">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="split_dropdown.html#html-c2d008d3-fcd8-469b-ab66-4b3934831f96">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-d8215ab0-8a0b-4feb-8766-6fb0bca0f7e7"><pre>
+<span class="n">ui_split_dropdown</span> <span class="s2">"Primary"</span><span class="p">,</span> <span class="ss">status: :primary</span> <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Secondary"</span><span class="p">,</span> <span class="ss">status: :secondary</span> <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Success"</span><span class="p">,</span> <span class="ss">status: :success</span> <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Danger"</span><span class="p">,</span> <span class="ss">status: :danger</span> <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Warning"</span><span class="p">,</span> <span class="ss">status: :warning</span> <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Info"</span><span class="p">,</span> <span class="ss">status: :info</span> <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Light"</span><span class="p">,</span> <span class="ss">status: :light</span> <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Dark"</span><span class="p">,</span> <span class="ss">status: :dark</span> <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+</pre></div><div class="card-body highlight tab-pane" id="html-c2d008d3-fcd8-469b-ab66-4b3934831f96"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-success dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-warning"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-warning dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-info"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-info dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-light"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-light dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-dark"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-dark dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+</pre></div></div></div></section><section class="section"><a name="outline"></a><h3>Outline</h3><div class="card-code card"><div class="card-header"><div class="btn-group dropdown"><button class="btn btn-outline-primary">Primary</button><button class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-59626"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-outline-secondary">Secondary</button><button class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-13275"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-outline-success">Success</button><button class="btn btn-outline-success dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-18847"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-outline-danger">Danger</button><button class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-69231"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-outline-warning">Warning</button><button class="btn btn-outline-warning dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-29686"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-outline-info">Info</button><button class="btn btn-outline-info dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-59491"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-outline-light">Light</button><button class="btn btn-outline-light dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-81866"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropdown"><button class="btn btn-outline-dark">Dark</button><button class="btn btn-outline-dark dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-8264"><a class="dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6>     Normal Text<a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="split_dropdown.html#ruby-86d1f4bc-5d31-4084-bfd4-28d50380a41c">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="split_dropdown.html#html-6dc89700-ec00-4dad-a45e-2f3e1cb433ee">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-86d1f4bc-5d31-4084-bfd4-28d50380a41c"><pre>
+<span class="n">ui_split_dropdown</span> <span class="s2">"Primary"</span><span class="p">,</span> <span class="ss">status: :primary</span><span class="p">,</span> <span class="ss">outline: </span><span class="kp">true</span>  <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Secondary"</span><span class="p">,</span> <span class="ss">status: :secondary</span><span class="p">,</span> <span class="ss">outline: </span><span class="kp">true</span>  <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Success"</span><span class="p">,</span> <span class="ss">status: :success</span><span class="p">,</span> <span class="ss">outline: </span><span class="kp">true</span>  <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Danger"</span><span class="p">,</span> <span class="ss">status: :danger</span><span class="p">,</span> <span class="ss">outline: </span><span class="kp">true</span>  <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Warning"</span><span class="p">,</span> <span class="ss">status: :warning</span><span class="p">,</span> <span class="ss">outline: </span><span class="kp">true</span>  <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Info"</span><span class="p">,</span> <span class="ss">status: :info</span><span class="p">,</span> <span class="ss">outline: </span><span class="kp">true</span>  <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Light"</span><span class="p">,</span> <span class="ss">status: :light</span><span class="p">,</span> <span class="ss">outline: </span><span class="kp">true</span>  <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">ui_split_dropdown</span> <span class="s2">"Dark"</span><span class="p">,</span> <span class="ss">status: :dark</span><span class="p">,</span> <span class="ss">outline: </span><span class="kp">true</span>  <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="ss">url: </span><span class="s2">"#another-action"</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Another action"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">html</span> <span class="s2">"      Normal Text"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span><span class="p">({</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span><span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-link"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"Separate link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+
+</pre></div><div class="card-body highlight tab-pane" id="html-6dc89700-ec00-4dad-a45e-2f3e1cb433ee"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-secondary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-success"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-success dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-danger"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-danger dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-warning"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-warning dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-info"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-info dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-light"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-light dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-dark"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-dark dropdown-toggle dropdown-toggle-split"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">arial-labelledby=</span><span class="s">"dropdown-168070325483302158190560373773057452001"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="ni">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</span>Normal Text
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+</pre></div></div></div></section><section class="section"><a name="size"></a><h3>Size</h3><div>The <code>size</code> option has following symbols for argument:<ul><li>:lg</li><li>:md</li><li>:sm</li></ul></div>
+<div class="card-code card"><div class="card-header"><div class="btn-group dropdown"><button class="btn btn-secondary btn-lg">Dropdown Lg</button><button class="btn btn-secondary btn-lg dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-14710"><a class="dropdown-item" href="split_dropdown.html#action-1">Action 1</a><a class="disabled dropdown-item" href="split_dropdown.html#action-2">Action 2</a><a class="dropdown-item" href="split_dropdown.html#action-3">Action 3</a></div></div><div class="btn-group dropdown"><button class="btn btn-secondary btn-md">Dropdown Md</button><button class="btn btn-secondary btn-md dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-38024"><a class="dropdown-item" href="split_dropdown.html#action-1">Action 1</a><a class="disabled dropdown-item" href="split_dropdown.html#action-2">Action 2</a><a class="dropdown-item" href="split_dropdown.html#action-3">Action 3</a></div></div><div class="btn-group dropdown"><button class="btn btn-secondary btn-sm">Dropdown Sm</button><button class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-68232"><a class="dropdown-item" href="split_dropdown.html#action-1">Action 1</a><a class="disabled dropdown-item" href="split_dropdown.html#action-2">Action 2</a><a class="dropdown-item" href="split_dropdown.html#action-3">Action 3</a></div></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="split_dropdown.html#ruby-0deb67fd-2905-418d-bb9d-ae2115b5f7e0">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="split_dropdown.html#html-410e36e8-9818-4137-abeb-137cd475227a">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-0deb67fd-2905-418d-bb9d-ae2115b5f7e0"><pre>
+<span class="n">ui_split_dropdown</span> <span class="s2">"Dropdown Lg"</span><span class="p">,</span> <span class="ss">size: :lg</span> <span class="k">do</span> <span class="o">|</span><span class="n">d</span><span class="o">|</span>
+<span class="err">  </span><span class="n">d</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action 1"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action-1"</span>
+<span class="err">  </span><span class="n">d</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action 2"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action-2"</span><span class="p">,</span> <span class="ss">state: :disabled</span>
+<span class="err">  </span><span class="n">d</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action 3"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action-3"</span>
+<span class="k">end</span>
+<span class="n">ui_split_dropdown</span> <span class="s2">"Dropdown Md"</span><span class="p">,</span> <span class="ss">size: :md</span> <span class="k">do</span> <span class="o">|</span><span class="n">d</span><span class="o">|</span>
+<span class="err">  </span><span class="n">d</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action 1"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action-1"</span>
+<span class="err">  </span><span class="n">d</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action 2"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action-2"</span><span class="p">,</span> <span class="ss">state: :disabled</span>
+<span class="err">  </span><span class="n">d</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action 3"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action-3"</span>
+<span class="k">end</span>
+<span class="n">ui_split_dropdown</span> <span class="s2">"Dropdown Sm"</span><span class="p">,</span> <span class="ss">size: :sm</span> <span class="k">do</span> <span class="o">|</span><span class="n">d</span><span class="o">|</span>
+<span class="err">  </span><span class="n">d</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action 1"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action-1"</span>
+<span class="err">  </span><span class="n">d</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action 2"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action-2"</span><span class="p">,</span> <span class="ss">state: :disabled</span>
+<span class="err">  </span><span class="n">d</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action 3"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action-3"</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-410e36e8-9818-4137-abeb-137cd475227a"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Dropdown Lg <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action-1"</span><span class="nt">&gt;</span>Action 1<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"disabled dropdown-item"</span> <span class="na">href=</span><span class="s">"#action-2"</span><span class="nt">&gt;</span>Action 2<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action-3"</span><span class="nt">&gt;</span>Action 3<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-md dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Dropdown Md <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action-1"</span><span class="nt">&gt;</span>Action 1<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"disabled dropdown-item"</span> <span class="na">href=</span><span class="s">"#action-2"</span><span class="nt">&gt;</span>Action 2<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action-3"</span><span class="nt">&gt;</span>Action 3<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Dropdown Sm <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action-1"</span><span class="nt">&gt;</span>Action 1<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"disabled dropdown-item"</span> <span class="na">href=</span><span class="s">"#action-2"</span><span class="nt">&gt;</span>Action 2<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action-3"</span><span class="nt">&gt;</span>Action 3<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="buttonsplit-dropdown-options"></a><h3>Buttonsplit  dropdown options</h3><div class="card-code card"><div class="card-header"><div class="btn-group dropdown"><button class="btn btn-success btn-lg"><i class="glyph fas fa-gem"></i>  Dropdown right</button><button class="btn btn-success btn-lg dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu dropdown-menu-right" arial-labelledby="dropdown-60062"><a class="dropdown-item" data-confirm="Are you sure?" href="split_dropdown.html#action">Confirm action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6><a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div><div class="btn-group dropup"><button class="btn btn-danger btn-sm">Dropup</button><button class="btn btn-danger btn-sm dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button><div class="dropdown-menu" arial-labelledby="dropdown-19014"><a class="action dropdown-item" href="split_dropdown.html#action">Action</a><a class="dropdown-item" href="split_dropdown.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6><a class="dropdown-item" href="split_dropdown.html#separate-link">Separate link</a></div></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="split_dropdown.html#ruby-5da10e81-65d5-4725-9fb0-6f0776495d43">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="split_dropdown.html#html-1b6e8fa1-75aa-4cef-bee9-1ef6220dcb1e">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-5da10e81-65d5-4725-9fb0-6f0776495d43"><pre>
+<span class="n">ui_split_dropdown</span> <span class="s2">"Dropdown right"</span><span class="p">,</span> <span class="ss">glyph: </span><span class="s2">"gem"</span><span class="p">,</span> <span class="ss">status: :success</span><span class="p">,</span> <span class="ss">size: :lg</span><span class="p">,</span> <span class="ss">position: :right</span> <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Confirm action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span><span class="p">,</span> <span class="ss">link_html_options: </span><span class="p">{</span> <span class="ss">data: </span><span class="p">{</span> <span class="ss">confirm: </span><span class="s2">"Are you sure?"</span> <span class="p">}},</span> <span class="ss">method: :delete</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Another action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#another-action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="k">end</span>
+<span class="err"> </span>
+<span class="n">ui_split_dropdown</span> <span class="s2">"Dropup"</span><span class="p">,</span> <span class="ss">status: :danger</span><span class="p">,</span> <span class="ss">size: :sm</span><span class="p">,</span> <span class="ss">type: :dropup</span> <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span>  <span class="p">{</span> <span class="ss">url: </span><span class="s2">"#action"</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"action"</span> <span class="p">}</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Another action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#another-action"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">  </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-1b6e8fa1-75aa-4cef-bee9-1ef6220dcb1e"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-success btn-lg"</span><span class="nt">&gt;</span>Dropdown right<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-success btn-lg dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-right"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">data-confirm=</span><span class="s">"Are you sure?"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Confirm action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+  
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropup"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger btn-sm"</span><span class="nt">&gt;</span>Dropup<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger btn-sm dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-left"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"action dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section></div>
+
+</div><div class="secondary-nav d-md-none d-lg-block col-xl-2 col-lg-2"><div class='sticky'>
+<h3>Contents</h3>
+<ul class="nav"><li class="nav-item"><a href="split_dropdown.html#split-dropdown">Split dropdown</a></li><li class="nav-item"><a href="split_dropdown.html#outline">Outline</a></li><li class="nav-item"><a href="split_dropdown.html#size">Size</a></li><li class="nav-item"><a href="split_dropdown.html#buttonsplit-dropdown-options">Buttonsplit  dropdown options</a></li></ul></div>
+</div></div><div class='scroll-to-top'>
+<a class="back-top btn-primary btn btn-lg" role="button" href="split_dropdown.html#top"><i class="glyph fas fa-arrow-circle-up"></i>  </a>
+</div>
+</div><footer class='mt-auto'>
+<nav class="nav nav-links justify-content-center"><a class="nav-link" href="https://github.com/thooams/Ui-Bibz"><i class="glyph fab fa-github-alt"></i> Github</a><a class="nav-link" href="../../../about.html"><i class="glyph fas fa-book"></i> About</a><a class="nav-link" href="https://rubygems.org/gems/ui_bibz"><i class="glyph fas fa-gem"></i> Gem</a></nav><p>Ui Bibz Framework is designed and created by Thomas HUMMEL (<a href="https://github.com/thooams">@thooams</a>)<br />
+This theme is inspired by <a href="http://getbootstrap.com">Bootstrap theme documentation</a><br />
+Currently v3.0.0.alpha2. Code licensed MIT</p>
+
+</footer>
+
+</body>
+</html>

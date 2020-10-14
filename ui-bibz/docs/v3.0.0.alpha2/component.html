@@ -1,0 +1,392 @@
+<html>
+<head>
+<title>Ui Bibz - Component</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="pYhQUqHwdqh38mvtwQn35wmqzNwWapYyoVqo/6eTe3Kk4mXfE4bc2Z7kz0/eOKArKlm3sxifwYy8HaVR5hkCyw==" />
+
+<meta CONTENT='Ui Bibz is an Ui Framework that allows you to build an interface very quickly and simply using Bootstrap 5.0.0.alpha2.' name='Description'>
+<meta CONTENT='Thomas HUMMEL &lt;thomas@hummel.link&gt;' name='Author'>
+<meta CONTENT='bootstrap rails, bootstrap ruby, ui bibz, bibz bootstrap, bootstrap interface, bootstrap ui, bootstrap interface, ui framework, ui interface' name='Keywords'>
+<link href='favicon.ico' rel='shortcut icon' type='image/x-icon'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<style>
+  ".highlight table td { padding: 5px; }
+  .highlight table pre { margin: 0; }
+  .highlight .cm {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cp {
+    color: #999999;
+    font-weight: bold;
+  }
+  .highlight .c1 {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2;
+  }
+  .highlight .gd {
+    color: #000000;
+    background-color: #ffdddd;
+  }
+  .highlight .ge {
+    color: #000000;
+    font-style: italic;
+  }
+  .highlight .gr {
+    color: #aa0000;
+  }
+  .highlight .gh {
+    color: #999999;
+  }
+  .highlight .gi {
+    color: #000000;
+    background-color: #ddffdd;
+  }
+  .highlight .go {
+    color: #888888;
+  }
+  .highlight .gp {
+    color: #555555;
+  }
+  .highlight .gs {
+    font-weight: bold;
+  }
+  .highlight .gu {
+    color: #aaaaaa;
+  }
+  .highlight .gt {
+    color: #aa0000;
+  }
+  .highlight .kc {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kd {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kn {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kp {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kr {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kt {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .k, .highlight .kv {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .mf {
+    color: #009999;
+  }
+  .highlight .mh {
+    color: #009999;
+  }
+  .highlight .il {
+    color: #009999;
+  }
+  .highlight .mi {
+    color: #009999;
+  }
+  .highlight .mo {
+    color: #009999;
+  }
+  .highlight .m, .highlight .mb, .highlight .mx {
+    color: #009999;
+  }
+  .highlight .sb {
+    color: #d14;
+  }
+  .highlight .sc {
+    color: #d14;
+  }
+  .highlight .sd {
+    color: #d14;
+  }
+  .highlight .s2 {
+    color: #d14;
+  }
+  .highlight .se {
+    color: #d14;
+  }
+  .highlight .sh {
+    color: #d14;
+  }
+  .highlight .si {
+    color: #d14;
+  }
+  .highlight .sx {
+    color: #d14;
+  }
+  .highlight .sr {
+    color: #009926;
+  }
+  .highlight .s1 {
+    color: #d14;
+  }
+  .highlight .ss {
+    color: #990073;
+  }
+  .highlight .s, .highlight .sa, .highlight .dl {
+    color: #d14;
+  }
+  .highlight .na {
+    color: #008080;
+  }
+  .highlight .bp {
+    color: #999999;
+  }
+  .highlight .nb {
+    color: #0086B3;
+  }
+  .highlight .nc {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .no {
+    color: #008080;
+  }
+  .highlight .nd {
+    color: #3c5d5d;
+    font-weight: bold;
+  }
+  .highlight .ni {
+    color: #800080;
+  }
+  .highlight .ne {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nf, .highlight .fm {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nl {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nn {
+    color: #555555;
+  }
+  .highlight .nt {
+    color: #000080;
+  }
+  .highlight .vc {
+    color: #008080;
+  }
+  .highlight .vg {
+    color: #008080;
+  }
+  .highlight .vi {
+    color: #008080;
+  }
+  .highlight .nv, .highlight .vm {
+    color: #008080;
+  }
+  .highlight .ow {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .o {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .w {
+    color: #bbbbbb;
+  }
+  .highlight {
+    background-color: #f8f8f8;
+  }"
+</style>
+<script src="packs/js/application-c26aa622200f49f31834.js" data-turbolinks-track="reload"></script>
+
+</head>
+<body>
+<header>
+<nav class="bg-dark navbar navbar-dark fixed-top navbar-expand-lg"><div class="container"><a class="navbar-brand" href="index.html"><img alt="Ui Bibz logo" src="assets/brand-7e0071621be0284fcfc439aacb153ac93a9ed2e0b032dd060bda1a929d905399.png" /></a><button name="button" type="submit" class="navbar-toggler d-block d-md-none collapsed submenu-toggler"><i class="glyph fas fa-arrow-alt-circle-down"></i>
+</button><button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-id-27171">☰</button><div class="navbar-collapse collapse" id="navbar-id-27171"><ul class="navbar-nav  mr-auto"><li class="nav-item"><a class="nav-link" href="getting_started.html">Get started</a></li><li class="nav-item"><a class="nav-link" href="components/boxes/card.html">Components</a></li><li class="active dropdown nav-item"><a class="active dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="component.html#">Component</a><div class="dropdown-menu" arial-labelledby="dropdown-40798"><a class="active dropdown-item" href="component.html">Base</a><a class="dropdown-item" href="custom_component.html">Custom</a></div></li><li class="nav-item"><a class="nav-link" href="simple_form.html">Simple form</a></li><li class="nav-item"><a class="nav-link" href="theme.html">Theme</a></li></ul><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="about.html"><i class="glyph fas fa-info-circle"></i><span class="empty-space"> </span></a></li><li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/thooams/Ui-Bibz"><i class="glyph fab fa-github"></i><span class="empty-space"> </span></a></li><li class="nav-item"><a class="nav-link" target="_blank" href="https://rubygems.org/gems/ui_bibz"><i class="glyph fas fa-gem"></i><span class="empty-space"> </span></a></li><li class="nav-item"><a class="nav-link" target="_blank" href="https://www.npmjs.com/package/ui-bibz-js"><i class="glyph fab fa-npm"></i><span class="empty-space"> </span></a></li></ul></div></div></nav></header>
+
+<div class="container-fluid"><div class='page'>
+<h2><i class="glyph fas fa-gem"></i> Component</h2>
+<blockquote>UiBibz::Ui::Core::Component</blockquote>
+<div class='bd-callout'>
+<p>
+The component is the core of Ui Bibz.
+<br>
+Each element of the framework inherits from
+<code>component</code>
+element.
+<br>
+It may contain three arguments :
+</p>
+<ul>
+<li>content (variable or block)</li>
+<li>options (hash &lt;default: {}&gt;)</li>
+<li>html_options (hash &lt;default: {}&gt;)</li>
+</ul>
+</div>
+<div><h2><i class="glyph fas fa-code"></i> Examples</h2>Some examples explain how to use the options present in the component.<section class="section"><a name="component"></a><h3>Component</h3><p>
+A component can be write with a <strong>variable</strong> or a <strong>block</strong>.
+<br>
+Content, options or html_options can be <code>nil</code>.
+<br>
+<strong>Important:</strong> The position of <code>options</code> and <code>html_options</code> change when content is passed by variable or by block.
+</p>
+<div class="card-code card"><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="component.html#ruby-d5322cbc-21ad-4dc6-ad9b-c30341152328">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-d5322cbc-21ad-4dc6-ad9b-c30341152328"><pre>
+<span class="c1"># by variable</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span>
+
+<span class="c1"># or by block</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">options</span><span class="p">,</span> <span class="n">html_options</span><span class="p">)</span> <span class="k">do</span>
+<span class="err">  </span><span class="n">content</span>
+<span class="k">end</span>
+</pre></div></div></div></section><section class="section"><a name="render-method"></a><h3>Render method</h3><p>The <code>render</code> method generates the html code of the component.</p>
+<div class="card-code card"><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="component.html#ruby-1785721e-1a51-46ae-bc65-72746a1dc64b">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-1785721e-1a51-46ae-bc65-72746a1dc64b"><pre>
+<span class="c1"># by variable</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'My content'</span><span class="p">,</span> <span class="p">{</span> <span class="ss">status: :primary</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s1">'my-class'</span> <span class="p">}).</span><span class="nf">render</span>
+
+<span class="c1"># or by block</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span><span class="p">({</span> <span class="ss">size: :xs</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">id: </span><span class="s1">'my-id'</span> <span class="p">})</span> <span class="k">do</span>
+<span class="err">  </span><span class="no">My</span> <span class="n">content</span>
+<span class="k">end</span><span class="p">.</span><span class="nf">render</span>
+</pre></div></div></div></section><section class="section"><a name="size"></a><h3>Size</h3><div>The <code>size</code> option has following symbols for argument:<ul><li>:lg</li><li>:md</li><li>:sm</li></ul></div>
+<div class="card-code card"><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="component.html#ruby-d39345d3-3459-4d22-a028-24f6b46c0b12">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-d39345d3-3459-4d22-a028-24f6b46c0b12"><pre>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">size: :lg</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">size: :md</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">size: :sm</span>
+</pre></div></div></div></section><section class="section"><a name="status"></a><h3>Status</h3><p>Some component may have the <code>status</code> option in their settings.
+This option lets you change the color of the item as specified in <a href="https://getbootstrap.com/docs/4.0/components/buttons/">the bootstrap documentation</a>.</p>
+<div>The <code>status</code> option has following symbols for argument:<ul><li>:primary</li><li>:secondary</li><li>:success</li><li>:danger</li><li>:warning</li><li>:info</li><li>:light</li><li>:dark</li></ul></div>
+<div class="card-code card"><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="component.html#ruby-f602d8b3-3c4e-40f0-ac6d-cd51fb00be91">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-f602d8b3-3c4e-40f0-ac6d-cd51fb00be91"><pre>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">status: :primary</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">status: :secondary</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">status: :success</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">status: :danger</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">status: :warning</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">status: :info</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">status: :light</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">status: :dark</span>
+</pre></div></div></div></section><section class="section"><a name="glyph"></a><h3>Glyph</h3><p>Some component may have the <code>glyph</code> option in their settings.
+This option lets you add a glyph to its component.
+You can write the value of this argument in many ways, for this, please refer to the component <a href="http://localhost:3000/components/glyph">glyph</a>.</p>
+<div class="card-code card"><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="component.html#ruby-73d2aa33-4622-4afb-84d0-53909fb25c41">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-73d2aa33-4622-4afb-84d0-53909fb25c41"><pre>
+<span class="c1"># by variable</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">glyph: </span><span class="s1">'star'</span>
+
+<span class="c1"># or by block</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="ss">glyph: </span><span class="p">{</span> <span class="ss">name: </span><span class="s1">'star'</span><span class="p">,</span> <span class="ss">size: </span><span class="mi">2</span><span class="p">,</span> <span class="ss">type: </span><span class="s1">'fw'</span><span class="p">,</span> <span class="ss">label: </span><span class="s1">'gem'</span> <span class="p">}</span> <span class="k">do</span>
+<span class="err">  </span><span class="n">content</span>
+<span class="k">end</span>
+</pre></div></div></div></section><section class="section"><a name="popover"></a><h3>Popover</h3><p>Some component may have the <code>popover</code> option in their settings like buttons, links, ...
+This option lets you add a popover to its component by string or hash.</p>
+<ul class="list-options"><li><span class="option-name">postion</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:auto, :top, :left, :right, :bottom</code>)</span><span class="option-description">How to position the popover</span></li><li><span class="option-name">animation</span></li><li><span class="option-name">container</span></li><li><span class="option-name">content</span></li><li><span class="option-name">delay</span></li><li><span class="option-name">html</span></li><li><span class="option-name">placement</span></li><li><span class="option-name">selector</span></li><li><span class="option-name">template</span></li><li><span class="option-name">title</span></li><li><span class="option-name">trigger</span></li><li><span class="option-name">offset</span></li><li><span class="option-name">fallback_placement</span></li><li><span class="option-name">boundary</span></li><li><span class="option-name">sanitize</span></li><li><span class="option-name">white_list</span></li><li><span class="option-name">sanitize_fn</span></li></ul><p>Documentation for popover options are in <a target="_blank" href="https://getbootstrap.com/docs/5.0/components/popovers/#options">bootstrap documentation</a>.</p>
+<div class="card-code card"><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="component.html#ruby-edfce7e7-0d84-4e57-aef2-9e6d3ce8adca">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-edfce7e7-0d84-4e57-aef2-9e6d3ce8adca"><pre>
+<span class="c1"># by sting</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">popover: </span><span class="s1">'My popover text...'</span>
+
+<span class="c1"># or by hash</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">popover: </span><span class="p">{</span> <span class="ss">content: </span><span class="s1">'My popover text...'</span><span class="p">,</span> <span class="ss">title: </span><span class="s1">'My Titel'</span><span class="p">,</span> <span class="o">...</span> <span class="p">}</span>
+</pre></div></div></div></section><section class="section"><a name="tooltip"></a><h3>Tooltip</h3><p>Some component may have the <code>tooltip</code> option in their settings like buttons, links, ...
+This option lets you add a tooltip to its component by boolean or hash.</p>
+<ul class="list-options"><li><span class="option-name">postion</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:auto, :top, :left, :right, :bottom</code>)</span><span class="option-description">How to position the popover</span></li><li><span class="option-name">animation</span></li><li><span class="option-name">container</span></li><li><span class="option-name">delay</span></li><li><span class="option-name">html</span></li><li><span class="option-name">placement</span></li><li><span class="option-name">selector</span></li><li><span class="option-name">template</span></li><li><span class="option-name">title</span></li><li><span class="option-name">trigger</span></li><li><span class="option-name">offset</span></li><li><span class="option-name">fallback_placement</span></li><li><span class="option-name">boundary</span></li><li><span class="option-name">sanitize</span></li><li><span class="option-name">white_list</span></li><li><span class="option-name">santitize_fn</span></li></ul><p>Documentation for popover options are in <a target="_blank" href="https://getbootstrap.com/docs/5.0/components/tooltips/#options">bootstrap documentation</a>.</p>
+<div class="card-code card"><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="component.html#ruby-163867cb-5c90-4e14-9024-38f420850309">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-163867cb-5c90-4e14-9024-38f420850309"><pre>
+<span class="c1"># by boolean</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="p">{</span> <span class="ss">tooltip: </span><span class="kp">true</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">title: </span><span class="s1">'My popover text...'</span> <span class="p">}</span>
+
+<span class="c1"># or by hash</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">tooltip: </span><span class="p">{</span> <span class="ss">content: </span><span class="s1">'My popover text...'</span><span class="p">,</span> <span class="ss">title: </span><span class="s1">'My Titel'</span><span class="p">,</span> <span class="o">...</span> <span class="p">}</span>
+</pre></div></div></div></section><section class="section"><a name="state"></a><h3>State</h3><div class="card-code card"><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="component.html#ruby-afd846f5-9c30-47d9-810d-7c1fb334fdc5">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-afd846f5-9c30-47d9-810d-7c1fb334fdc5"><pre>
+<span class="c1"># by variable</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">state: :active</span>
+
+<span class="c1"># or by block</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="ss">state: :disabled</span> <span class="k">do</span>
+<span class="err">  </span><span class="n">content</span>
+<span class="k">end</span>
+</pre></div></div></div></section><section class="section"><a name="cache"></a><h3>Cache</h3><p>You can cache your component thanks to rails <a target="_blank" href="https://guides.rubyonrails.org/caching_with_rails.html">cache</a> options.</p>
+<div class="card-code card"><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="component.html#ruby-47e3c339-9bbf-4342-9efd-2a2d2e0c2428">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-47e3c339-9bbf-4342-9efd-2a2d2e0c2428"><pre>
+<span class="c1"># by variable</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">cache: </span><span class="s2">"my-component-cache-</span><span class="si">#{</span> <span class="no">Date</span><span class="p">.</span><span class="nf">today</span> <span class="si">}</span><span class="s2">"</span>
+
+<span class="c1"># or by block</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="ss">cache: </span><span class="s2">"my-static-component-cache"</span> <span class="k">do</span>
+  <span class="n">content</span>
+<span class="k">end</span>
+
+
+</pre></div></div></div></section><section class="section"><a name="stimulus-options"></a><h3>Stimulus options</h3><p>Ui Bibz can use <a target="_blank" href="https://stimulusjs.org/">stimulus</a> with these options:</p>
+<ul class='list-options'>
+<li>
+controller
+<span class='option-types'>[String]</span>
+</li>
+<li>
+action
+<span class='option-types'>[String]</span>
+</li>
+<li>
+target
+<span class='option-types'>[String]</span>
+</li>
+</ul>
+<div class="card-code card"><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="component.html#ruby-a37bffd2-239f-4997-9b92-98db0b451d77">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-a37bffd2-239f-4997-9b92-98db0b451d77"><pre>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="ss">controller: </span><span class="s2">"hello"</span> <span class="k">do</span>
+  <span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="s1">'My sub component'</span><span class="p">,</span> <span class="ss">target: </span><span class="s1">'hello.name'</span>
+  <span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="s1">'My sub component 2'</span><span class="p">,</span> <span class="ss">action: </span><span class="s1">'click-&gt;hello#greet'</span>
+<span class="k">end</span>
+</pre></div></div></div></section><section class="section"><a name="html-options"></a><h3>Html options</h3><p>You can add any html properties.</p>
+<div class="card-code card"><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="component.html#ruby-da82fa19-8566-4506-a41a-076aed202ecb">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-da82fa19-8566-4506-a41a-076aed202ecb"><pre>
+<span class="c1"># by variable</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="kp">nil</span><span class="p">,</span> <span class="p">{</span> <span class="ss">class: </span><span class="s1">'my-component'</span><span class="p">,</span> <span class="ss">data: </span><span class="p">{</span> <span class="ss">level: </span><span class="s1">'first'</span> <span class="p">}}</span>
+
+<span class="c1"># or by block</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span><span class="p">({},</span> <span class="p">{</span> <span class="ss">id: </span><span class="s1">'my-id'</span> <span class="p">})</span> <span class="k">do</span>
+<span class="err">  </span><span class="n">content</span>
+<span class="k">end</span>
+</pre></div></div></div></section><section class="section"><a name="tips"></a><h3>Tips</h3><p>Key <code>class:</code> can be inserted in <code>html_options</code> and in <code>options</code> too.<br/>
+This solution was added to simplify writing of the component.</p>
+<div class="card-code card"><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="component.html#ruby-3b52ebef-6bf8-4a38-b01f-11d8d56a0c92">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-3b52ebef-6bf8-4a38-b01f-11d8d56a0c92"><pre>
+<span class="c1"># by variable</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="p">{</span> <span class="ss">size: :xs</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s1">'my-component'</span> <span class="p">}</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="n">content</span><span class="p">,</span> <span class="ss">class: </span><span class="s1">'my-component'</span><span class="p">,</span> <span class="ss">size: :xs</span>
+
+<span class="c1"># or by block</span>
+<span class="no">Component</span><span class="p">.</span><span class="nf">new</span> <span class="ss">class: </span><span class="s1">'my-component'</span><span class="p">,</span> <span class="ss">size: :xs</span> <span class="k">do</span>
+<span class="err">  </span><span class="n">content</span>
+<span class="k">end</span>
+</pre></div></div></div></section><section class="section"><a name="custom-component"></a><h3>Custom Component</h3><p>You can create your own components into your application.</p>
+<p>For more information, see <a href="custom_component.html">Custom Component page</a></p>
+</section></div>
+
+</div>
+</div><footer class='mt-auto'>
+<nav class="nav nav-links justify-content-center"><a class="nav-link" href="https://github.com/thooams/Ui-Bibz"><i class="glyph fab fa-github-alt"></i> Github</a><a class="nav-link" href="about.html"><i class="glyph fas fa-book"></i> About</a><a class="nav-link" href="https://rubygems.org/gems/ui_bibz"><i class="glyph fas fa-gem"></i> Gem</a></nav><p>Ui Bibz Framework is designed and created by Thomas HUMMEL (<a href="https://github.com/thooams">@thooams</a>)<br />
+This theme is inspired by <a href="http://getbootstrap.com">Bootstrap theme documentation</a><br />
+Currently v3.0.0.alpha2. Code licensed MIT</p>
+
+</footer>
+
+</body>
+</html>

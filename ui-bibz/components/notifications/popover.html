@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-JHZ4Y79ZS3'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JHZ4Y79ZS3');
+</script>
+<title>Ui Bibz - Popover</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="7yrrXcf/ATkhrMYjZ/zXXIvqemWZJM4P2cznp0kuam0k1zv9ZoySknxNOtu78pezWFjR4JhSvsge1bYK8szi4g==" />
+
+<meta CONTENT='Ui Bibz is an Ui Framework that allows you to build an interface very quickly and simply using Bootstrap 5.0.0.beta1.' name='Description'>
+<meta CONTENT='Thomas HUMMEL &lt;thomas@hummel.link&gt;' name='Author'>
+<meta content='#343a40' name='theme-color'>
+<meta CONTENT='bootstrap rails, bootstrap ruby, ui bibz, bibz bootstrap, bootstrap interface, bootstrap ui, bootstrap interface, ui framework, ui interface' name='Keywords'>
+<link href='../../packs/media/images/favicon-dddff665ae4b1fc2f21bc368ffe6e1d1.ico' rel='shortcut icon' type='image/x-icon'>
+<link href='../../packs/media/images/ui-bibz-logo-bc44be1f6375d587afc842f26084abee.png' rel='appel-touch-icon'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<style>
+  ".highlight table td { padding: 5px; }
+  .highlight table pre { margin: 0; }
+  .highlight .cm {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cp {
+    color: #999999;
+    font-weight: bold;
+  }
+  .highlight .c1 {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2;
+  }
+  .highlight .gd {
+    color: #000000;
+    background-color: #ffdddd;
+  }
+  .highlight .ge {
+    color: #000000;
+    font-style: italic;
+  }
+  .highlight .gr {
+    color: #aa0000;
+  }
+  .highlight .gh {
+    color: #999999;
+  }
+  .highlight .gi {
+    color: #000000;
+    background-color: #ddffdd;
+  }
+  .highlight .go {
+    color: #888888;
+  }
+  .highlight .gp {
+    color: #555555;
+  }
+  .highlight .gs {
+    font-weight: bold;
+  }
+  .highlight .gu {
+    color: #aaaaaa;
+  }
+  .highlight .gt {
+    color: #aa0000;
+  }
+  .highlight .kc {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kd {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kn {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kp {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kr {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kt {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .k, .highlight .kv {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .mf {
+    color: #009999;
+  }
+  .highlight .mh {
+    color: #009999;
+  }
+  .highlight .il {
+    color: #009999;
+  }
+  .highlight .mi {
+    color: #009999;
+  }
+  .highlight .mo {
+    color: #009999;
+  }
+  .highlight .m, .highlight .mb, .highlight .mx {
+    color: #009999;
+  }
+  .highlight .sa {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .sb {
+    color: #d14;
+  }
+  .highlight .sc {
+    color: #d14;
+  }
+  .highlight .sd {
+    color: #d14;
+  }
+  .highlight .s2 {
+    color: #d14;
+  }
+  .highlight .se {
+    color: #d14;
+  }
+  .highlight .sh {
+    color: #d14;
+  }
+  .highlight .si {
+    color: #d14;
+  }
+  .highlight .sx {
+    color: #d14;
+  }
+  .highlight .sr {
+    color: #009926;
+  }
+  .highlight .s1 {
+    color: #d14;
+  }
+  .highlight .ss {
+    color: #990073;
+  }
+  .highlight .s, .highlight .dl {
+    color: #d14;
+  }
+  .highlight .na {
+    color: #008080;
+  }
+  .highlight .bp {
+    color: #999999;
+  }
+  .highlight .nb {
+    color: #0086B3;
+  }
+  .highlight .nc {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .no {
+    color: #008080;
+  }
+  .highlight .nd {
+    color: #3c5d5d;
+    font-weight: bold;
+  }
+  .highlight .ni {
+    color: #800080;
+  }
+  .highlight .ne {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nf, .highlight .fm {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nl {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nn {
+    color: #555555;
+  }
+  .highlight .nt {
+    color: #000080;
+  }
+  .highlight .vc {
+    color: #008080;
+  }
+  .highlight .vg {
+    color: #008080;
+  }
+  .highlight .vi {
+    color: #008080;
+  }
+  .highlight .nv, .highlight .vm {
+    color: #008080;
+  }
+  .highlight .ow {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .o {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .w {
+    color: #bbbbbb;
+  }
+  .highlight {
+    background-color: #f8f8f8;
+  }"
+</style>
+<link rel="stylesheet" media="all" href="../../packs/css/application-746de02d.css" data-turbolinks-track="reload" />
+<script src="../../packs/js/application-65f61705671b5951cdc3.js" data-turbolinks-track="reload"></script>
+
+</head>
+<body>
+<header>
+<nav class="bg-dark navbar navbar-dark fixed-top navbar-expand-lg"><div class="container"><a class="navbar-brand" href="../../index.html"><img alt="Ui Bibz logo" src="../../packs/media/images/brand-74a5bcbfd13eabea5f80a6f443816fbe.png" width="37" height="30" /></a><button name="button" type="submit" class="navbar-toggler d-block d-md-none collapsed submenu-toggler"><i class="glyph fas fa-arrow-alt-circle-down"></i>
+</button><button class="navbar-toggler hidden-sm-up" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-id-90">☰</button><div class="navbar-collapse collapse" id="navbar-id-90"><ul class="navbar-nav  me-auto"><li class="nav-item"><a href="../../getting_started.html" class="nav-link">Get started</a></li><li class="nav-item"><a href="../boxes/card.html" class="active nav-link">Components</a></li><li class="dropdown nav-item"><a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Component</a><div class="dropdown-menu" arial-labelledby="dropdown-21339"><a class="dropdown-item" href="../../component.html">Base</a><a class="dropdown-item" href="../../custom_component.html">Custom</a></div></li><li class="nav-item"><a href="../../simple_form.html" class="nav-link">Simple form</a></li><li class="nav-item"><a href="../../theme.html" class="nav-link">Theme</a></li></ul><ul class="navbar-nav"><li class="nav-item"><a href="../../about.html" class="nav-link"><i class="glyph fas fa-info-circle"></i> <span class="visually-hidden">About</span></a></li><li class="nav-item"><a href="https://github.com/thooams/ui_bibz" class="nav-link" target="_blank" rel="noopener"><i class="glyph fab fa-github"></i> <span class="visually-hidden">Github</span></a></li><li class="nav-item"><a href="https://rubygems.org/gems/ui_bibz" class="nav-link" target="_blank" rel="noopener"><i class="glyph fas fa-gem"></i> <span class="visually-hidden">Ruby Gem</span></a></li><li class="nav-item"><a href="https://www.npmjs.com/package/ui-bibz-js" class="nav-link" target="_blank" rel="noopener"><i class="glyph fab fa-npm"></i> <span class="visually-hidden">Npm</span></a></li></ul></div></div></nav></header>
+
+<div class="container-fluid"><div class="row-fluid row"><a name='top'></a>
+<div class="left-nav d-none d-md-block col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12"><div class='sidebar'>
+<ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Boxes</span></li><li class="nav-item"><a href="../boxes/card.html" class="nav-link">Card</a></li><li class="nav-item"><a href="../boxes/card-accordion.html" class="nav-link">Card accordion</a></li><li class="nav-item"><a href="../boxes/card-column.html" class="nav-link">Card column</a></li><li class="nav-item"><a href="../boxes/card-grid.html" class="nav-link">Card grid</a></li><li class="nav-item"><a href="../boxes/card-group.html" class="nav-link">Card group</a></li><li class="nav-item"><a href="../boxes/jumbotron.html" class="nav-link">Jumbotron</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Containers</span></li><li class="nav-item"><a href="../containers/panel.html" class="nav-link">Panel</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Icons</span></li><li class="nav-item"><a href="../icons/glyph.html" class="nav-link">Glyph</a></li><li class="nav-item"><a href="../icons/star.html" class="nav-link">Star</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Layouts</span></li><li class="nav-item"><a href="../layouts/col.html" class="nav-link">Col</a></li><li class="nav-item"><a href="../layouts/container.html" class="nav-link">Container</a></li><li class="nav-item"><a href="../layouts/row.html" class="nav-link">Row</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Lists</span></li><li class="nav-item"><a href="../lists/list.html" class="nav-link">List</a></li><li class="nav-item"><a href="../lists/list_group.html" class="nav-link">List group</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Navigations</span></li><li class="nav-item"><a href="../navigations/breadcrumb.html" class="nav-link">Breadcrumb</a></li><li class="nav-item"><a href="../navigations/link.html" class="nav-link">Link</a></li><li class="nav-item"><a href="../navigations/nav.html" class="nav-link">Nav</a></li><li class="nav-item"><a href="../navigations/navbar.html" class="nav-link">Navbar</a></li><li class="nav-item"><a href="../navigations/pagination.html" class="nav-link">Pagination</a></li><li class="nav-item"><a href="../navigations/tab_group.html" class="nav-link">Tab group</a></li><li class="nav-item"><a href="../navigations/toolbar.html" class="nav-link">Toolbar</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Notifications</span></li><li class="nav-item"><a href="alert.html" class="nav-link">Alert</a></li><li class="nav-item"><a href="badge.html" class="nav-link">Badge</a></li><li class="nav-item"><a href="popover.html" class="active nav-link">Popover</a></li><li class="nav-item"><a href="progress_bar.html" class="nav-link">Progress bar</a></li><li class="nav-item"><a href="spinner.html" class="nav-link">Spinner</a></li><li class="nav-item"><a href="tooltip.html" class="nav-link">Tooltip</a></li><li class="nav-item"><a href="toast.html" class="nav-link">Toast</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Tables</span></li><li class="nav-item"><a href="../tables/table.html" class="nav-link">Table</a></li><li class="nav-item"><a href="../tables/table_card.html" class="nav-link">Table card</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Forms</span></li><ul class="nav"><li class="nav-item nav-text"><span class="nav-link">Buttons</span></li><ul class="nav"><li class="nav-item"><a href="../forms/buttons/button.html" class="nav-link">Button</a></li><li class="nav-item"><a href="../forms/buttons/button-group.html" class="nav-link">Button group</a></li><li class="nav-item"><a href="../forms/buttons/button-link.html" class="nav-link">Button link</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Choices</span></li><ul class="nav"><li class="nav-item"><a href="../forms/choices/box-switch-field.html" class="nav-link">Box Switch field</a></li><li class="nav-item"><a href="../forms/choices/checkbox-field.html" class="nav-link">Checkbox field</a></li><li class="nav-item"><a href="../forms/choices/choice-group.html" class="nav-link">Choice group</a></li><li class="nav-item"><a href="../forms/choices/radio-field.html" class="nav-link">Radio field</a></li><li class="nav-item"><a href="../forms/choices/switch-field.html" class="nav-link">Switch field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dates</span></li><ul class="nav"><li class="nav-item"><a href="../forms/dates/date-picker-field.html" class="nav-link">Date picker field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dropdowns</span></li><ul class="nav"><li class="nav-item"><a href="../forms/dropdowns/dropdown.html" class="nav-link">Dropdown</a></li><li class="nav-item"><a href="../forms/dropdowns/split_dropdown.html" class="nav-link">Split Dropdown</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Files</span></li><ul class="nav"><li class="nav-item"><a href="../forms/files/file-field.html" class="nav-link">File</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Numbers</span></li><ul class="nav"><li class="nav-item"><a href="../forms/numbers/formula-field.html" class="nav-link">Formula field</a></li><li class="nav-item"><a href="../forms/numbers/number-field.html" class="nav-link">Number field</a></li><li class="nav-item"><a href="../forms/numbers/range-field.html" class="nav-link">Range field</a></li><li class="nav-item"><a href="../forms/numbers/slider-field.html" class="nav-link">Slider field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Selects</span></li><ul class="nav"><li class="nav-item"><a href="../forms/selects/dropdown-select-field.html" class="nav-link">Dropdown select field</a></li><li class="nav-item"><a href="../forms/selects/select-field.html" class="nav-link">Select field</a></li><li class="nav-item"><a href="../forms/selects/multi-column-field.html" class="nav-link">Multi column field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Surrounds</span></li><ul class="nav"><li class="nav-item"><a href="../forms/surrounds/surround-field.html" class="nav-link">Surround field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Textareas</span></li><ul class="nav"><li class="nav-item"><a href="../forms/textareas/markdown-editor-field.html" class="nav-link">Markdown editor field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Texts</span></li><ul class="nav"><li class="nav-item"><a href="../forms/texts/auto-complete-field.html" class="nav-link">Auto complete field</a></li><li class="nav-item"><a href="../forms/texts/text-field.html" class="nav-link">Text field</a></li></ul></ul></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Windows</span></li><li class="nav-item"><a href="../windows/modal.html" class="nav-link">Modal</a></li></ul>
+</div>
+
+</div><div class="content col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12"><main><h2><i class="glyph fas fa-gem"></i> Popover</h2>
+<blockquote>UiBibz::Ui::Core::Notifications::Popover</blockquote>
+<p class='bd-callout'>Documentation and examples for adding custom Bootstrap popovers with CSS and JavaScript using CSS3 for animations and data-bs-attributes for local title storage</p>
+<div class="usage"><h2><i class="glyph fas fa-book"></i> Usage</h2><div>This component is an extension of <a href="../../component.html">component</a> element. A Ui Bibz component consists of 3 arguments:<ul class="list-options"><li><span class="option-name">content</span><span class="option-types">[value/block]</span></li><li><span class="option-name">html_options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li><li><span class="option-name">options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li></ul></div><div class="highlight code card"><div class="card-body"><div class="highlight"><pre class="codehilite"><code>
+ <span class="c1"># by variable </span>
+ <span class="n">popover</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> 
+
+ <span class="c1"># or by block </span>
+ <span class="n">popover</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span> 
+   <span class="n">content</span> 
+ <span class="k">end</span></code></pre></div></div></div></div>
+<div class="component-options" id="component-options"><h2><i class="glyph fas fa-sliders-h"></i> Options</h2>The specific options for this component are:<ul class="list-options"><li><span class="option-name">animation</span><span class="option-types">[Boolean]</span><span class="option-description">Apply a CSS fade transition to the popover</span><span class="option-default">&lt;default: true&gt;</span></li><li><span class="option-name">boundary</span><span class="option-types">[String]</span><span class="option-description">Overflow constraint boundary of the popover</span></li><li><span class="option-name">container</span><span class="option-types">[String/Element/Boolean]</span><span class="option-description">Delay showing and hiding the popover (ms) - does not apply to manual trigger type</span><span class="option-default">&lt;default: false&gt;</span></li><li><span class="option-name">content</span><span class="option-types">[String]</span><span class="option-description">Default content value if data-bs-content attribute isn't present.</span></li><li><span class="option-name">customClass</span><span class="option-types">[String]</span><span class="option-description">Add classes to the popover when it is shown</span></li><li><span class="option-name">delai</span><span class="option-types">[Integer/Object]</span><span class="option-description">Appends the popover to a specific element</span><span class="option-default">&lt;default: 0&gt;</span></li><li><span class="option-name">fallbackPlacement</span><span class="option-types">[Array]</span><span class="option-description">Allow to specify which position Popper will use on fallback</span><span class="option-default">&lt;default: flip&gt;</span></li><li><span class="option-name">html</span><span class="option-types">[Boolean]</span><span class="option-description">Allow HTML in the popover.</span><span class="option-default">&lt;default: false&gt;</span></li><li><span class="option-name">offset</span><span class="option-types">[Integer]</span><span class="option-description">Offset of the popover relative to its target</span><span class="option-default">&lt;default: 0&gt;</span></li><li><span class="option-name">placement</span><span class="option-types">[String]</span><span class="option-description">Alias of position</span></li><li><span class="option-name">popperConfig</span><span class="option-types">[Object]</span><span class="option-description">To change Bootstrap's default Popper config</span></li><li><span class="option-name">position</span><span class="option-types">[String]</span><span class="option-description">How to position the popover - auto | top | bottom | left | right. When auto is specified, it will dynamically reorient the popover.</span><span class="option-default">&lt;default: top&gt;</span></li><li><span class="option-name">selector</span><span class="option-types">[String/Boolean]</span><span class="option-description">If a selector is provided, popover objects will be delegated to the specified targets</span></li><li><span class="option-name">template</span><span class="option-types">[String]</span><span class="option-description">Base HTML to use when creating the popover</span></li><li><span class="option-name">title</span><span class="option-types">[String]</span><span class="option-description">Default title value if title attribute isn't present.</span></li><li><span class="option-name">trigger</span><span class="option-types">[String]</span><span class="option-description">How popover is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space.</span><span class="option-default">&lt;default: hover focus&gt;</span></li></ul></div><p class='bd-callout'>Note that for security reasons the <code>sanitize</code>, <code>sanitizeFn</code>, and <code>allowList</code> options cannot be supplied using data attributes.</p>
+<div><h2><i class="glyph fas fa-code"></i> Examples</h2>Some examples explain how to use the options present in the component.<section class="section"><a name="options-by-object"></a><h3>Options by Object</h3><div class="card-code card"><div class="card-header"><i data-bs-toggle="popover" data-bs-content="My popover" data-bs-placement="right" class="glyph fas fa-gem"></i>
+</div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#ruby-d8cfea6b-dcc4-43cd-8568-8f8d3c05d027">Ruby</a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#html-dc454364-7570-473a-b780-7100e4f25091">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-d8cfea6b-dcc4-43cd-8568-8f8d3c05d027"><pre>
+<span class="n">popover</span> <span class="o">=</span> <span class="no">UiBibz</span><span class="o">::</span><span class="no">Ui</span><span class="o">::</span><span class="no">Core</span><span class="o">::</span><span class="no">Notifications</span><span class="o">::</span><span class="no">Popover</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'My popover'</span><span class="p">,</span> <span class="ss">position: :right</span><span class="p">)</span>
+<span class="n">ui_glyph</span> <span class="s2">"gem"</span><span class="p">,</span> <span class="ss">popover: </span><span class="n">popover</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-dc454364-7570-473a-b780-7100e4f25091"><pre>
+<span class="nt">&lt;i</span> <span class="na">data-bs-toggle=</span><span class="s">"popover"</span> <span class="na">data-bs-title=</span><span class="s">"My popover"</span> <span class="na">data-bs-placement=</span><span class="s">"right"</span> <span class="na">class=</span><span class="s">"glyph fas fa-gem"</span> <span class="na">data-bs-original-title=</span><span class="s">""</span> <span class="na">title=</span><span class="s">""</span><span class="nt">&gt;&lt;/i&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="options-by-hash"></a><h3>Options by Hash</h3><div class="card-code card"><div class="card-header"><button data-bs-toggle="popover" data-bs-content="My popover" data-bs-placement="top" data-bs-title="My title" class="btn-primary btn">My button</button>
+</div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#ruby-4ac3a97d-c119-43d7-9c24-c04074366ffd">Ruby</a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#html-2306093f-4dae-4e65-827d-eef4eda8d06a">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-4ac3a97d-c119-43d7-9c24-c04074366ffd"><pre>
+<span class="n">ui_button</span> <span class="s2">"My button"</span><span class="p">,</span> <span class="ss">popover: </span><span class="p">{</span> <span class="ss">content: </span><span class="s1">'My popover'</span><span class="p">,</span> <span class="ss">title: </span><span class="s1">'My title'</span> <span class="ss">position: :top</span><span class="p">},</span> <span class="ss">status: :primary</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-2306093f-4dae-4e65-827d-eef4eda8d06a"><pre>
+<span class="nt">&lt;button</span> <span class="na">data-bs-toggle=</span><span class="s">"popover"</span> <span class="na">data-bs-title=</span><span class="s">"My popover"</span> <span class="na">data-bs-placement=</span><span class="s">"right"</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span> <span class="na">data-bs-original-title=</span><span class="s">""</span> <span class="na">title=</span><span class="s">""</span><span class="nt">&gt;</span>My button<span class="nt">&lt;/button&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="options-by-string"></a><h3>Options by String</h3><p>To replace title notification by popover notification</p>
+<div class="card-code card"><div class="card-header"><span data-bs-toggle="popover" data-bs-content="My popover" class="bg-danger badge rounded-pill">My badge</span>
+</div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#ruby-8c6092a6-3819-4f8c-8f82-32591a394e14">Ruby</a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#html-1754f436-8587-4d44-82df-6daec8e75770">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-8c6092a6-3819-4f8c-8f82-32591a394e14"><pre>
+<span class="n">ui_badge</span> <span class="s2">"My badge"</span><span class="p">,</span> <span class="ss">type: :pill</span><span class="p">,</span> <span class="ss">popover: </span><span class="s1">'My popover'</span><span class="p">,</span> <span class="ss">status: :danger</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-1754f436-8587-4d44-82df-6daec8e75770"><pre>
+<span class="nt">&lt;span</span> <span class="na">data-bs-toggle=</span><span class="s">"popover"</span> <span class="na">data-bs-title=</span><span class="s">"My popover"</span> <span class="na">class=</span><span class="s">"bg-danger badge rounded-pill"</span> <span class="na">data-bs-original-title=</span><span class="s">""</span> <span class="na">title=</span><span class="s">""</span><span class="nt">&gt;</span>My badge<span class="nt">&lt;/span&gt;</span>
+</pre></div></div></div></section></div>
+</main>
+</div><div class="secondary-nav d-md-none d-lg-block col-xl-2 col-lg-2"><aside class='sticky'>
+<h4>On this page</h4>
+<hr>
+<ul class="nav"><li class="nav-item"><a data-turbolinks="false" href="popover.html#options-by-hash">Options by Hash</a></li><li class="nav-item"><a data-turbolinks="false" href="popover.html#options-by-object">Options by Object</a></li><li class="nav-item"><a data-turbolinks="false" href="popover.html#options-by-string">Options by String</a></li></ul></aside>
+</div></div><div class='scroll-to-top'>
+<a class="back-top btn-primary btn btn-lg" role="button" href="popover.html#top"><i class="glyph fas fa-arrow-circle-up"></i> </a>
+</div>
+</div><footer class='mt-auto'>
+<nav class="nav nav-links justify-content-center"><a href="https://github.com/thooams/ui_bibz" class="nav-link"><i class="glyph fab fa-github-alt"></i> Github</a><a href="../../about.html" class="nav-link"><i class="glyph fas fa-book"></i> About</a><a href="https://rubygems.org/gems/ui_bibz" class="nav-link"><i class="glyph fas fa-gem"></i> Gem</a></nav><p>Ui Bibz Framework is designed and created by Thomas HUMMEL (<a href="https://github.com/thooams">@thooams</a>)<br />
+This theme is inspired by <a href="http://getbootstrap.com">Bootstrap theme documentation</a><br />
+Currently v3.0.0.beta8. Code licensed MIT</p>
+
+</footer>
+
+</body>
+</html>

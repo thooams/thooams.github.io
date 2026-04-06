@@ -88,7 +88,7 @@
 
 {{/* CSS - Hugo Pipes (PostCSS + Tailwind v4 + DaisyUI v5) */}}
 {{ $css := resources.Get "css/main.css" | css.PostCSS | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous" />
+<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" />
 
 {{/* Font Awesome - async (non-render-blocking) */}}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />

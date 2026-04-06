@@ -1,0 +1,90 @@
+# ── Navigation ───────────────────────────────────────────────────────────────
+[home]
+other = "Home"
+
+# ── Banner / Hero ─────────────────────────────────────────────────────────────
+[banner_tagline]
+other = "Lead Tech Full Stack Ruby Developer"
+
+[banner_description]
+other = "Ruby (Ruby on Rails), Javascript, Docker & Co. from 2007"
+
+[banner_location]
+other = "Grenoble (France)"
+
+[banner_learn_more]
+other = "Learn More"
+
+# ── Intro section ─────────────────────────────────────────────────────────────
+[intro_headline]
+other = "I am a French Ruby developer who daily seeks to progress and actively pursue knowledge and personal growth."
+
+[intro_motto]
+other = "My pragmatism is my greatest strength. My motto: \"Never regret anything.\""
+
+# ── Skills section ────────────────────────────────────────────────────────────
+[years_experience]
+other = "years experience"
+
+[years_ruby]
+other = "years in Ruby"
+
+[skills_description]
+other = "The combination of my skills develops and promotes design allows me to respond to specific problems at all levels: large accounts, SME / SMI, Independent, Artisan, Institutional..."
+
+[skill_experience]
+other = "Experience"
+
+[skill_experience_desc]
+other = "I'm full stack developer involved in online communication, web design (ecommerce, showcase tools...), software, referencing, auditing, graphic identity, monitoring and maintenance."
+
+[skill_environments]
+other = "Environments"
+
+[skill_environments_desc]
+other = "I work on Linux and Mac with Git and Github. I use Vim, Tmux and Homebrew. Developments run on RVM or Docker."
+
+[skill_languages]
+other = "Languages"
+
+[skill_languages_desc]
+other = "Ruby, Ruby on Rails, Javascript, ES6, Extjs, Jquery, Coffeescript, Stimulus.js, Docker, Docker-Compose, HTML, CSS, Haml, Sass."
+
+[skill_servers]
+other = "Servers (DevOps)"
+
+[skill_servers_desc]
+other = "I manage servers on Linux with Docker, Docker-compose, Upstart, Systemd and other Linux tools."
+
+[skill_philosophy]
+other = "Philosophy"
+
+[skill_philosophy_desc]
+other = "Code needs to be tested. MVP (Model-View-Presenter) rather than MVC (Model-View-Controller). Pattern, pattern and pattern. Open Source is good."
+
+[skill_passion]
+other = "Passion"
+
+[skill_passion_desc]
+other = "I'm passionate about new technologies and the countryside. My travels have given me a creative spirit and pragmatic vision. I'm a vim and bépo user."
+
+# ── CTA section ───────────────────────────────────────────────────────────────
+[cta_heading]
+other = "And after"
+
+[cta_description]
+other = "Always looking for new opportunities, you can follow my work on Github, LinkedIn, or Twitter. You can also download my CV."
+
+[cta_download_cv]
+other = "Download CV"
+
+# ── Footer ────────────────────────────────────────────────────────────────────
+[footer_copyright]
+other = "© Thomas HUMMEL"
+
+# ── Project pages ─────────────────────────────────────────────────────────────
+[learn_more]
+other = "Learn More"
+
+[see_more]
+other = "To see More"

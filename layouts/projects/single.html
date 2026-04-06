@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+<!-- ── Project header ─────────────────────────────────────────────────────── -->
+<section class="spectral-section-accent py-20 text-base-content text-center">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-bold mb-3">{{ .Title }}</h2>
+    {{ with .Params.subtitle }}
+    <p class="text-xl opacity-75">{{ . }}</p>
+    {{ end }}
+  </div>
+</section>
+
+<!-- ── Project content (Markdown rendered) ────────────────────────────────── -->
+<article>
+  {{ .Content }}
+</article>
+
+<!-- ── CTA ────────────────────────────────────────────────────────────────── -->
+{{ with .Params.cta }}
+<section class="spectral-section-neutral py-16 text-base-content text-center">
+  <div class="container mx-auto px-6 max-w-2xl">
+    <h2 class="text-2xl font-bold mb-4">{{ .heading }}</h2>
+    {{ with .text }}<p class="opacity-70 mb-6 leading-relaxed">{{ . | safeHTML }}</p>{{ end }}
+    <div class="flex flex-wrap justify-center gap-3">
+      {{ range .links }}
+      <a href="{{ .url }}" class="btn btn-primary"{{ if .external }} target="_blank"{{ end }}>
+        {{ .label }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}

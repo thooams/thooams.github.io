@@ -1,0 +1,169 @@
+{{ define "main" }}
+
+<!-- ── Banner / Hero ───────────────────────────────────────────────────────── -->
+<section class="spectral-hero flex items-center justify-center text-center text-base-content relative">
+  <div class="container mx-auto px-6 py-24">
+    <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tight">Thomas HUMMEL</h1>
+
+    <div class="mb-8 flex justify-center">
+      <picture>
+        <source srcset="/images/profil.webp" type="image/webp" />
+        <img
+          src="/images/profil.jpg"
+          alt="Thomas HUMMEL - Lead Tech Full Stack Ruby Developer"
+          class="profile-img"
+          width="160"
+          height="160"
+          fetchpriority="high"
+          decoding="sync"
+        />
+      </picture>
+    </div>
+
+    <div class="space-y-2 text-lg md:text-xl">
+      <p><strong>{{ i18n "banner_tagline" }}</strong></p>
+      <p>{{ i18n "banner_description" }} ({{ sub now.Year 2007 }} years)</p>
+      <p>{{ i18n "banner_location" }}</p>
+      <p>{{ sub now.Year 1984 }} years old &bull; French</p>
+    </div>
+
+    <div class="mt-10">
+    <a href="/cv/thomas-hummel-cv.pdf" target="_blank" class="btn btn-primary btn-lg">
+      <i class="fa-solid fa-download mr-2" aria-hidden="true"></i>
+      {{ i18n "cta_download_cv" }}
+    </a>
+    </div>
+  </div>
+
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce opacity-40" aria-hidden="true">
+    {{ i18n "banner_learn_more" }}
+    <br/>
+    <i class="fa-solid fa-chevron-down text-base-content text-xl"></i>
+  </div>
+</section>
+
+<!-- ── Intro with icons ────────────────────────────────────────────────────── -->
+<section id="intro" class="spectral-section-accent py-20 text-base-content">
+  <div class="container mx-auto px-6 text-center">
+    <header class="max-w-3xl mx-auto mb-14">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 leading-relaxed">
+        {{ i18n "intro_headline" }}
+      </h2>
+      <p class="opacity-75 text-lg">{{ i18n "intro_motto" }}</p>
+    </header>
+
+    <div class="flex justify-center gap-10 md:gap-16 flex-wrap">
+      <a href="https://rubygems.org/profiles/Thooams" target="_blank" rel="noopener noreferrer" aria-label="Thomas HUMMEL on Ruby Gems" class="flex flex-col items-center gap-3 group">
+        <div class="w-20 h-20 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-3xl text-primary group-hover:bg-primary group-hover:text-primary-content transition-all duration-300">
+          <i class="fa-solid fa-gem" aria-hidden="true"></i>
+        </div>
+        <span class="text-sm opacity-60 group-hover:opacity-100 transition-opacity">Ruby Gems</span>
+      </a>
+      <a href="https://github.com/thooams" target="_blank" rel="noopener noreferrer" aria-label="Thomas HUMMEL on GitHub" class="flex flex-col items-center gap-3 group">
+        <div class="w-20 h-20 rounded-full bg-secondary/20 border-2 border-secondary flex items-center justify-center text-3xl text-secondary group-hover:bg-secondary group-hover:text-secondary-content transition-all duration-300">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </div>
+        <span class="text-sm opacity-60 group-hover:opacity-100 transition-opacity">GitHub</span>
+      </a>
+      <a href="https://fr.linkedin.com/in/thomas-hummel-68274117" target="_blank" rel="noopener noreferrer" aria-label="Thomas HUMMEL on LinkedIn" class="flex flex-col items-center gap-3 group">
+        <div class="w-20 h-20 rounded-full bg-accent/20 border-2 border-accent flex items-center justify-center text-3xl text-accent group-hover:bg-accent group-hover:text-accent-content transition-all duration-300">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <span class="text-sm opacity-60 group-hover:opacity-100 transition-opacity">LinkedIn</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Project spotlights ──────────────────────────────────────────────────── -->
+<section id="projects" aria-label="Projects">
+  {{ $projects := where .Site.RegularPages "Section" "projects" }}
+  {{ range $i, $p := sort $projects "Weight" }}
+  {{ $webpSrc := $p.Params.image | replaceRE "\\.(?:jpe?g|png|gif)$" ".webp" }}
+  <div class="flex flex-col {{ if eq (mod $i 2) 1 }}md:flex-row-reverse{{ else }}md:flex-row{{ end }}">
+    <!-- Image side -->
+    <div class="md:w-5/12 overflow-hidden min-h-64 md:min-h-80">
+      <picture>
+        <source srcset="{{ $webpSrc }}" type="image/webp" />
+        <img
+          src="{{ $p.Params.image }}"
+          alt="{{ $p.Title }}"
+          class="w-full h-full object-cover"
+          style="min-height: 20rem;"
+          width="748"
+          height="529"
+          loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}"
+        />
+      </picture>
+    </div>
+    <!-- Content side -->
+    <div class="md:w-7/12 p-10 md:p-16 flex flex-col justify-center bg-base-200 text-base-content">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">{{ $p.Title }}</h2>
+      <p class="mb-6 opacity-70 leading-relaxed">{{ $p.Params.description }}</p>
+      <div class="flex flex-wrap gap-3">
+        {{ with $p.Params.doc_url }}
+        <a href="{{ . }}" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">{{ $p.Params.doc_label }}</a>
+        {{ end }}
+        <a href="{{ $p.Permalink }}" class="btn btn-outline btn-sm" aria-label="{{ i18n "learn_more" }} about {{ $p.Title }}">
+          {{ i18n "learn_more" }}
+        </a>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+<!-- ── Skills grid ────────────────────────────────────────────────────────── -->
+<section id="skills" class="spectral-section-dark py-20 text-base-content" aria-label="Skills">
+  <div class="container mx-auto px-6">
+    <header class="text-center max-w-3xl mx-auto mb-14">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        {{ sub now.Year 2007 }} {{ i18n "years_experience" }}
+        ({{ sub now.Year 2009 }} {{ i18n "years_ruby" }})
+      </h2>
+      <p class="opacity-70 leading-relaxed">{{ i18n "skills_description" }}</p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+      {{ $skills := slice
+        (dict "icon" "fa-road"   "title" (i18n "skill_experience")   "desc" (i18n "skill_experience_desc"))
+        (dict "icon" "fa-laptop" "title" (i18n "skill_environments") "desc" (i18n "skill_environments_desc"))
+        (dict "icon" "fa-code"   "title" (i18n "skill_languages")    "desc" (i18n "skill_languages_desc"))
+        (dict "icon" "fa-server" "title" (i18n "skill_servers")      "desc" (i18n "skill_servers_desc"))
+        (dict "icon" "fa-eye"    "title" (i18n "skill_philosophy")   "desc" (i18n "skill_philosophy_desc"))
+        (dict "icon" "fa-heart"  "title" (i18n "skill_passion")      "desc" (i18n "skill_passion_desc"))
+      }}
+      {{ range $skills }}
+      <div class="card bg-base-200 border border-base-300 hover:border-primary transition-colors">
+        <div class="card-body">
+          <div class="text-primary text-2xl mb-2" aria-hidden="true">
+            <i class="fa-solid {{ .icon }}"></i>
+          </div>
+          <h3 class="card-title text-base-content text-base">{{ .title }}</h3>
+          <p class="text-base-content/60 text-sm leading-relaxed">{{ .desc }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ────────────────────────────────────────────────────────────────── -->
+<section class="spectral-section-neutral py-16 text-base-content" aria-label="Contact">
+  <div class="container mx-auto px-6 text-center max-w-2xl">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">{{ i18n "cta_heading" }}</h2>
+    <p class="mb-8 leading-relaxed">
+      <span class="opacity-70">Always looking for new opportunities, you can follow my work on </span>
+      <a href="https://github.com/thooams" target="_blank" rel="noopener noreferrer" class="text-primary underline decoration-1 underline-offset-2 hover:opacity-80">Github</a><span class="opacity-70">,</span>
+      <a href="https://fr.linkedin.com/in/thomas-hummel-68274117" target="_blank" rel="noopener noreferrer" class="text-primary underline decoration-1 underline-offset-2 hover:opacity-80">LinkedIn</a><span class="opacity-70">,</span>
+      <span class="opacity-70"> or </span>
+      <a href="https://twitter.com/thooams" target="_blank" rel="noopener noreferrer" class="text-primary underline decoration-1 underline-offset-2 hover:opacity-80">Twitter</a><span class="opacity-70">.</span>
+    </p>
+    <a href="/cv/thomas-hummel-cv.pdf" target="_blank" class="btn btn-primary btn-lg">
+      <i class="fa-solid fa-download mr-2" aria-hidden="true"></i>
+      {{ i18n "cta_download_cv" }}
+    </a>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,108 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/images/favicon.ico" />
+<meta name="theme-color" content="#282a36" />
+
+{{/* Title */}}
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+
+{{/* Canonical */}}
+<link rel="canonical" href="{{ .Permalink }}" />
+
+{{/* Description */}}
+{{ $desc := (.Params.description | default site.Params.description) }}
+<meta name="description" content="{{ $desc }}" />
+<meta name="author" content="{{ site.Params.author }}" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="Ruby on Rails, Ruby developer, Full Stack, Docker, Javascript, Grenoble, Thomas Hummel, Lead Tech" />
+
+{{/* Open Graph */}}
+{{ $ogTitle := (.Title | default site.Title) }}
+{{ $ogImage := (.Params.ogImage | default (printf "%s%s" site.BaseURL "images/profil.webp")) }}
+{{ if .Params.image }}{{ $ogImage = printf "%s%s" site.BaseURL (strings.TrimPrefix "/" (.Params.image | replaceRE "\\.(?:jpe?g|png|gif)$" ".webp")) }}{{ end }}
+<meta property="og:type"        content="{{ if .IsHome }}profile{{ else }}website{{ end }}" />
+<meta property="og:title"       content="{{ $ogTitle }}" />
+<meta property="og:description" content="{{ $desc }}" />
+<meta property="og:url"         content="{{ .Permalink }}" />
+<meta property="og:site_name"   content="{{ site.Title }}" />
+<meta property="og:image"       content="{{ $ogImage }}" />
+<meta property="og:image:width"  content="748" />
+<meta property="og:image:height" content="529" />
+<meta property="og:locale"      content="{{ site.Params.locale | default "en_US" }}" />
+{{ if .IsHome }}
+<meta property="profile:first_name" content="Thomas" />
+<meta property="profile:last_name"  content="Hummel" />
+<meta property="profile:username"   content="thooams" />
+{{ end }}
+
+{{/* Twitter Card */}}
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:site"        content="{{ site.Params.twitterHandle }}" />
+<meta name="twitter:creator"     content="{{ site.Params.twitterHandle }}" />
+<meta name="twitter:title"       content="{{ $ogTitle }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
+<meta name="twitter:image"       content="{{ $ogImage }}" />
+
+{{/* JSON-LD Structured Data - built via dict to avoid minifier double-encoding */}}
+{{ if .IsHome }}
+{{ $jsonLD := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" "Thomas HUMMEL"
+  "url" site.BaseURL
+  "image" (printf "%simages/profil.webp" site.BaseURL)
+  "jobTitle" "Lead Tech Full Stack Ruby Developer"
+  "description" $desc
+  "sameAs" (slice "https://github.com/thooams" "https://fr.linkedin.com/in/thomas-hummel-68274117" "https://twitter.com/thooams" "https://rubygems.org/profiles/Thooams")
+  "address" (dict "@type" "PostalAddress" "addressLocality" "Grenoble" "addressCountry" "FR")
+  "knowsAbout" (slice "Ruby" "Ruby on Rails" "JavaScript" "Docker" "Full Stack Development" "DevOps")
+}}
+<script type="application/ld+json">{{ $jsonLD | jsonify | safeJS }}</script>
+{{ else }}
+{{ $breadcrumb := dict
+  "@type" "BreadcrumbList"
+  "itemListElement" (slice
+    (dict "@type" "ListItem" "position" 1 "name" "Home" "item" site.BaseURL)
+    (dict "@type" "ListItem" "position" 2 "name" $ogTitle "item" .Permalink)
+  )
+}}
+{{ $jsonLD := dict
+  "@context" "https://schema.org"
+  "@type" "WebPage"
+  "name" $ogTitle
+  "description" $desc
+  "url" .Permalink
+  "author" (dict "@type" "Person" "name" "Thomas HUMMEL" "url" site.BaseURL)
+  "breadcrumb" $breadcrumb
+}}
+<script type="application/ld+json">{{ $jsonLD | jsonify | safeJS }}</script>
+{{ end }}
+
+{{/* Preload LCP image (profile on homepage, project image otherwise) */}}
+{{ if .IsHome }}
+<link rel="preload" as="image" href="/images/profil.webp" type="image/webp" fetchpriority="high" />
+{{ else if .Params.image }}
+{{ $webp := .Params.image | replaceRE "\\.(?:jpe?g|png|gif)$" ".webp" }}
+<link rel="preload" as="image" href="{{ $webp }}" type="image/webp" fetchpriority="high" />
+{{ end }}
+
+{{/* CSS - Hugo Pipes (PostCSS + Tailwind v4 + DaisyUI v5) */}}
+{{ $css := resources.Get "css/main.css" | css.PostCSS | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous" />
+
+{{/* Font Awesome - async (non-render-blocking) */}}
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" as="style" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" crossorigin="anonymous" /></noscript>
+
+{{/* Google Analytics */}}
+{{ with site.Params.googleAnalytics }}
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ . }}');
+</script>
+{{ end }}

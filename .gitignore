@@ -1,9 +1,19 @@
-_site
-tags
-.sass-cache
+# Hugo
+resources/
+.hugo_build.lock
+
+# Node
+node_modules/
+package-lock.json
+
+# OS
 .DS_Store
+tags
+
+# Old build tools
+_site
+.sass-cache
+_asset_bundler_cache
 *.sublime-project
 *.sublime-workspace
 codekit-config.json
-node_modules
-_asset_bundler_cache

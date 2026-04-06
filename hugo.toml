@@ -1,0 +1,69 @@
+baseURL = 'https://hummel.link/'
+
+[minify]
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepSpecialComments = false
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepWhitespace = false
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 0
+    [minify.tdewolff.json]
+      keepNumbers = false
+      precision = 0
+defaultContentLanguage        = 'en'
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+disableKinds    = ['taxonomy', 'term']
+
+[params]
+  author          = "Thomas HUMMEL"
+  twitterHandle   = "@thooams"
+  googleAnalytics = "G-EH3TXG9BJH"
+  ogImage         = "images/profil.webp"
+  locale          = "en_US"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[sitemap]
+  changefreq = 'monthly'
+  priority   = 1.0
+  filename   = 'sitemap.xml'
+
+# ── English (default) ────────────────────────────────────────────────────────
+[languages.en]
+  languageCode = 'en'
+  languageName = 'English'
+  title        = 'Thomas HUMMEL - Full Stack Ruby Developer'
+  weight       = 1
+
+  [languages.en.params]
+    description = "Lead Tech Full Stack Ruby Developer - Ruby on Rails, Javascript, Docker & Co. Based in Grenoble, France."
+    locale      = "en_US"
+
+  [[languages.en.menus.main]]
+    name   = 'Home'
+    url    = '/'
+    weight = 1
+  [[languages.en.menus.main]]
+    name   = 'Fathome'
+    url    = '/projects/fathome/'
+    weight = 10
+  [[languages.en.menus.main]]
+    name   = 'Ui Bibz'
+    url    = '/projects/ui-bibz/'
+    weight = 20
+  [[languages.en.menus.main]]
+    name   = 'Harbour Crane'
+    url    = '/projects/harbour-crane/'
+    weight = 30
+  [[languages.en.menus.main]]
+    name   = 'EIME'
+    url    = '/projects/eime/'
+    weight = 40

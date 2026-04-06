@@ -1,0 +1,324 @@
+<html>
+<head>
+<title>Ui Bibz - Card group</title>
+<meta CONTENT='Create your project with Ui Bibz. Over a thirty reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.' name='Description'>
+<meta CONTENT='Thomas HUMMEL &lt;thomas@hummel.link&gt;' name='Author'>
+<meta CONTENT='bootstrap rails, bootstrap ruby, ui bibz, bibz bootstrap, bootstrap interface, bootstrap ui, bootstrap interface' name='Keywords'>
+<link href='../../favicon.ico' rel='shortcut icon' type='image/x-icon'>
+<link rel="stylesheet" media="all" href="../../assets/application-7f22455fbf319ef8556253c7fff0e81b7f8ec945208a8dced04e33039e934afe.css" data-turbolinks-track="true" />
+<script src="../../assets/application-c30df31716e2bcb02e44e6d175931f10845e363b82be7dccbc37625a430024ab.js" data-turbolinks-track="true"></script>
+<style>
+  ".highlight table td { padding: 5px; }
+  .highlight table pre { margin: 0; }
+  .highlight .cm {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cp {
+    color: #999999;
+    font-weight: bold;
+  }
+  .highlight .c1 {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2;
+  }
+  .highlight .gd {
+    color: #000000;
+    background-color: #ffdddd;
+  }
+  .highlight .ge {
+    color: #000000;
+    font-style: italic;
+  }
+  .highlight .gr {
+    color: #aa0000;
+  }
+  .highlight .gh {
+    color: #999999;
+  }
+  .highlight .gi {
+    color: #000000;
+    background-color: #ddffdd;
+  }
+  .highlight .go {
+    color: #888888;
+  }
+  .highlight .gp {
+    color: #555555;
+  }
+  .highlight .gs {
+    font-weight: bold;
+  }
+  .highlight .gu {
+    color: #aaaaaa;
+  }
+  .highlight .gt {
+    color: #aa0000;
+  }
+  .highlight .kc {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kd {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kn {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kp {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kr {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kt {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .k, .highlight .kv {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .mf {
+    color: #009999;
+  }
+  .highlight .mh {
+    color: #009999;
+  }
+  .highlight .il {
+    color: #009999;
+  }
+  .highlight .mi {
+    color: #009999;
+  }
+  .highlight .mo {
+    color: #009999;
+  }
+  .highlight .m, .highlight .mb, .highlight .mx {
+    color: #009999;
+  }
+  .highlight .sb {
+    color: #d14;
+  }
+  .highlight .sc {
+    color: #d14;
+  }
+  .highlight .sd {
+    color: #d14;
+  }
+  .highlight .s2 {
+    color: #d14;
+  }
+  .highlight .se {
+    color: #d14;
+  }
+  .highlight .sh {
+    color: #d14;
+  }
+  .highlight .si {
+    color: #d14;
+  }
+  .highlight .sx {
+    color: #d14;
+  }
+  .highlight .sr {
+    color: #009926;
+  }
+  .highlight .s1 {
+    color: #d14;
+  }
+  .highlight .ss {
+    color: #990073;
+  }
+  .highlight .s, .highlight .sa, .highlight .dl {
+    color: #d14;
+  }
+  .highlight .na {
+    color: #008080;
+  }
+  .highlight .bp {
+    color: #999999;
+  }
+  .highlight .nb {
+    color: #0086B3;
+  }
+  .highlight .nc {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .no {
+    color: #008080;
+  }
+  .highlight .nd {
+    color: #3c5d5d;
+    font-weight: bold;
+  }
+  .highlight .ni {
+    color: #800080;
+  }
+  .highlight .ne {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nf, .highlight .fm {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nl {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nn {
+    color: #555555;
+  }
+  .highlight .nt {
+    color: #000080;
+  }
+  .highlight .vc {
+    color: #008080;
+  }
+  .highlight .vg {
+    color: #008080;
+  }
+  .highlight .vi {
+    color: #008080;
+  }
+  .highlight .nv, .highlight .vm {
+    color: #008080;
+  }
+  .highlight .ow {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .o {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .w {
+    color: #bbbbbb;
+  }
+  .highlight {
+    background-color: #f8f8f8;
+  }"
+</style>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="QJtFqu8UP2NuxG5F2nhvsQ7IS4vcHbYcQG3sT+b/Reo8OskvYyLFqgY2a3PihK+3/8dAKiz0/TNKpGc31Phu3Q==" />
+
+</head>
+<body>
+<header>
+<nav class="bg-dark navbar navbar-dark fixed-top navbar-expand-lg"><span class="navbar-brand"><img class="rounded" src="../../assets/ui-bibz-logo-30-9c9f99605f83320cec3b86413ef285f50dfe8941e4b52be6e6baa89bddb2cab9.gif" /></span><button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-id-31399">☰</button><div class="navbar-collapse" id="navbar-id-31399"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="../../getting_started.html">Get started</a></li><li class="nav-item"><a class="nav-link" href="card.html">Components</a></li><li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="card-group.html#">Component</a><div class="dropdown-menu" arial-labelledby="dropdown-73165"><a class="dropdown-item" href="../../component.html">Base</a><a class="dropdown-item" href="../../custom_component.html">Custom</a></div></li><li class="nav-item"><a class="nav-link" href="../../simple_form.html">Simple form</a></li><li class="nav-item"><a class="nav-link" href="../../theme.html">Theme</a></li><li class="nav-item"><a class="nav-link" href="../../about.html">About</a></li></ul></div></nav></header>
+
+<div class="container-fluid"><div class="row-fluid row"><a name='top'></a>
+<div class="left-nav col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12"><div class='sidebar'>
+<ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Boxes</span></li><li class="nav-item"><a class="nav-link" href="card.html">Card</a></li><li class="nav-item"><a class="nav-link" href="card-accordion.html">Card accordion</a></li><li class="nav-item"><a class="nav-link" href="card-column.html">Card column</a></li><li class="nav-item"><a class="nav-link" href="card-deck.html">Card deck</a></li><li class="nav-item"><a class="active nav-link" href="card-group.html">Card group</a></li><li class="nav-item"><a class="nav-link" href="jumbotron.html">Jumbotron</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Containers</span></li><li class="nav-item"><a class="nav-link" href="../containers/panel.html">Panel</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Icons</span></li><li class="nav-item"><a class="nav-link" href="../icons/glyph.html">Glyph</a></li><li class="nav-item"><a class="nav-link" href="../icons/glyph_group.html">Glyph group</a></li><li class="nav-item"><a class="nav-link" href="../icons/star.html">Star</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Layouts</span></li><li class="nav-item"><a class="nav-link" href="../layouts/col.html">Col</a></li><li class="nav-item"><a class="nav-link" href="../layouts/container.html">Container</a></li><li class="nav-item"><a class="nav-link" href="../layouts/row.html">Row</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Lists</span></li><li class="nav-item"><a class="nav-link" href="../lists/list.html">List</a></li><li class="nav-item"><a class="nav-link" href="../lists/list_group.html">List group</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Navigations</span></li><li class="nav-item"><a class="nav-link" href="../navigations/breadcrumb.html">Breadcrumb</a></li><li class="nav-item"><a class="nav-link" href="../navigations/link.html">Link</a></li><li class="nav-item"><a class="nav-link" href="../navigations/nav.html">Nav</a></li><li class="nav-item"><a class="nav-link" href="../navigations/navbar.html">Navbar</a></li><li class="nav-item"><a class="nav-link" href="../navigations/pagination.html">Pagination</a></li><li class="nav-item"><a class="nav-link" href="../navigations/tab_group.html">Tab group</a></li><li class="nav-item"><a class="nav-link" href="../navigations/toolbar.html">Toolbar</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Notifications</span></li><li class="nav-item"><a class="nav-link" href="../notifications/alert.html">Alert</a></li><li class="nav-item"><a class="nav-link" href="../notifications/badge.html">Badge</a></li><li class="nav-item"><a class="nav-link" href="../../component.html#popover">Popover</a></li><li class="nav-item"><a class="nav-link" href="../notifications/progress_bar.html">Progress bar</a></li><li class="nav-item"><a class="nav-link" href="../notifications/spinner.html">Spinner</a></li><li class="nav-item"><a class="nav-link" href="../../component.html#tooltip">Tooltip</a></li><li class="nav-item"><a class="nav-link" href="../notifications/toast.html">Toast</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Tables</span></li><li class="nav-item"><a class="nav-link" href="../tables/table.html">Table</a></li><li class="nav-item"><a class="nav-link" href="../tables/table_card.html">Table card</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Forms</span></li><ul class="nav"><li class="nav-item nav-text"><span class="nav-link">Buttons</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/buttons/button.html">Button</a></li><li class="nav-item"><a class="nav-link" href="../forms/buttons/button-group.html">Button group</a></li><li class="nav-item"><a class="nav-link" href="../forms/buttons/button-link.html">Button link</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Choices</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/choices/box-switch-field.html">Box Switch field</a></li><li class="nav-item"><a class="nav-link" href="../forms/choices/checkbox-field.html">Checkbox field</a></li><li class="nav-item"><a class="nav-link" href="../forms/choices/choice-group.html">Choice group</a></li><li class="nav-item"><a class="nav-link" href="../forms/choices/radio-field.html">Radio field</a></li><li class="nav-item"><a class="nav-link" href="../forms/choices/switch-field.html">Switch field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dates</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/dates/date-picker-field.html">Date picker field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dropdowns</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/dropdowns/dropdown.html">Dropdown</a></li><li class="nav-item"><a class="nav-link" href="../forms/dropdowns/split_dropdown.html">Split Dropdown</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Files</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/files/file-field.html">File</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Numbers</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/numbers/formula-field.html">Formula field</a></li><li class="nav-item"><a class="nav-link" href="../forms/numbers/number-field.html">Number field</a></li><li class="nav-item"><a class="nav-link" href="../forms/numbers/range-field.html">Range field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Selects</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/selects/dropdown-select-field.html">Dropdown select field</a></li><li class="nav-item"><a class="nav-link" href="../forms/selects/select-field.html">Select field</a></li><li class="nav-item"><a class="nav-link" href="../forms/selects/multi-column-field.html">Multi column field</a></li><li class="nav-item"><a class="nav-link" href="../forms/selects/multi-select-field.html">Multi select field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Surrounds</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/surrounds/surround-field.html">Surround field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Textareas</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/textareas/markdown-editor-field.html">Markdown editor field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Texts</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../forms/texts/auto-complete-field.html">Auto complete field</a></li><li class="nav-item"><a class="nav-link" href="../forms/texts/text-field.html">Text field</a></li></ul></ul></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Windows</span></li><li class="nav-item"><a class="nav-link" href="../windows/modal.html">Modal</a></li></ul>
+</div>
+
+</div><div class="content col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12"><h2><i class="glyph fas fa-gem"></i> Card group<span>(ui_card_group)</span><a target="_blank" title="See original component documentation" href="https://getbootstrap.com/docs/4.4/components/card/#card-groups"><img class="icon-indicator" src="../../assets/bootstrap-icon-b47630f0b2ed43dc2da6885c9d60d4f274df7bad1ceffa74948e7a7cc0c94ab4.png" /></a></h2>
+<blockquote>UiBibz::Ui::Core::Boxes::CardGroup</blockquote>
+<div class='bd-callout'>These elements allow the placement of the cards by group.</div>
+<div class="usage"><h2><i class="glyph fas fa-book"></i> Usage</h2><div>This component is an extension of <a href="../../component.html">component</a> element. A Ui Bibz component consists of 3 arguments:<ul class="list-options"><li><span class="option-name">content</span><span class="option-types">[value/block]</span></li><li><span class="option-name">options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li><li><span class="option-name">html_options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li></ul></div><div class="highlight code card"><div class="card-body"><div class="highlight"><pre class="codehilite"><code>
+<span class="n">ui_card_group</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span> <span class="o">|</span><span class="n">cg</span><span class="o">|</span>
+  <span class="n">cg</span><span class="p">.</span><span class="nf">card</span> <span class="k">do</span>
+    <span class="n">content</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div></div></div><div class="component-options" id="component-items"><h2><i class="glyph fas fa-list"></i> Items</h2>The allowed items for this component are:<ul class="list-options"><li><span class="option-name">card</span><span class="option-description">(inherit of <a href="card.html">card</a>)</span></li></ul></div><div><h2><i class="glyph fas fa-code"></i> Examples</h2>Some examples explain how to use the options present in the component.<section class="section"><a name="card-group"></a><h3>Card group</h3><p>The <code>card_group</code> component is an extension of <a href="../../component.html">component</a> element.<br>
+    Like this one, the <code>card_group</code> component has <code>options</code> and <code>html_options</code> present as hash.<br/>
+    It inherits options of <a href="../../component.html">component</a> element.</p>
+<div class="card-code card"><div class="card-header"><div class="card-group"><div class="card"><div class="card-header">header 1</div><div class="card-body">content 1</div><div class="card-footer">footer 1</div></div><div class="card"><img class="card-img-top" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22241%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20241%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15f6c72b839%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A12pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15f6c72b839%22%3E%3Crect%20width%3D%22241%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2289.765625%22%20y%3D%2294.2%22%3E241x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" /><div class="card-body"><h4 class="card-title">card title</h4><p class="card-text">this is a wider card with supporting text below as a natural lead-in to additional content. this content is a little bit longer.</p><p class="card-text"><small class='text-muted'>last updated 3 mins ago</small></p></div></div><div class="card"><ul class="list-group-flush list-group"><li class="list-group-item">cras justo odio</li><li class="active list-group-item">Dapibas ac facilisis in</li><li class="list-group-item flex-column align-items-start"><div class="d-flex w-100 justify-content-between"><h5 class="mb-1">Header list</h5><small></small></div><p class="mb-1">vestibulum at eros</p><small></small></li></ul></div><div class="card"><div class="card-body">content 4 <br/> some quick example text to build on the card title and make up the bulk of the card's content.</div></div><div class="bg-primary text-white card card-inverse"><div class="card-body"><bodyquote class="card-bodyquote"><p>lorem ipsum dolor sit amet, consectetur adipiscing elit. integer posuere erat a ante.</p><footer>someone famous in <cite title="source title">source title</cite></footer></bodyquote>
+</div></div></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="card-group.html#ruby-1ca306c5-759f-411b-8ceb-5b5e22ff5cef">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="card-group.html#html-24ef84cf-12fc-4182-b201-dc9c37467252">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-1ca306c5-759f-411b-8ceb-5b5e22ff5cef"><pre>
+<span class="n">ui_card_group</span> <span class="k">do</span> <span class="o">|</span><span class="n">cg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">cg</span><span class="p">.</span><span class="nf">card</span> <span class="ss">tap: </span><span class="kp">true</span> <span class="k">do</span> <span class="o">|</span><span class="n">c</span><span class="o">|</span>
+<span class="err">    </span><span class="n">c</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"header 1"</span>
+<span class="err">    </span><span class="n">c</span><span class="p">.</span><span class="nf">body</span> <span class="s2">"content 1"</span>
+<span class="err">    </span><span class="n">c</span><span class="p">.</span><span class="nf">footer</span> <span class="s2">"footer 1"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">cg</span><span class="p">.</span><span class="nf">card</span> <span class="ss">tap: </span><span class="kp">true</span> <span class="k">do</span> <span class="o">|</span><span class="n">c</span><span class="o">|</span>
+<span class="err">    </span><span class="n">c</span><span class="p">.</span><span class="nf">image</span> <span class="s2">"image.svg"</span>
+<span class="err">    </span><span class="n">c</span><span class="p">.</span><span class="nf">body</span> <span class="ss">tap: </span><span class="kp">true</span> <span class="k">do</span> <span class="o">|</span><span class="n">b</span><span class="o">|</span>
+<span class="err">      </span><span class="n">b</span><span class="p">.</span><span class="nf">title</span> <span class="s2">"Card title"</span>
+<span class="err">      </span><span class="n">b</span><span class="p">.</span><span class="nf">text</span> <span class="s2">"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."</span>
+<span class="err">      </span><span class="n">b</span><span class="p">.</span><span class="nf">text</span> <span class="s2">"&lt;small class='text-muted'&gt;Last updated 3 mins ago&lt;/small&gt;"</span>
+<span class="err">    </span><span class="k">end</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">cg</span><span class="p">.</span><span class="nf">card</span> <span class="ss">tap: </span><span class="kp">true</span> <span class="k">do</span> <span class="o">|</span><span class="n">c</span><span class="o">|</span>
+<span class="err">    </span><span class="n">c</span><span class="p">.</span><span class="nf">list_group</span> <span class="k">do</span> <span class="o">|</span><span class="n">lg</span><span class="o">|</span>
+<span class="err">      </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Cras justo odio"</span>
+<span class="err">      </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="s2">"Dapibas ac facilisis in"</span><span class="p">,</span> <span class="ss">state: :active</span>
+<span class="err">      </span><span class="n">lg</span><span class="p">.</span><span class="nf">list</span> <span class="ss">tap: </span><span class="kp">true</span> <span class="k">do</span> <span class="o">|</span><span class="n">l</span><span class="o">|</span>
+<span class="err">        </span><span class="n">l</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header list"</span>
+<span class="err">        </span><span class="n">l</span><span class="p">.</span><span class="nf">body</span> <span class="s2">"vestibulum at eros"</span>
+<span class="err">      </span><span class="k">end</span>
+<span class="err">    </span><span class="k">end</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="err">  </span><span class="n">cg</span><span class="p">.</span><span class="nf">card</span> <span class="s2">"Content 4 &lt;br/&gt; Some quick example text to build on the card title and make up the bulk of the card's content."</span>
+<span class="err">  </span><span class="n">cg</span><span class="p">.</span><span class="nf">card</span> <span class="ss">status: :primary</span><span class="p">,</span> <span class="ss">type: :inverse</span><span class="p">,</span> <span class="ss">text_position: :center</span> <span class="k">do</span>
+<span class="err">    </span><span class="s2">"&lt;bodyquote class='card-bodyquote'&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;&lt;footer&gt;Someone famous in &lt;cite title="</span><span class="no">Source</span> <span class="no">Title</span><span class="s2">"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;&lt;/bodyquote&gt;"</span><span class="p">.</span><span class="nf">html_safe</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-24ef84cf-12fc-4182-b201-dc9c37467252"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>header 1<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>content 1<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-footer"</span><span class="nt">&gt;</span>footer 1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/image.svg"</span> <span class="na">alt=</span><span class="s">"Image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Card title<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Last updated 3 mins ago<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group-flush list-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active list-group-item"</span><span class="nt">&gt;</span>Dapibas ac facilisis in<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"list-group-item-heading"</span><span class="nt">&gt;</span>Header list<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"list-group-item-text"</span><span class="nt">&gt;</span>vestibulum at eros<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card card-body"</span><span class="nt">&gt;</span>Content 4 <span class="nt">&lt;br&gt;</span> Some quick example text to build on the card title and make up the bulk of the card's content.
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-primary card text-center card-body card-inverse"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;bodyquote</span> <span class="na">class=</span><span class="s">"card-bodyquote"</span><span class="nt">&gt;&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;&lt;footer&gt;</span>Someone famous in <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>Source Title<span class="nt">&lt;/cite&gt;&lt;/footer&gt;&lt;/bodyquote&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section></div>
+
+</div><div class="secondary-nav col-xl-2 col-lg-2"><div class='sticky'>
+<h3>Contents</h3>
+<ul class="nav"><li class="nav-item"><a href="card-group.html#card-group">Card group</a></li></ul></div>
+</div></div><div class='scroll-to-top'>
+<a class="back-top btn-primary btn btn-lg" role="button" href="card-group.html#top"><i class="glyph fas fa-arrow-circle-up"></i>  </a>
+</div>
+</div><footer>
+<nav class="nav nav-links justify-content-center"><a class="nav-link" href="https://github.com/thooams/Ui-Bibz"><i class="glyph fab fa-github"></i> Github</a><a class="nav-link" href="../../about.html"><i class="glyph fas fa-book"></i> About</a><a class="nav-link" href="https://rubygems.org/gems/ui_bibz"><i class="glyph fas fa-gem"></i> Gem</a></nav><p>Ui Bibz Framework is designed and created by Thomas HUMMEL (<a href="https://github.com/thooams">@thooams</a>)<br />
+This theme is inspired by <a href="http://getbootstrap.com">Bootstrap theme documentation</a><br />
+Currently v2.5.2. Code licensed MIT</p>
+
+</footer>
+
+</body>
+</html>

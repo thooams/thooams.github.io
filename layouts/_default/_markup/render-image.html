@@ -1,0 +1,17 @@
+{{ $src := .Destination }}
+{{ $alt := .PlainText }}
+{{ $title := .Title }}
+{{ $webp := $src | replaceRE "\\.(?:jpe?g|png|gif)$" ".webp" }}
+{{ $isExternal := hasPrefix $src "http" }}
+<picture>
+  {{ if not $isExternal }}
+  <source srcset="{{ $webp }}" type="image/webp" />
+  {{ end }}
+  <img
+    src="{{ $src }}"
+    alt="{{ $alt }}"
+    {{ with $title }}title="{{ . }}"{{ end }}
+    loading="lazy"
+    decoding="async"
+  />
+</picture>

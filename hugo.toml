@@ -23,7 +23,6 @@ disableKinds    = ['taxonomy', 'term']
 
 [params]
   author          = "Thomas HUMMEL"
-  twitterHandle   = "@thooams"
   googleAnalytics = "G-EH3TXG9BJH"
   ogImage         = "images/profil.webp"
   locale          = "en_US"
@@ -51,19 +50,3 @@ disableKinds    = ['taxonomy', 'term']
     name   = 'Home'
     url    = '/'
     weight = 1
-  [[languages.en.menus.main]]
-    name   = 'Fathome'
-    url    = '/projects/fathome/'
-    weight = 10
-  [[languages.en.menus.main]]
-    name   = 'Ui Bibz'
-    url    = '/projects/ui-bibz/'
-    weight = 20
-  [[languages.en.menus.main]]
-    name   = 'Harbour Crane'
-    url    = '/projects/harbour-crane/'
-    weight = 30
-  [[languages.en.menus.main]]
-    name   = 'EIME'
-    url    = '/projects/eime/'
-    weight = 40

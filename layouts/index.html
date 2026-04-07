@@ -104,8 +104,8 @@
         {{ with $p.Params.doc_url }}
         <a href="{{ . }}" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">{{ $p.Params.doc_label }}</a>
         {{ end }}
-        <a href="{{ $p.Permalink }}" class="btn btn-outline btn-sm" aria-label="{{ i18n "learn_more" }} about {{ $p.Title }}">
-          {{ i18n "learn_more" }}
+        <a href="{{ $p.Permalink }}" class="btn btn-outline btn-sm">
+          {{ i18n "learn_more" }}<span class="sr-only"> - {{ $p.Title }}</span>
         </a>
       </div>
     </div>
@@ -155,9 +155,7 @@
     <p class="mb-8 leading-relaxed">
       <span class="opacity-70">Always looking for new opportunities, you can follow my work on </span>
       <a href="https://github.com/thooams" target="_blank" rel="noopener noreferrer" class="text-primary underline decoration-1 underline-offset-2 hover:opacity-80">Github</a><span class="opacity-70">,</span>
-      <a href="https://fr.linkedin.com/in/thomas-hummel-68274117" target="_blank" rel="noopener noreferrer" class="text-primary underline decoration-1 underline-offset-2 hover:opacity-80">LinkedIn</a><span class="opacity-70">,</span>
-      <span class="opacity-70"> or </span>
-      <a href="https://twitter.com/thooams" target="_blank" rel="noopener noreferrer" class="text-primary underline decoration-1 underline-offset-2 hover:opacity-80">Twitter</a><span class="opacity-70">.</span>
+      <a href="https://fr.linkedin.com/in/thomas-hummel-68274117" target="_blank" rel="noopener noreferrer" class="text-primary underline decoration-1 underline-offset-2 hover:opacity-80">LinkedIn</a><span class="opacity-70">.</span>
     </p>
     <a href="/cv/thomas-hummel-cv.pdf" target="_blank" class="btn btn-primary btn-lg">
       <i class="fa-solid fa-download mr-2" aria-hidden="true"></i>

@@ -3,7 +3,7 @@ title: "Chronicle (GMP Software)"
 subtitle: "GMP Manufacturing Automation Software"
 description: "Chronicle is a GMP-compliant digital platform by Cytiva designed to automate and monitor complex cell therapy manufacturing operations, from process development to commercial production."
 image: "/images/pic07.jpg"
-weight: 2
+weight: 4
 doc_label: "Chronicle"
 doc_url: "https://www.cytivalifesciences.com/en/us/products/items/chronicle-gmp-manufacturing-automation-software-p-09959"
 cta:

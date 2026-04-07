@@ -111,8 +111,8 @@ html {
 
 .project-content ul {
   list-style: disc;
-  padding-left: 1.5rem;
   margin-bottom: 1rem;
+  list-style-position: inside;
 }
 
 .project-content ul li {

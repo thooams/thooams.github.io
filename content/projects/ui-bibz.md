@@ -3,7 +3,7 @@ title: "Ui Bibz V3 (Framework)"
 subtitle: "Bootstrap Framework with Ruby on Rails"
 description: "Ui bibz is an interface framework for building an interface very quickly and simply using Ruby on Rails 6 and Bootstrap 5."
 image: "/images/pic01.jpg"
-weight: 2
+weight: 6
 doc_label: "Ui Bibz"
 doc_url: "/ui-bibz/index.html"
 cta:

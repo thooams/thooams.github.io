@@ -3,7 +3,7 @@ title: "Harbour Crane (Docker)"
 subtitle: "Manage Apps with Docker"
 description: "Harbour Crane is a web application running on Docker to manage all apps through Docker."
 image: "/images/pic02.jpg"
-weight: 3
+weight: 7
 doc_label: "Harbour Crane"
 doc_url: "https://github.com/thooams/harbour-crane"
 cta:

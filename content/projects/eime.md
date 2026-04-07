@@ -3,7 +3,7 @@ title: "EIME (Web App)"
 subtitle: "Perform Life Cycle Assessments App"
 description: "Eime is a referential that lets you easily perform Life Cycle Assessments (LCA) and eco-design projects in compliance with international programmes."
 image: "/images/pic06.jpg"
-weight: 4
+weight: 8
 doc_label: "EIME"
 doc_url: "http://beta.codde.fr/nos-logiciels/eime/presentation-eime/"
 cta:

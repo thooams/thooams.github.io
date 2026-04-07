@@ -10,16 +10,16 @@
 <section class="py-16 bg-base-100">
   <div class="container mx-auto px-6 max-w-4xl">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {{ range (sort .Pages "Weight") }}
-      <a href="{{ .Permalink }}" class="card bg-base-200 border border-base-300 hover:border-primary transition-colors group">
-        {{ with .Params.image }}
+      {{ range $i, $p := (sort .Pages "Weight") }}
+      <a href="{{ $p.Permalink }}" class="card bg-base-200 border border-base-300 hover:border-primary transition-colors group">
+        {{ with $p.Params.image }}
         <figure class="overflow-hidden h-48">
-          <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          <img src="{{ . }}" alt="{{ $p.Title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" {{ if eq $i 0 }}fetchpriority="high" loading="eager"{{ else }}loading="lazy"{{ end }} />
         </figure>
         {{ end }}
         <div class="card-body">
-          <h2 class="card-title text-base-content">{{ .Title }}</h2>
-          <p class="text-base-content/60 text-sm">{{ .Params.description }}</p>
+          <h2 class="card-title text-base-content">{{ $p.Title }}</h2>
+          <p class="text-base-content/60 text-sm">{{ $p.Params.description }}</p>
           <div class="card-actions justify-end mt-2">
             <span class="btn btn-primary btn-sm">{{ i18n "learn_more" }}</span>
           </div>

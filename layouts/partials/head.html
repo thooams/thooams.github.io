@@ -35,13 +35,6 @@
 <meta property="profile:username"   content="thooams" />
 {{ end }}
 
-{{/* Twitter Card */}}
-<meta name="twitter:card"        content="summary_large_image" />
-<meta name="twitter:site"        content="{{ site.Params.twitterHandle }}" />
-<meta name="twitter:creator"     content="{{ site.Params.twitterHandle }}" />
-<meta name="twitter:title"       content="{{ $ogTitle }}" />
-<meta name="twitter:description" content="{{ $desc }}" />
-<meta name="twitter:image"       content="{{ $ogImage }}" />
 
 {{/* JSON-LD Structured Data - built via dict to avoid minifier double-encoding */}}
 {{ if .IsHome }}
@@ -53,7 +46,7 @@
   "image" (printf "%simages/profil.webp" site.BaseURL)
   "jobTitle" "Lead Tech Full Stack Ruby Developer"
   "description" $desc
-  "sameAs" (slice "https://github.com/thooams" "https://fr.linkedin.com/in/thomas-hummel-68274117" "https://twitter.com/thooams" "https://rubygems.org/profiles/Thooams")
+  "sameAs" (slice "https://github.com/thooams" "https://fr.linkedin.com/in/thomas-hummel-68274117" "https://rubygems.org/profiles/Thooams")
   "address" (dict "@type" "PostalAddress" "addressLocality" "Grenoble" "addressCountry" "FR")
   "knowsAbout" (slice "Ruby" "Ruby on Rails" "JavaScript" "Docker" "Full Stack Development" "DevOps")
 }}
@@ -92,7 +85,7 @@
 
 {{/* Font Awesome - async (non-render-blocking) */}}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" as="style" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'" />
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" as="style" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet';var s=document.createElement('style');s.textContent='@font-face{font-family:\'Font Awesome 6 Free\';font-style:normal;font-weight:400;font-display:swap;src:url(\'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/webfonts/fa-regular-400.woff2\')format(\'woff2\')}@font-face{font-family:\'Font Awesome 6 Free\';font-style:normal;font-weight:900;font-display:swap;src:url(\'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/webfonts/fa-solid-900.woff2\')format(\'woff2\')}@font-face{font-family:\'Font Awesome 6 Brands\';font-style:normal;font-weight:400;font-display:swap;src:url(\'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/webfonts/fa-brands-400.woff2\')format(\'woff2\')}';document.head.appendChild(s)" />
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" crossorigin="anonymous" /></noscript>
 
 {{/* Google Analytics */}}

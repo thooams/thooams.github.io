@@ -18,7 +18,7 @@ cta:
 {{< section-content >}}
 ### Environmental Improvement Made Easy
 
-<img src="/images/portfolio/eime/eime-logo.gif" alt="EIME logo" class="img-left" />
+<img src="/images/portfolio/eime/eime-logo.gif" alt="EIME logo" class="img-left" width="180" height="180" />
 
 **EIME** is a referential that allows easily perform Life Cycle Assessments (LCA) and eco-design projects in accordance with international programmes and standards.
 
@@ -40,7 +40,7 @@ Eime has data versioning in the core application. Mixed with many formulas and a
 {{< section-content >}}
 ### Notification Center
 
-<img src="/images/portfolio/eime/notification-center-computer.png" alt="Notification center" class="img-right" />
+<img src="/images/portfolio/eime/notification-center-computer.png" alt="Notification center" class="img-right" width="683" height="413" />
 
 For long operations:
 
@@ -54,7 +54,7 @@ Eime will launch in the background intensive actions in time and process so the 
 
 Of course, a percentage display of each action is available in real time in the notification center. In addition, a web notification system (Chrome / Firefox) allows to be informed of the purpose of the process.
 
-<img src="/images/portfolio/eime/notification-chrome.png" alt="Notification center Chrome" class="img-left" />
+<img src="/images/portfolio/eime/notification-chrome.png" alt="Notification center Chrome" class="img-left" width="360" height="93" />
 
 The technology of the notification center is based on a background job system ([Delayed Job](https://github.com/collectiveidea/delayed_job)) and a pubsub system ([Faye](http://faye.jcoglan.com/)).
 
@@ -62,7 +62,7 @@ The notification center provides a historic of copy / cut / paste to choose one 
 
 ### Multi copy/cut/paste
 
-<img src="/images/portfolio/eime/copy-paste-computer.png" alt="Copy cut paste" class="img-left" />
+<img src="/images/portfolio/eime/copy-paste-computer.png" alt="Copy cut paste" class="img-left" width="880" height="459" />
 
 The system of multi copy / cut / paste is used in several interfaces within the application. Eime is a software including the logic of "container / item", so it is natural that a simple and effective method is implemented to move many projects, folders, boxes study, containers, modules flow.
 {{< /section-content >}}
@@ -78,7 +78,7 @@ ExtJS (javascript) allows to render the application more dynamic with notificati
 {{< section-content >}}
 ### Analysis/graphs/calculation Interface
 
-<img src="/images/portfolio/eime/analysis-values-computer.png" alt="Analysis values" class="img-right" />
+<img src="/images/portfolio/eime/analysis-values-computer.png" alt="Analysis values" class="img-right" width="571" height="536" />
 
 The **Analysis** part includes two distinct parts:
 
@@ -87,7 +87,7 @@ The **Analysis** part includes two distinct parts:
 
 Some calculations are optimized through database queries to a performance gain. A tab management was created in order to compare the results of calculations.
 
-<img src="/images/portfolio/eime/analysis-graphs-computer.png" alt="Analysis graphs" class="img-left" />
+<img src="/images/portfolio/eime/analysis-graphs-computer.png" alt="Analysis graphs" class="img-left" width="683" height="413" />
 
 **Graphics** exploit previous values to offer the most appropriate chart (pie, bar, column...). It is possible to refine the results of graphics in real time and also to set these through the 3d or changing scales.
 
@@ -95,7 +95,7 @@ Some calculations are optimized through database queries to a performance gain. 
 
 ### Design Interface
 
-<img src="/images/portfolio/eime/design-computer.png" alt="Design" class="img-right" />
+<img src="/images/portfolio/eime/design-computer.png" alt="Design" class="img-right" width="880" height="459" />
 
 The design part includes several distinct elements:
 
@@ -113,13 +113,13 @@ The copy / cut / paste is also present. A window opens indicating in real time (
 
 ### Main Search (spotlight)
 
-<img src="/images/portfolio/eime/main-search-computer.png" alt="Main search" class="img-left" />
+<img src="/images/portfolio/eime/main-search-computer.png" alt="Main search" class="img-left" width="571" height="536" />
 
 The Main research is a kind of spotlight (like Apple spotlight) and allows to find any information in the application through a search window.
 
 ### Project Interface
 
-<img src="/images/portfolio/eime/project-computer.png" alt="Project" class="img-right" />
+<img src="/images/portfolio/eime/project-computer.png" alt="Project" class="img-right" width="880" height="459" />
 
 The Project part provides a project tree on the left, an overview at the center and a retail panel on the right. The copy / cut / paste is also active as well as the right click allowing more actions.
 {{< /section-content >}}

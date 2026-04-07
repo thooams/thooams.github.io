@@ -7,22 +7,23 @@
 
   <!-- Desktop menu -->
   <div class="flex-none gap-1 hidden md:flex">
-    {{ range site.Menus.main }}
-    {{ if ne .Name "Home" }}
-    <a href="{{ .URL }}" class="btn btn-ghost btn-sm">{{ .Name }}</a>
-    {{ end }}
+    {{ range (site.GetPage "projects").Pages.ByWeight }}
+    <a href="{{ .Permalink }}" class="btn btn-ghost btn-sm">{{ .Params.doc_label }}</a>
     {{ end }}
   </div>
 
   <!-- Mobile hamburger -->
   <div class="flex-none md:hidden">
     <div class="dropdown dropdown-end">
-      <div tabindex="0" role="button" class="btn btn-ghost btn-sm">
-        <i class="fa-solid fa-bars text-lg"></i>
+      <div tabindex="0" role="button" class="btn btn-ghost btn-sm" aria-label="Open navigation menu">
+        <i class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
       </div>
       <ul tabindex="0" class="dropdown-content menu bg-base-200 rounded-box z-[1] w-52 p-2 shadow border border-base-300">
         {{ range site.Menus.main }}
         <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+        {{ range (site.GetPage "projects").Pages.ByWeight }}
+        <li><a href="{{ .Permalink }}">{{ .Params.doc_label }}</a></li>
         {{ end }}
       </ul>
     </div>

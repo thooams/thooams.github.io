@@ -21,7 +21,7 @@ cta:
 {{< section-content >}}
 ### The only tool built for V-Model and Agile
 
-<img src="/images/portfolio/sinra/sinra-overview.webp" alt="Sinra overview" class="img-right" />
+<img src="/images/portfolio/sinra/sinra-overview.webp" alt="Sinra overview" class="img-right" width="2880" height="1800" />
 
 **Sinra** is a project management platform designed for teams that run both V-Model (specification) and Agile (development) workflows in parallel.
 
@@ -45,7 +45,7 @@ Sinra automatically computes weighted average workload across teams, flagging ov
 {{< section-content >}}
 ### Workload per team and per cycle
 
-<img src="/images/portfolio/sinra/methodology-hybrid.webp" alt="Sinra workload and hybrid methodology" class="img-left" />
+<img src="/images/portfolio/sinra/methodology-hybrid.webp" alt="Sinra workload and hybrid methodology" class="img-left" width="2456" height="1368" />
 
 The cycle header aggregates workload data across all teams in real time. Each team card shows:
 
@@ -69,7 +69,7 @@ Switch between a full Kanban board and a detailed list view without losing any d
 {{< section-content >}}
 ### Kanban board
 
-<img src="/images/portfolio/sinra/kanban-list-view.webp" alt="Sinra Kanban board" class="img-right" />
+<img src="/images/portfolio/sinra/kanban-list-view.webp" alt="Sinra Kanban board" class="img-right" width="2460" height="1774" />
 
 The Kanban board displays issues across customizable columns: Todo, In Progress, Blocked, In Review, and Done. Each card surfaces:
 
@@ -82,7 +82,7 @@ Issues are written as user stories ("As a user, I can...") to keep specification
 
 ### Issue list with advanced filtering
 
-<img src="/images/portfolio/sinra/collaboration.webp" alt="Sinra issue list" class="img-left" />
+<img src="/images/portfolio/sinra/collaboration.webp" alt="Sinra issue list" class="img-left" width="2470" height="1738" />
 
 The issue list provides a dense, sortable view across all projects and cycles. Each row shows platform, priority, assignees, estimated time, and a real-time timer.
 
@@ -102,7 +102,7 @@ Statuses, roles, labels, and platforms can be configured per project to match an
 {{< section-content >}}
 ### Dual status system
 
-<img src="/images/portfolio/sinra/customization.webp" alt="Sinra status customization" class="img-right" />
+<img src="/images/portfolio/sinra/customization.webp" alt="Sinra status customization" class="img-right" width="1196" height="908" />
 
 One of Sinra's core design decisions is maintaining two independent status tracks per issue:
 
@@ -113,7 +113,7 @@ Each status has a name, type, completion percentage, and position. This separati
 
 ### Reduce meetings with workload assignment
 
-<img src="/images/portfolio/sinra/reduce-meetings.webp" alt="Sinra workload assignment" class="img-left" />
+<img src="/images/portfolio/sinra/reduce-meetings.webp" alt="Sinra workload assignment" class="img-left" width="2190" height="1788" />
 
 The workload panel lets release managers assign issues to specific teams and developers directly from the cycle view. Each issue row shows estimated time, platform, and priority alongside team and developer selectors.
 

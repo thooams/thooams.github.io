@@ -18,7 +18,7 @@ cta:
 {{< section-content >}}
 ### Manage easily Apps with Docker
 
-<img src="/images/portfolio/harbour-crane/logo.png" alt="Harbour Crane logo" class="img-left" style="width: 200px;" />
+<img src="/images/portfolio/harbour-crane/logo.png" alt="Harbour Crane logo" class="img-left" style="width: 200px;" width="362" height="596" />
 
 As a web developer, I do not want to manage the applications on my server. I do not always control the techie, always problems with libraries sharing...
 
@@ -36,7 +36,7 @@ Build, Ship, and Run Any App, Anywhere
 {{< section-content >}}
 ### The big blue whale
 
-<img src="/images/portfolio/harbour-crane/docker.jpg" alt="Docker" class="img-right" style="width: 200px;" />
+<img src="/images/portfolio/harbour-crane/docker.jpg" alt="Docker" class="img-right" style="width: 200px;" width="400" height="400" />
 
 We will not hide the fact, Docker revolutionized the world of containers. And to help it, Harbour Crane offers an application-oriented vision and fewer management of images or volumes.
 

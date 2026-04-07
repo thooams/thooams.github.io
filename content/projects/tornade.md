@@ -21,7 +21,7 @@ cta:
 {{< section-content >}}
 ### A native music player built for lossless audio
 
-<img src="/images/portfolio/tornade/albums.webp" alt="Tornade albums view" class="img-right" />
+<img src="/images/portfolio/tornade/albums.webp" alt="Tornade albums view" class="img-right" width="1536" height="971" />
 
 **Tornade** is a native macOS music player built with [Rust](https://www.rust-lang.org/) and [SwiftUI](https://developer.apple.com/xcode/swiftui/), designed for audiophiles who want full control over their music library without bloat.
 
@@ -45,7 +45,7 @@ The track list shows the exact audio format for every file, so you always know w
 {{< section-content >}}
 ### Tracks view
 
-<img src="/images/portfolio/tornade/tracks.webp" alt="Tornade tracks view" class="img-left" />
+<img src="/images/portfolio/tornade/tracks.webp" alt="Tornade tracks view" class="img-left" width="1536" height="971" />
 
 The tracks view lists the entire library in a dense table with columns for title, artist, album, duration, and format. Each row displays the codec badge (FLAC, ALAC, AAC...) so the audio quality is always visible at a glance.
 
@@ -65,7 +65,7 @@ Each album and artist page is built from metadata extracted directly from the au
 {{< section-content >}}
 ### Album detail
 
-<img src="/images/portfolio/tornade/album-show.webp" alt="Tornade album detail" class="img-right" />
+<img src="/images/portfolio/tornade/album-show.webp" alt="Tornade album detail" class="img-right" width="1536" height="971" />
 
 The album page surfaces the full track list alongside an info panel showing year, genre, label, and format. Below the tracklist, Tornade displays other albums by the same artist and any featuring collaborators - all derived from embedded tags.
 
@@ -73,7 +73,7 @@ Clicking a track adds it to the queue without interrupting playback. The queue p
 
 ### Artist page
 
-<img src="/images/portfolio/tornade/artists.webp" alt="Tornade artist page" class="img-left" />
+<img src="/images/portfolio/tornade/artists.webp" alt="Tornade artist page" class="img-left" width="1536" height="971" />
 
 Each artist page aggregates all albums and tracks attributed to that artist across the library. A short biography sourced from the embedded metadata is displayed alongside the discography.
 
@@ -91,7 +91,7 @@ Tornade groups tracks by genre automatically, generating a mosaic of album cover
 {{< section-content >}}
 ### Genres view
 
-<img src="/images/portfolio/tornade/genres.webp" alt="Tornade genres view" class="img-right" />
+<img src="/images/portfolio/tornade/genres.webp" alt="Tornade genres view" class="img-right" width="1536" height="971" />
 
 The genres view displays each genre as a card with a representative album cover and a track count. With 67+ genres detected automatically from file tags, it transforms a flat folder structure into a browsable music collection.
 
@@ -99,7 +99,7 @@ Clicking a genre filters the library instantly, showing all matching tracks and 
 
 ### Global search
 
-<img src="/images/portfolio/tornade/global-search.webp" alt="Tornade global search" class="img-left" />
+<img src="/images/portfolio/tornade/global-search.webp" alt="Tornade global search" class="img-left" width="1536" height="971" />
 
 The global search bar queries the entire library simultaneously across artists, albums, and tracks. Results appear grouped by type in real time as you type, powered by SQLite FTS5.
 

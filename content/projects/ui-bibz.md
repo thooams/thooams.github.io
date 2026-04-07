@@ -21,7 +21,7 @@ cta:
 {{< section-content >}}
 ### One component to rule them all
 
-<img src="/images/portfolio/ui-bibz/ui-bibz-logo-without-border.gif" alt="Ui Bibz logo" class="img-left" style="border: 20px solid white;" />
+<img src="/images/portfolio/ui-bibz/ui-bibz-logo-without-border.gif" alt="Ui Bibz logo" class="img-left" style="border: 20px solid white;" width="137" height="107" />
 
 Library **Ui Bibz** is based on one component. All components inherit from `component` element. No need to write **HTML**, **CSS** or **Javascript**. Components are based on [Bootstrap](http://getbootstrap.com/) and all new versions are managed by Ui Bibz. The framework is written with [Ruby](https://www.ruby-lang.org/) for [Ruby on Rails](http://rubyonrails.org/).
 
@@ -46,7 +46,7 @@ def component content = nil, options = nil, html_options = nil, &block
 end
 ```
 
-<img src="/images/portfolio/ui-bibz/components-computer.png" alt="Components" class="img-left" />
+<img src="/images/portfolio/ui-bibz/components-computer.png" alt="Components" class="img-left" width="880" height="459" />
 
 The content can be inserted inline on the **content** variable or by **block**. **Options** and **html_options** are hashes present to configure the component or its html.
 
@@ -62,7 +62,7 @@ All input components are compatible with [simple_form](https://github.com/plataf
 
 ### Tested, Gemified, Installed
 
-<img src="/images/portfolio/ui-bibz/rubygems.jpg" alt="Rubygems" class="img-left" />
+<img src="/images/portfolio/ui-bibz/rubygems.jpg" alt="Rubygems" class="img-left" width="290" height="190" />
 
 All components are tested with unit tests (Minitest). Library follows the latest version of Ruby on Rails, Bootstrap or FontAwesome and is updated monthly.
 
@@ -80,7 +80,7 @@ Ux interface with complex components created by developers for developers.
 {{< section-content >}}
 ### An extensible library
 
-<img src="/images/portfolio/ui-bibz/table-card-computer.png" alt="Table card" class="img-left" />
+<img src="/images/portfolio/ui-bibz/table-card-computer.png" alt="Table card" class="img-left" width="571" height="536" />
 
 Ui Bibz library is extensible with complex components. Usually, there are mixed components like `card_table` (table in card) with a search engine, pagination and sortable columns.
 

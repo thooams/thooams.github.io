@@ -40,7 +40,7 @@ Chronicle's home dashboard aggregates real-time data across all connected instru
 {{< section-content >}}
 ### Instruments Overview
 
-<img src="/images/portfolio/chronicle/Screen%20Shot%202020-04-10%20at%2020.20.17.png" alt="Chronicle dashboard" class="img-right" />
+<img src="/images/portfolio/chronicle/Screen%20Shot%202020-04-10%20at%2020.20.17.png" alt="Chronicle dashboard" class="img-right" width="3356" height="1830" />
 
 The main dashboard displays all connected instruments across two categories:
 
@@ -51,7 +51,7 @@ Each instrument card shows its current unit count in real time. The header bar p
 
 ### Equipment List
 
-<img src="/images/portfolio/chronicle/Screen%20Shot%202020-04-10%20at%2020.21.40.png" alt="Chronicle equipment list" class="img-left" />
+<img src="/images/portfolio/chronicle/Screen%20Shot%202020-04-10%20at%2020.21.40.png" alt="Chronicle equipment list" class="img-left" width="3360" height="1834" />
 
 The equipment list provides a sortable, searchable table of every registered instrument across all demo pools and organisations. Each row surfaces:
 
@@ -75,7 +75,7 @@ Each instrument record captures cumulative runtime, data points, service history
 {{< section-content >}}
 ### Instrument Detail View
 
-<img src="/images/portfolio/chronicle/Screen%20Shot%202020-04-10%20at%2020.21.58.png" alt="Chronicle equipment detail" class="img-right" />
+<img src="/images/portfolio/chronicle/Screen%20Shot%202020-04-10%20at%2020.21.58.png" alt="Chronicle equipment detail" class="img-right" width="3360" height="1832" />
 
 The equipment detail page aggregates all data related to a single instrument:
 
@@ -101,7 +101,7 @@ The work queue surfaces all in-progress and pending eSOPs alongside a live activ
 {{< section-content >}}
 ### Real-time Operations View
 
-<img src="/images/portfolio/chronicle/Screen%20Shot%202020-04-10%20at%2020.22.22.png" alt="Chronicle work queue and activity stream" class="img-left" />
+<img src="/images/portfolio/chronicle/Screen%20Shot%202020-04-10%20at%2020.22.22.png" alt="Chronicle work queue and activity stream" class="img-left" width="3360" height="1838" />
 
 The home screen for GMP operators combines three panels:
 
@@ -123,7 +123,7 @@ The facility dashboard overlays real-time instrument data onto a floor plan, mak
 {{< section-content >}}
 ### Floor Plan Monitoring
 
-<img src="/images/portfolio/chronicle/Screen%20Shot%202020-04-10%20at%2020.23.01.png" alt="Chronicle facility dashboard" class="img-right" />
+<img src="/images/portfolio/chronicle/Screen%20Shot%202020-04-10%20at%2020.23.01.png" alt="Chronicle facility dashboard" class="img-right" width="3360" height="1836" />
 
 The facility dashboard renders a floor plan of the manufacturing space with each connected instrument pinned to its physical location. Instruments in a warning state are highlighted in orange with a warning banner at the top of the screen.
 
@@ -133,7 +133,7 @@ This view integrates with the alarm and deviation management system, so clicking
 
 ### Electronic Standard Operating Procedures (eSOPs)
 
-<img src="/images/portfolio/chronicle/Screen%20Shot%202020-04-10%20at%2020.23.43.png" alt="Chronicle eSOPs" class="img-left" />
+<img src="/images/portfolio/chronicle/Screen%20Shot%202020-04-10%20at%2020.23.43.png" alt="Chronicle eSOPs" class="img-left" width="3360" height="1832" />
 
 Chronicle replaces paper SOPs with guided, digital step-by-step procedures. Each eSOPs task:
 

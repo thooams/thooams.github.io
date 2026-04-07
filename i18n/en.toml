@@ -36,7 +36,7 @@ other = "The combination of my skills develops and promotes design allows me to 
 other = "Experience"
 
 [skill_experience_desc]
-other = "I'm full stack developer involved in online communication, web design (ecommerce, showcase tools...), software, referencing, auditing, graphic identity, monitoring and maintenance."
+other = "I am a Senior Ruby full stack developer specializing in multi-tenant SaaS development, covering backend and frontend development through to infrastructure management on AWS and OVH."
 
 [skill_environments]
 other = "Environments"
@@ -48,7 +48,7 @@ other = "I work on Linux and Mac with Git and Github. I use Vim, Tmux and Homebr
 other = "Languages"
 
 [skill_languages_desc]
-other = "Ruby, Ruby on Rails, Javascript, ES6, Extjs, Jquery, Coffeescript, Stimulus.js, Docker, Docker-Compose, HTML, CSS, Haml, Sass."
+other = "Ruby, Ruby on Rails, Javascript, ES6, Extjs, Jquery, Hotwire Turbo, Stimulus.js, Docker, Docker-Compose, HTML, CSS, Haml, Sass."
 
 [skill_servers]
 other = "Servers (DevOps)"

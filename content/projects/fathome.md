@@ -3,7 +3,7 @@ title: "Fathome - Real estate ads by route"
 subtitle: "Real Estate Ads by route"
 description: "The real estate ads site that allows you to scrap pro and home sites linked with google maps to search an ad by route, distance or duration."
 image: "/images/pic04.jpg"
-weight: 2
+weight: 5
 cta:
   heading: "To Resume"
   text: "Fathome is a clever mix between a Ruby on Rails multi site scrapper and an ergonomic javascript interface allowing the setting of favorite ads, as well as a history. Its strength is of course its powerful search that allows searching by area for all ads."

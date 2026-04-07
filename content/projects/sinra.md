@@ -3,7 +3,7 @@ title: "Sinra (SaaS)"
 subtitle: "Project Management for V-Model and Agile Teams"
 description: "Sinra is a project management platform built for teams combining V-Model and Agile methodologies, offering unified capacity planning, real-time QA tracking, and release-driven workflows in one platform."
 image: "/images/pic08.jpg"
-weight: 1
+weight: 2
 doc_label: "Sinra"
 doc_url: "https://sinra.dev/"
 cta:

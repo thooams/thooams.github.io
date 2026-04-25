@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+Disallow: /ui-bibz/components/
+Disallow: /ui-bibz/docs/
+Disallow: /categories/
+Disallow: /tags/
+
 Sitemap: https://hummel.link/sitemap.xml

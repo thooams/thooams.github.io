@@ -16,3 +16,5 @@ _asset_bundler_cache
 *.sublime-project
 *.sublime-workspace
 codekit-config.json
+
+man/

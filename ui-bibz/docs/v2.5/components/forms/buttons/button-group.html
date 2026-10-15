@@ -1,0 +1,341 @@
+<html>
+<head>
+<title>Ui Bibz - Button group</title>
+<meta CONTENT='Create your project with Ui Bibz. Over a thirty reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.' name='Description'>
+<meta CONTENT='Thomas HUMMEL &lt;thomas@hummel.link&gt;' name='Author'>
+<meta CONTENT='bootstrap rails, bootstrap ruby, ui bibz, bibz bootstrap, bootstrap interface, bootstrap ui, bootstrap interface' name='Keywords'>
+<link href='../../../favicon.ico' rel='shortcut icon' type='image/x-icon'>
+<link rel="stylesheet" media="all" href="../../../assets/application-7f22455fbf319ef8556253c7fff0e81b7f8ec945208a8dced04e33039e934afe.css" data-turbolinks-track="true" />
+<script src="../../../assets/application-c30df31716e2bcb02e44e6d175931f10845e363b82be7dccbc37625a430024ab.js" data-turbolinks-track="true"></script>
+<style>
+  ".highlight table td { padding: 5px; }
+  .highlight table pre { margin: 0; }
+  .highlight .cm {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cp {
+    color: #999999;
+    font-weight: bold;
+  }
+  .highlight .c1 {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2;
+  }
+  .highlight .gd {
+    color: #000000;
+    background-color: #ffdddd;
+  }
+  .highlight .ge {
+    color: #000000;
+    font-style: italic;
+  }
+  .highlight .gr {
+    color: #aa0000;
+  }
+  .highlight .gh {
+    color: #999999;
+  }
+  .highlight .gi {
+    color: #000000;
+    background-color: #ddffdd;
+  }
+  .highlight .go {
+    color: #888888;
+  }
+  .highlight .gp {
+    color: #555555;
+  }
+  .highlight .gs {
+    font-weight: bold;
+  }
+  .highlight .gu {
+    color: #aaaaaa;
+  }
+  .highlight .gt {
+    color: #aa0000;
+  }
+  .highlight .kc {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kd {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kn {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kp {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kr {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kt {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .k, .highlight .kv {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .mf {
+    color: #009999;
+  }
+  .highlight .mh {
+    color: #009999;
+  }
+  .highlight .il {
+    color: #009999;
+  }
+  .highlight .mi {
+    color: #009999;
+  }
+  .highlight .mo {
+    color: #009999;
+  }
+  .highlight .m, .highlight .mb, .highlight .mx {
+    color: #009999;
+  }
+  .highlight .sb {
+    color: #d14;
+  }
+  .highlight .sc {
+    color: #d14;
+  }
+  .highlight .sd {
+    color: #d14;
+  }
+  .highlight .s2 {
+    color: #d14;
+  }
+  .highlight .se {
+    color: #d14;
+  }
+  .highlight .sh {
+    color: #d14;
+  }
+  .highlight .si {
+    color: #d14;
+  }
+  .highlight .sx {
+    color: #d14;
+  }
+  .highlight .sr {
+    color: #009926;
+  }
+  .highlight .s1 {
+    color: #d14;
+  }
+  .highlight .ss {
+    color: #990073;
+  }
+  .highlight .s, .highlight .sa, .highlight .dl {
+    color: #d14;
+  }
+  .highlight .na {
+    color: #008080;
+  }
+  .highlight .bp {
+    color: #999999;
+  }
+  .highlight .nb {
+    color: #0086B3;
+  }
+  .highlight .nc {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .no {
+    color: #008080;
+  }
+  .highlight .nd {
+    color: #3c5d5d;
+    font-weight: bold;
+  }
+  .highlight .ni {
+    color: #800080;
+  }
+  .highlight .ne {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nf, .highlight .fm {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nl {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nn {
+    color: #555555;
+  }
+  .highlight .nt {
+    color: #000080;
+  }
+  .highlight .vc {
+    color: #008080;
+  }
+  .highlight .vg {
+    color: #008080;
+  }
+  .highlight .vi {
+    color: #008080;
+  }
+  .highlight .nv, .highlight .vm {
+    color: #008080;
+  }
+  .highlight .ow {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .o {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .w {
+    color: #bbbbbb;
+  }
+  .highlight {
+    background-color: #f8f8f8;
+  }"
+</style>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Az59APKORYESqLjvzyGuI+TyA6qjFHsp95Rl359OZIZ/n/GFfri/SHpavdn33W4lFf0IC1P9MAb9Xe6nrUlPsQ==" />
+
+</head>
+<body>
+<header>
+<nav class="bg-dark navbar navbar-dark fixed-top navbar-expand-lg"><span class="navbar-brand"><img class="rounded" src="../../../assets/ui-bibz-logo-30-9c9f99605f83320cec3b86413ef285f50dfe8941e4b52be6e6baa89bddb2cab9.gif" /></span><button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-id-45930">☰</button><div class="navbar-collapse" id="navbar-id-45930"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="../../../getting_started.html">Get started</a></li><li class="nav-item"><a class="nav-link" href="../../boxes/card.html">Components</a></li><li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="button-group.html#">Component</a><div class="dropdown-menu" arial-labelledby="dropdown-62915"><a class="dropdown-item" href="../../../component.html">Base</a><a class="dropdown-item" href="../../../custom_component.html">Custom</a></div></li><li class="nav-item"><a class="nav-link" href="../../../simple_form.html">Simple form</a></li><li class="nav-item"><a class="nav-link" href="../../../theme.html">Theme</a></li><li class="nav-item"><a class="nav-link" href="../../../about.html">About</a></li></ul></div></nav></header>
+
+<div class="container-fluid"><div class="row-fluid row"><a name='top'></a>
+<div class="left-nav col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12"><div class='sidebar'>
+<ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Boxes</span></li><li class="nav-item"><a class="nav-link" href="../../boxes/card.html">Card</a></li><li class="nav-item"><a class="nav-link" href="../../boxes/card-accordion.html">Card accordion</a></li><li class="nav-item"><a class="nav-link" href="../../boxes/card-column.html">Card column</a></li><li class="nav-item"><a class="nav-link" href="../../boxes/card-deck.html">Card deck</a></li><li class="nav-item"><a class="nav-link" href="../../boxes/card-group.html">Card group</a></li><li class="nav-item"><a class="nav-link" href="../../boxes/jumbotron.html">Jumbotron</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Containers</span></li><li class="nav-item"><a class="nav-link" href="../../containers/panel.html">Panel</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Icons</span></li><li class="nav-item"><a class="nav-link" href="../../icons/glyph.html">Glyph</a></li><li class="nav-item"><a class="nav-link" href="../../icons/glyph_group.html">Glyph group</a></li><li class="nav-item"><a class="nav-link" href="../../icons/star.html">Star</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Layouts</span></li><li class="nav-item"><a class="nav-link" href="../../layouts/col.html">Col</a></li><li class="nav-item"><a class="nav-link" href="../../layouts/container.html">Container</a></li><li class="nav-item"><a class="nav-link" href="../../layouts/row.html">Row</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Lists</span></li><li class="nav-item"><a class="nav-link" href="../../lists/list.html">List</a></li><li class="nav-item"><a class="nav-link" href="../../lists/list_group.html">List group</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Navigations</span></li><li class="nav-item"><a class="nav-link" href="../../navigations/breadcrumb.html">Breadcrumb</a></li><li class="nav-item"><a class="nav-link" href="../../navigations/link.html">Link</a></li><li class="nav-item"><a class="nav-link" href="../../navigations/nav.html">Nav</a></li><li class="nav-item"><a class="nav-link" href="../../navigations/navbar.html">Navbar</a></li><li class="nav-item"><a class="nav-link" href="../../navigations/pagination.html">Pagination</a></li><li class="nav-item"><a class="nav-link" href="../../navigations/tab_group.html">Tab group</a></li><li class="nav-item"><a class="nav-link" href="../../navigations/toolbar.html">Toolbar</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Notifications</span></li><li class="nav-item"><a class="nav-link" href="../../notifications/alert.html">Alert</a></li><li class="nav-item"><a class="nav-link" href="../../notifications/badge.html">Badge</a></li><li class="nav-item"><a class="nav-link" href="../../../component.html#popover">Popover</a></li><li class="nav-item"><a class="nav-link" href="../../notifications/progress_bar.html">Progress bar</a></li><li class="nav-item"><a class="nav-link" href="../../notifications/spinner.html">Spinner</a></li><li class="nav-item"><a class="nav-link" href="../../../component.html#tooltip">Tooltip</a></li><li class="nav-item"><a class="nav-link" href="../../notifications/toast.html">Toast</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Tables</span></li><li class="nav-item"><a class="nav-link" href="../../tables/table.html">Table</a></li><li class="nav-item"><a class="nav-link" href="../../tables/table_card.html">Table card</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Forms</span></li><ul class="nav"><li class="nav-item nav-text"><span class="nav-link">Buttons</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="button.html">Button</a></li><li class="nav-item"><a class="active nav-link" href="button-group.html">Button group</a></li><li class="nav-item"><a class="nav-link" href="button-link.html">Button link</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Choices</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../choices/box-switch-field.html">Box Switch field</a></li><li class="nav-item"><a class="nav-link" href="../choices/checkbox-field.html">Checkbox field</a></li><li class="nav-item"><a class="nav-link" href="../choices/choice-group.html">Choice group</a></li><li class="nav-item"><a class="nav-link" href="../choices/radio-field.html">Radio field</a></li><li class="nav-item"><a class="nav-link" href="../choices/switch-field.html">Switch field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dates</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../dates/date-picker-field.html">Date picker field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dropdowns</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../dropdowns/dropdown.html">Dropdown</a></li><li class="nav-item"><a class="nav-link" href="../dropdowns/split_dropdown.html">Split Dropdown</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Files</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../files/file-field.html">File</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Numbers</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../numbers/formula-field.html">Formula field</a></li><li class="nav-item"><a class="nav-link" href="../numbers/number-field.html">Number field</a></li><li class="nav-item"><a class="nav-link" href="../numbers/range-field.html">Range field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Selects</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../selects/dropdown-select-field.html">Dropdown select field</a></li><li class="nav-item"><a class="nav-link" href="../selects/select-field.html">Select field</a></li><li class="nav-item"><a class="nav-link" href="../selects/multi-column-field.html">Multi column field</a></li><li class="nav-item"><a class="nav-link" href="../selects/multi-select-field.html">Multi select field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Surrounds</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../surrounds/surround-field.html">Surround field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Textareas</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../textareas/markdown-editor-field.html">Markdown editor field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Texts</span></li><ul class="nav"><li class="nav-item"><a class="nav-link" href="../texts/auto-complete-field.html">Auto complete field</a></li><li class="nav-item"><a class="nav-link" href="../texts/text-field.html">Text field</a></li></ul></ul></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Windows</span></li><li class="nav-item"><a class="nav-link" href="../../windows/modal.html">Modal</a></li></ul>
+</div>
+
+</div><div class="content col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12"><h2><i class="glyph fas fa-gem"></i> Button group<span>(ui_button_group)</span><a target="_blank" title="See original component documentation" href="https://getbootstrap.com/docs/4.4/components/button-group/"><img class="icon-indicator" src="../../../assets/bootstrap-icon-b47630f0b2ed43dc2da6885c9d60d4f274df7bad1ceffa74948e7a7cc0c94ab4.png" /></a></h2>
+<blockquote>UiBibz::Ui::Core::Forms::Buttons::ButtonGroup</blockquote>
+<p class='bd-callout'>Group a series of buttons together on a single line with the button group.</p>
+<div class="usage"><h2><i class="glyph fas fa-book"></i> Usage</h2><div>This component is an extension of <a href="../../../component.html">component</a> element. A Ui Bibz component consists of 3 arguments:<ul class="list-options"><li><span class="option-name">content</span><span class="option-types">[value/block]</span></li><li><span class="option-name">options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li><li><span class="option-name">html_options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li></ul></div><div class="highlight code card"><div class="card-body"><div class="highlight"><pre class="codehilite"><code>
+<span class="n">ui_button_group</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span> <span class="o">|</span><span class="n">bg</span><span class="o">|</span>
+  <span class="c1"># by variable</span>
+  <span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span>
+  <span class="c1"># by block</span>
+  <span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span>
+    <span class="n">content</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div></div></div><div class="component-options" id="component-options"><h2><i class="glyph fas fa-sliders-h"></i> Options</h2>The specific options for this component are:<ul class="list-options"><li><span class="option-name">position</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:horizontal, :vertical</code>)</span><span class="option-default">&lt;default: :horizontal&gt;</span></li><li><span class="option-name">size</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:lg, :md, :sm</code>)</span><span class="option-description">(use component <a href="../../../component.html#size">size</a> method)</span></li><li><span class="option-name">state</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:disabled, :active</code>)</span><span class="option-description">(use component <a href="../../../component.html#state">state</a> method)</span></li><li><span class="option-name">status</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:primary, :secondary, :success, :danger, :warning, :info, :light, :dark</code>)</span><span class="option-description">(use component <a href="../../../component.html#status">status</a> method)</span></li><li><span class="option-name">cache</span><span class="option-types">[string]</span><span class="option-description">(use to <a href="../../../component.html#cache">cache</a> your component)</span></li><li><span class="option-name">controller</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">action</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">target</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../../component.html#stimulus-options">stimulus-options</a> method)</span></li></ul></div><div class="component-options" id="component-items"><h2><i class="glyph fas fa-list"></i> Items</h2>The allowed items for this component are:<ul class="list-options"><li><span class="option-name">button</span><span class="option-description">(inherit of <a href="button.html">button</a>)</span></li><li><span class="option-name">button_link</span><span class="option-description">(inherit of <a href="button-link.html">button_link</a>)</span></li><li><span class="option-name">dropdown</span><span class="option-description">(inherit of <a href="../dropdowns/dropdown.html">dropdown</a>)</span></li><li><span class="option-name">input</span><span class="option-description">(inherit of <a href="../../../simple_form.html">input</a>)</span></li></ul></div><div><h2><i class="glyph fas fa-code"></i> Examples</h2>Some examples explain how to use the options present in the component.<section class="section"><a name="button-group"></a><h3>Button group</h3><div class="card-code card"><div class="card-header"><div class="btn-group" role="group"><button class="btn-secondary btn">Left</button><button class="btn-secondary btn">Middle</button><button class="btn-secondary btn">Right</button></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="button-group.html#ruby-b6f82a95-54fb-46ea-a306-74e195601460">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="button-group.html#html-af4b30c5-b263-4123-b5c6-57739c5854ce">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-b6f82a95-54fb-46ea-a306-74e195601460"><pre>
+<span class="n">ui_button_group</span> <span class="k">do</span> <span class="o">|</span><span class="n">bg</span><span class="o">|</span>
+  <span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Left"</span>
+  <span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Middle"</span>
+  <span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Right"</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-af4b30c5-b263-4123-b5c6-57739c5854ce"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="status"></a><h3>Status</h3><div>The <code>status</code> option has following symbols for argument:<ul><li>:primary</li><li>:secondary</li><li>:success</li><li>:danger</li><li>:warning</li><li>:info</li><li>:light</li><li>:dark</li></ul></div>
+<div class="card-code card"><div class="card-header"><div class="btn-group" role="group"><button class="btn-success btn">Left</button><button class="btn-success btn">Middle</button><button class="btn-success btn">Right</button></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="button-group.html#ruby-44b0b5cd-a3e0-4de0-8a46-082a3895a761">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="button-group.html#html-a716c5b8-5fe6-4582-a6c7-87797b4738d0">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-44b0b5cd-a3e0-4de0-8a46-082a3895a761"><pre>
+<span class="n">ui_button_group</span> <span class="ss">status: :success</span> <span class="k">do</span> <span class="o">|</span><span class="n">bg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Left"</span>
+<span class="err">  </span><span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Middle"</span>
+<span class="err">  </span><span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Right"</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-a716c5b8-5fe6-4582-a6c7-87797b4738d0"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-sm"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="size"></a><h3>Size</h3><div>The <code>size</code> option has following symbols for argument:<ul><li>:lg</li><li>:md</li><li>:sm</li></ul></div>
+<div class="card-code card"><div class="card-header"><div class="btn-group btn-group-sm" role="group"><button class="btn-secondary btn btn-sm">Left</button><button class="btn-secondary btn btn-sm">Middle</button><button class="btn-secondary btn btn-sm">Right</button></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="button-group.html#ruby-971e4150-7d93-4e94-9347-28dd8b767d3b">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="button-group.html#html-d1d002d6-1f90-4641-8b98-14d86ed0cafc">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-971e4150-7d93-4e94-9347-28dd8b767d3b"><pre>
+<span class="n">ui_button_group</span> <span class="ss">size: :sm</span> <span class="k">do</span> <span class="o">|</span><span class="n">bg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Left"</span>
+<span class="err">  </span><span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Middle"</span>
+<span class="err">  </span><span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Right"</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-d1d002d6-1f90-4641-8b98-14d86ed0cafc"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-sm"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="position"></a><h3>Position</h3><ul class="list-options"><li><span class="option-name">position</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:horizontal, :vertical</code>)</span><span class="option-default">&lt;default: :horizontal&gt;</span></li></ul><div class="card-code card"><div class="card-header"><div class="btn-group-vertical" role="group"><button class="btn-secondary btn">Left</button><button class="btn-secondary btn">Middle</button><button class="btn-secondary btn">Right</button></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="button-group.html#ruby-5746cc9f-85dd-41d6-8de7-0a172331aa17">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="button-group.html#html-4a9b0bb8-09e6-4b96-bb86-aeee30e1a383">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-5746cc9f-85dd-41d6-8de7-0a172331aa17"><pre>
+<span class="n">ui_button_group</span> <span class="ss">position: :vertical</span> <span class="k">do</span> <span class="o">|</span><span class="n">bg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Left"</span>
+<span class="err">  </span><span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Middle"</span>
+<span class="err">  </span><span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Right"</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-4a9b0bb8-09e6-4b96-bb86-aeee30e1a383"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group-vertical"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Left<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Middle<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>Right<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="nesting"></a><h3>Nesting</h3><div class="card-code card"><div class="card-header"><div class="btn-group" role="group"><button class="btn-dark btn">Dark</button><a class="btn-primary btn" role="button" href="button-group.html#button-link">Link</a><div class="dropdown btn-group"><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown-48824">Dropdown</button><div class="dropdown-menu" arial-labelledby="dropdown-48824"><a class="dropdown-item" href="button-group.html#action">Action</a><a class="dropdown-item" href="button-group.html#another-action">Another action</a><div class="dropdown-divider"></div><h6 class="dropdown-header" role="presentation">Header</h6><a class="dropdown-item" href="button-group.html#separate-link">Separate link</a></div></div></div></div><div class="card-block highlight"><ul class="nav nav-tabs"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" href="button-group.html#ruby-9821f0f9-75db-4cd5-8197-88b7efa7a1a6">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" href="button-group.html#html-640e7435-52e0-4b2b-8e6c-31eb60b4be49">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-9821f0f9-75db-4cd5-8197-88b7efa7a1a6"><pre>
+<span class="n">ui_button_group</span> <span class="ss">status: :primary</span> <span class="k">do</span> <span class="o">|</span><span class="n">bg</span><span class="o">|</span>
+<span class="err">  </span><span class="n">bg</span><span class="p">.</span><span class="nf">button</span> <span class="s2">"Dark"</span><span class="p">,</span> <span class="ss">status: :dark</span>
+<span class="err">  </span><span class="n">bg</span><span class="p">.</span><span class="nf">button_link</span> <span class="s2">"Link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#button-link"</span>
+<span class="err">  </span><span class="n">bg</span><span class="p">.</span><span class="nf">dropdown</span> <span class="s2">"Dropdown"</span> <span class="k">do</span> <span class="o">|</span><span class="n">bd</span><span class="o">|</span>
+<span class="err">    </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#action"</span>
+<span class="err">    </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Another action"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#another-action"</span>
+<span class="err">    </span><span class="n">bd</span><span class="p">.</span><span class="nf">divider</span>
+<span class="err">    </span><span class="n">bd</span><span class="p">.</span><span class="nf">header</span> <span class="s2">"Header"</span>
+<span class="err">    </span><span class="n">bd</span><span class="p">.</span><span class="nf">link</span> <span class="s2">"Separate link"</span><span class="p">,</span> <span class="ss">url: </span><span class="s2">"#separate-link"</span>
+<span class="err">  </span><span class="k">end</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-640e7435-52e0-4b2b-8e6c-31eb60b4be49"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn-dark btn"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#button-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown btn-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>Dropdown
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-left"</span> <span class="na">x-placement=</span><span class="s">"bottom-start"</span> <span class="na">style=</span><span class="s">"position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#action"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#another-action"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"dropdown-header"</span> <span class="na">role=</span><span class="s">"presentation"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/h6&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#separate-link"</span><span class="nt">&gt;</span>Separate link<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section></div>
+
+</div><div class="secondary-nav col-xl-2 col-lg-2"><div class='sticky'>
+<h3>Contents</h3>
+<ul class="nav"><li class="nav-item"><a href="button-group.html#button-group">Button group</a></li><li class="nav-item"><a href="button-group.html#status">Status</a></li><li class="nav-item"><a href="button-group.html#size">Size</a></li><li class="nav-item"><a href="button-group.html#position">Position</a></li><li class="nav-item"><a href="button-group.html#nesting">Nesting</a></li></ul></div>
+</div></div><div class='scroll-to-top'>
+<a class="back-top btn-primary btn btn-lg" role="button" href="button-group.html#top"><i class="glyph fas fa-arrow-circle-up"></i>  </a>
+</div>
+</div><footer>
+<nav class="nav nav-links justify-content-center"><a class="nav-link" href="https://github.com/thooams/Ui-Bibz"><i class="glyph fab fa-github"></i> Github</a><a class="nav-link" href="../../../about.html"><i class="glyph fas fa-book"></i> About</a><a class="nav-link" href="https://rubygems.org/gems/ui_bibz"><i class="glyph fas fa-gem"></i> Gem</a></nav><p>Ui Bibz Framework is designed and created by Thomas HUMMEL (<a href="https://github.com/thooams">@thooams</a>)<br />
+This theme is inspired by <a href="http://getbootstrap.com">Bootstrap theme documentation</a><br />
+Currently v2.5.2. Code licensed MIT</p>
+
+</footer>
+
+</body>
+</html>

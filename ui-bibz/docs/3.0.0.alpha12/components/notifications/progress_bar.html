@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-JHZ4Y79ZS3'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JHZ4Y79ZS3');
+</script>
+<title>Ui Bibz - Progress bar</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="5aZPFck5+YCW955bObTvW7CVGXkG+J+hGnDZZytYjLo18syiOPCTzJ6YLMWPdyODBqRcY7AYjGHs6i5DS/PSSQ==" />
+
+<meta CONTENT='Ui Bibz is an Ui Framework that allows you to build an interface very quickly and simply using Bootstrap 5.0.0.alpha3.' name='Description'>
+<meta CONTENT='Thomas HUMMEL &lt;thomas@hummel.link&gt;' name='Author'>
+<meta content='#343a40' name='theme-color'>
+<meta CONTENT='bootstrap rails, bootstrap ruby, ui bibz, bibz bootstrap, bootstrap interface, bootstrap ui, bootstrap interface, ui framework, ui interface' name='Keywords'>
+<link href='../../packs/media/images/favicon-dddff665ae4b1fc2f21bc368ffe6e1d1.ico' rel='shortcut icon' type='image/x-icon'>
+<link href='../../packs/media/images/ui-bibz-logo-bc44be1f6375d587afc842f26084abee.png' rel='appel-touch-icon'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<style>
+  ".highlight table td { padding: 5px; }
+  .highlight table pre { margin: 0; }
+  .highlight .cm {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cp {
+    color: #999999;
+    font-weight: bold;
+  }
+  .highlight .c1 {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2;
+  }
+  .highlight .gd {
+    color: #000000;
+    background-color: #ffdddd;
+  }
+  .highlight .ge {
+    color: #000000;
+    font-style: italic;
+  }
+  .highlight .gr {
+    color: #aa0000;
+  }
+  .highlight .gh {
+    color: #999999;
+  }
+  .highlight .gi {
+    color: #000000;
+    background-color: #ddffdd;
+  }
+  .highlight .go {
+    color: #888888;
+  }
+  .highlight .gp {
+    color: #555555;
+  }
+  .highlight .gs {
+    font-weight: bold;
+  }
+  .highlight .gu {
+    color: #aaaaaa;
+  }
+  .highlight .gt {
+    color: #aa0000;
+  }
+  .highlight .kc {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kd {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kn {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kp {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kr {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kt {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .k, .highlight .kv {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .mf {
+    color: #009999;
+  }
+  .highlight .mh {
+    color: #009999;
+  }
+  .highlight .il {
+    color: #009999;
+  }
+  .highlight .mi {
+    color: #009999;
+  }
+  .highlight .mo {
+    color: #009999;
+  }
+  .highlight .m, .highlight .mb, .highlight .mx {
+    color: #009999;
+  }
+  .highlight .sb {
+    color: #d14;
+  }
+  .highlight .sc {
+    color: #d14;
+  }
+  .highlight .sd {
+    color: #d14;
+  }
+  .highlight .s2 {
+    color: #d14;
+  }
+  .highlight .se {
+    color: #d14;
+  }
+  .highlight .sh {
+    color: #d14;
+  }
+  .highlight .si {
+    color: #d14;
+  }
+  .highlight .sx {
+    color: #d14;
+  }
+  .highlight .sr {
+    color: #009926;
+  }
+  .highlight .s1 {
+    color: #d14;
+  }
+  .highlight .ss {
+    color: #990073;
+  }
+  .highlight .s, .highlight .sa, .highlight .dl {
+    color: #d14;
+  }
+  .highlight .na {
+    color: #008080;
+  }
+  .highlight .bp {
+    color: #999999;
+  }
+  .highlight .nb {
+    color: #0086B3;
+  }
+  .highlight .nc {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .no {
+    color: #008080;
+  }
+  .highlight .nd {
+    color: #3c5d5d;
+    font-weight: bold;
+  }
+  .highlight .ni {
+    color: #800080;
+  }
+  .highlight .ne {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nf, .highlight .fm {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nl {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nn {
+    color: #555555;
+  }
+  .highlight .nt {
+    color: #000080;
+  }
+  .highlight .vc {
+    color: #008080;
+  }
+  .highlight .vg {
+    color: #008080;
+  }
+  .highlight .vi {
+    color: #008080;
+  }
+  .highlight .nv, .highlight .vm {
+    color: #008080;
+  }
+  .highlight .ow {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .o {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .w {
+    color: #bbbbbb;
+  }
+  .highlight {
+    background-color: #f8f8f8;
+  }"
+</style>
+<link rel="stylesheet" media="all" href="../../packs/css/application-9f67c97f.css" data-turbolinks-track="reload" />
+<script src="../../packs/js/application-34b474191f1504470f8b.js" data-turbolinks-track="reload"></script>
+
+</head>
+<body>
+<header>
+<nav class="bg-dark navbar navbar-dark fixed-top navbar-expand-lg"><div class="container"><a class="navbar-brand" href="../../index.html"><img alt="Ui Bibz logo" src="../../packs/media/images/brand-74a5bcbfd13eabea5f80a6f443816fbe.png" width="37" height="30" /></a><button name="button" type="submit" class="navbar-toggler d-block d-md-none collapsed submenu-toggler"><i class="glyph fas fa-arrow-alt-circle-down"></i>
+</button><button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-id-66413">☰</button><div class="navbar-collapse collapse" id="navbar-id-66413"><ul class="navbar-nav  mr-auto"><li class="nav-item"><a href="../../getting_started.html" class="nav-link">Get started</a></li><li class="nav-item"><a href="../boxes/card.html" class="active nav-link">Components</a></li><li class="dropdown nav-item"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown" aria-expanded="false">Component</a><div class="dropdown-menu" arial-labelledby="dropdown-31077"><a class="dropdown-item" href="../../component.html">Base</a><a class="dropdown-item" href="../../custom_component.html">Custom</a></div></li><li class="nav-item"><a href="../../simple_form.html" class="nav-link">Simple form</a></li><li class="nav-item"><a href="../../theme.html" class="nav-link">Theme</a></li></ul><ul class="navbar-nav"><li class="nav-item"><a href="../../about.html" class="nav-link"><i class="glyph fas fa-info-circle"></i> <span class="visually-hidden">About</span></a></li><li class="nav-item"><a href="https://github.com/thooams/Ui-Bibz" class="nav-link" target="_blank" rel="noopener"><i class="glyph fab fa-github"></i> <span class="visually-hidden">Github</span></a></li><li class="nav-item"><a href="https://rubygems.org/gems/ui_bibz" class="nav-link" target="_blank" rel="noopener"><i class="glyph fas fa-gem"></i> <span class="visually-hidden">Ruby Gem</span></a></li><li class="nav-item"><a href="https://www.npmjs.com/package/ui-bibz-js" class="nav-link" target="_blank" rel="noopener"><i class="glyph fab fa-npm"></i> <span class="visually-hidden">Npm</span></a></li></ul></div></div></nav></header>
+
+<div class="container-fluid"><div class="row-fluid row"><a name='top'></a>
+<div class="left-nav d-none d-md-block col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12"><div class='sidebar'>
+<ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Boxes</span></li><li class="nav-item"><a href="../boxes/card.html" class="nav-link">Card</a></li><li class="nav-item"><a href="../boxes/card-accordion.html" class="nav-link">Card accordion</a></li><li class="nav-item"><a href="../boxes/card-column.html" class="nav-link">Card column</a></li><li class="nav-item"><a href="../boxes/card-grid.html" class="nav-link">Card grid</a></li><li class="nav-item"><a href="../boxes/card-group.html" class="nav-link">Card group</a></li><li class="nav-item"><a href="../boxes/jumbotron.html" class="nav-link">Jumbotron</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Containers</span></li><li class="nav-item"><a href="../containers/panel.html" class="nav-link">Panel</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Icons</span></li><li class="nav-item"><a href="../icons/glyph.html" class="nav-link">Glyph</a></li><li class="nav-item"><a href="../icons/star.html" class="nav-link">Star</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Layouts</span></li><li class="nav-item"><a href="../layouts/col.html" class="nav-link">Col</a></li><li class="nav-item"><a href="../layouts/container.html" class="nav-link">Container</a></li><li class="nav-item"><a href="../layouts/row.html" class="nav-link">Row</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Lists</span></li><li class="nav-item"><a href="../lists/list.html" class="nav-link">List</a></li><li class="nav-item"><a href="../lists/list_group.html" class="nav-link">List group</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Navigations</span></li><li class="nav-item"><a href="../navigations/breadcrumb.html" class="nav-link">Breadcrumb</a></li><li class="nav-item"><a href="../navigations/link.html" class="nav-link">Link</a></li><li class="nav-item"><a href="../navigations/nav.html" class="nav-link">Nav</a></li><li class="nav-item"><a href="../navigations/navbar.html" class="nav-link">Navbar</a></li><li class="nav-item"><a href="../navigations/pagination.html" class="nav-link">Pagination</a></li><li class="nav-item"><a href="../navigations/tab_group.html" class="nav-link">Tab group</a></li><li class="nav-item"><a href="../navigations/toolbar.html" class="nav-link">Toolbar</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Notifications</span></li><li class="nav-item"><a href="alert.html" class="nav-link">Alert</a></li><li class="nav-item"><a href="badge.html" class="nav-link">Badge</a></li><li class="nav-item"><a href="../../component.html#popover" class="nav-link">Popover</a></li><li class="nav-item"><a href="progress_bar.html" class="active nav-link">Progress bar</a></li><li class="nav-item"><a href="spinner.html" class="nav-link">Spinner</a></li><li class="nav-item"><a href="../../component.html#tooltip" class="nav-link">Tooltip</a></li><li class="nav-item"><a href="toast.html" class="nav-link">Toast</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Tables</span></li><li class="nav-item"><a href="../tables/table.html" class="nav-link">Table</a></li><li class="nav-item"><a href="../tables/table_card.html" class="nav-link">Table card</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Forms</span></li><ul class="nav"><li class="nav-item nav-text"><span class="nav-link">Buttons</span></li><ul class="nav"><li class="nav-item"><a href="../forms/buttons/button.html" class="nav-link">Button</a></li><li class="nav-item"><a href="../forms/buttons/button-group.html" class="nav-link">Button group</a></li><li class="nav-item"><a href="../forms/buttons/button-link.html" class="nav-link">Button link</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Choices</span></li><ul class="nav"><li class="nav-item"><a href="../forms/choices/box-switch-field.html" class="nav-link">Box Switch field</a></li><li class="nav-item"><a href="../forms/choices/checkbox-field.html" class="nav-link">Checkbox field</a></li><li class="nav-item"><a href="../forms/choices/choice-group.html" class="nav-link">Choice group</a></li><li class="nav-item"><a href="../forms/choices/radio-field.html" class="nav-link">Radio field</a></li><li class="nav-item"><a href="../forms/choices/switch-field.html" class="nav-link">Switch field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dates</span></li><ul class="nav"><li class="nav-item"><a href="../forms/dates/date-picker-field.html" class="nav-link">Date picker field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dropdowns</span></li><ul class="nav"><li class="nav-item"><a href="../forms/dropdowns/dropdown.html" class="nav-link">Dropdown</a></li><li class="nav-item"><a href="../forms/dropdowns/split_dropdown.html" class="nav-link">Split Dropdown</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Files</span></li><ul class="nav"><li class="nav-item"><a href="../forms/files/file-field.html" class="nav-link">File</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Numbers</span></li><ul class="nav"><li class="nav-item"><a href="../forms/numbers/formula-field.html" class="nav-link">Formula field</a></li><li class="nav-item"><a href="../forms/numbers/number-field.html" class="nav-link">Number field</a></li><li class="nav-item"><a href="../forms/numbers/range-field.html" class="nav-link">Range field</a></li><li class="nav-item"><a href="../forms/numbers/slider-field.html" class="nav-link">Slider field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Selects</span></li><ul class="nav"><li class="nav-item"><a href="../forms/selects/dropdown-select-field.html" class="nav-link">Dropdown select field</a></li><li class="nav-item"><a href="../forms/selects/select-field.html" class="nav-link">Select field</a></li><li class="nav-item"><a href="../forms/selects/multi-column-field.html" class="nav-link">Multi column field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Surrounds</span></li><ul class="nav"><li class="nav-item"><a href="../forms/surrounds/surround-field.html" class="nav-link">Surround field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Textareas</span></li><ul class="nav"><li class="nav-item"><a href="../forms/textareas/markdown-editor-field.html" class="nav-link">Markdown editor field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Texts</span></li><ul class="nav"><li class="nav-item"><a href="../forms/texts/auto-complete-field.html" class="nav-link">Auto complete field</a></li><li class="nav-item"><a href="../forms/texts/text-field.html" class="nav-link">Text field</a></li></ul></ul></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Windows</span></li><li class="nav-item"><a href="../windows/modal.html" class="nav-link">Modal</a></li></ul>
+</div>
+
+</div><div class="content col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12"><main><h2><i class="glyph fas fa-gem"></i> Progress Bar<span>(ui_progress_bar)</span><a target="_blank" rel="noreferrer" title="See original component documentation" href="http://localhost:3000/components/notifications/components/progress/"><img class="icon-indicator" alt="Bootstrap Logo" src="../../packs/media/images/bootstrap-icon-6040c3f32c3b518c69e4385fd6237ab6.png" /></a></h2>
+<blockquote>UiBibz::Ui::Core::Notifications::ProgressBar</blockquote>
+<p class='bd-callout'>Examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.</p>
+<div class="usage"><h2><i class="glyph fas fa-book"></i> Usage</h2><div>This component is an extension of <a href="../../component.html">component</a> element. A Ui Bibz component consists of 3 arguments:<ul class="list-options"><li><span class="option-name">content</span><span class="option-types">[value/block]</span></li><li><span class="option-name">html_options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li><li><span class="option-name">options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li></ul></div><div class="highlight code card"><div class="card-body"><div class="highlight"><pre class="codehilite"><code>
+<span class="c1"># by variable</span>
+<span class="n">ui_progress_bar</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span>
+
+<span class="c1"># or by block</span>
+<span class="n">ui_progress_bar</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span>
+  <span class="n">content</span>
+<span class="k">end</span>
+
+<span class="c1"># or by block with tap</span>
+<span class="n">ui_progress_bar</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span> <span class="o">|</span><span class="n">pb</span><span class="o">|</span>
+  <span class="n">pb</span><span class="p">.</span><span class="nf">bar</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span>
+  <span class="c1"># or</span>
+  <span class="n">pb</span><span class="p">.</span><span class="nf">bar</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span>
+    <span class="n">content</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div></div></div><div class="component-options" id="component-options"><h2><i class="glyph fas fa-sliders-h"></i> Options</h2>The specific options for this component are:<ul class="list-options"><li><span class="option-name">action</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">animated</span><span class="option-types">[boolean]</span></li><li><span class="option-name">cache</span><span class="option-types">[string]</span><span class="option-description">(use to <a href="../../component.html#cache">cache</a> your component)</span></li><li><span class="option-name">controller</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">popover</span><span class="option-types">[string/hash]</span><span class="option-description">(use component <a href="../../component.html#popover">popover</a> method)</span></li><li><span class="option-name">state</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:disabled, :active</code>)</span><span class="option-description">(use component <a href="../../component.html#state">state</a> method)</span></li><li><span class="option-name">status</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:primary, :secondary, :success, :danger, :warning, :info, :light, :dark</code>)</span><span class="option-description">(use component <a href="../../component.html#status">status</a> method)</span></li><li><span class="option-name">statuses</span><span class="option-types">[boolean/array]</span></li><li><span class="option-name">striped</span><span class="option-types">[boolean]</span></li><li><span class="option-name">target</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">tooltip</span><span class="option-types">[string/hash]</span><span class="option-description">(use component <a href="../../component.html#tooltip">tooltip</a> method)</span></li><li><span class="option-name">turbolinks</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../component.html#turbolinks">turbolinks</a> method)</span></li><li><span class="option-name">value</span><span class="option-types">[number]</span></li></ul></div><div class="component-options" id="component-items"><h2><i class="glyph fas fa-list"></i> Items</h2>The allowed items for this component are:<ul class="list-options"><li><span class="option-name">bar</span><span class="option-description">(inherit of <a href="../../component.html">component</a>)</span></li><li><span class="option-name">html</span><span class="option-types">[html/string]</span><span class="option-description">Insert html as a component</span></li></ul></div><div><h2><i class="glyph fas fa-code"></i> Examples</h2>Some examples explain how to use the options present in the component.<section class="section"><a name="progress-bar"></a><h3>Progress Bar</h3><div class="card-code card"><div class="card-header"><div class="progress"><div class="progress-bar" aria-valuenow="0.0" aria-valuemin="0" aria-valuemax="100" style="width: 0.0%" role="progressbar">0.0%</div></div>
+<div class="my-progress progress"><div class="bg-primary progress-bar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%" role="progressbar">25%</div></div>
+<div class="my-progress progress"><div class="bg-primary progress-bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%" role="progressbar">50%</div></div></div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" data-target="#ruby-125e4de9-6782-4f30-9c0a-8cd8ad9f5506">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" data-target="#html-d10907da-d3c7-46e6-bd41-0fe1f5d461f9">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-125e4de9-6782-4f30-9c0a-8cd8ad9f5506"><pre>
+<span class="n">ui_progress_bar</span> <span class="mi">0</span>
+<span class="err"> </span>
+<span class="n">ui_progress_bar</span> <span class="s2">"25%"</span><span class="p">,</span> <span class="p">{</span> <span class="ss">status: :primary</span><span class="p">,</span> <span class="ss">value: </span><span class="mi">25</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-progress"</span> <span class="p">}</span>
+<span class="err"> </span>
+<span class="n">ui_progress_bar</span><span class="p">({</span> <span class="ss">status: :primary</span><span class="p">,</span> <span class="ss">value: </span><span class="mi">50</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">class: </span><span class="s2">"my-progress"</span><span class="p">})</span> <span class="k">do</span>
+<span class="err">  </span><span class="mi">50</span><span class="o">%</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-d10907da-d3c7-46e6-bd41-0fe1f5d461f9"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"0.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 0.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"my-progress progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"25"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 25%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"my-progress progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"50"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 50%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="status"></a><h3>status</h3><div class="card-code card"><div class="card-header"><div class="progress"><div class="bg-primary progress-bar" aria-valuenow="10.0" aria-valuemin="0" aria-valuemax="100" style="width: 10.0%" role="progressbar">10.0%</div></div>
+<div class="progress"><div class="bg-success progress-bar" aria-valuenow="25.0" aria-valuemin="0" aria-valuemax="100" style="width: 25.0%" role="progressbar">25.0%</div></div>
+<div class="progress"><div class="bg-warning progress-bar" aria-valuenow="50.0" aria-valuemin="0" aria-valuemax="100" style="width: 50.0%" role="progressbar">50.0%</div></div>
+<div class="progress"><div class="bg-danger progress-bar" aria-valuenow="75.0" aria-valuemin="0" aria-valuemax="100" style="width: 75.0%" role="progressbar">75.0%</div></div>
+<div class="progress"><div class="bg-info progress-bar" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100" style="width: 100.0%" role="progressbar">100.0%</div></div>
+</div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" data-target="#ruby-284dcb1e-b0b5-448b-abae-7907f2a9f70a">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" data-target="#html-46c1d0e4-adcd-4e43-8a10-f9debb6a0e4a">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-284dcb1e-b0b5-448b-abae-7907f2a9f70a"><pre>
+<span class="n">ui_progress_bar</span> <span class="mi">10</span><span class="p">,</span> <span class="ss">status: :primary</span>
+<span class="n">ui_progress_bar</span> <span class="mi">25</span><span class="p">,</span> <span class="ss">status: :success</span>
+<span class="n">ui_progress_bar</span> <span class="mi">50</span><span class="p">,</span> <span class="ss">status: :warning</span>
+<span class="n">ui_progress_bar</span> <span class="mi">75</span><span class="p">,</span> <span class="ss">status: :danger</span>
+<span class="n">ui_progress_bar</span> <span class="mi">100</span><span class="p">,</span> <span class="ss">status: :info</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-46c1d0e4-adcd-4e43-8a10-f9debb6a0e4a"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"10.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 10.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-success progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"25.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 25.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-warning progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"50.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 50.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-danger progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"75.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 75.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-info progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"100.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 100.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="line"></a><h3>Line</h3><div class="card-code card"><div class="card-header"><div class="progress progress-bar-line"><div class="bg-primary progress-bar" aria-valuenow="10.0" aria-valuemin="0" aria-valuemax="100" style="width: 10.0%" role="progressbar">10.0%</div></div>
+<div class="progress progress-bar-line"><div class="bg-success progress-bar" aria-valuenow="25.0" aria-valuemin="0" aria-valuemax="100" style="width: 25.0%" role="progressbar">25.0%</div></div>
+<div class="progress progress-bar-line"><div class="bg-warning progress-bar" aria-valuenow="50.0" aria-valuemin="0" aria-valuemax="100" style="width: 50.0%" role="progressbar">50.0%</div></div>
+<div class="progress progress-bar-line"><div class="bg-danger progress-bar" aria-valuenow="75.0" aria-valuemin="0" aria-valuemax="100" style="width: 75.0%" role="progressbar">75.0%</div></div>
+<div class="progress progress-bar-line"><div class="bg-info progress-bar" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100" style="width: 100.0%" role="progressbar">100.0%</div></div>
+</div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" data-target="#ruby-1da211b2-1655-43d5-b23d-3aed81a6608f">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" data-target="#html-cc15c6f2-4ae3-4759-a825-a15e2f6cb186">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-1da211b2-1655-43d5-b23d-3aed81a6608f"><pre>
+<span class="n">ui_progress_bar</span> <span class="mi">10</span><span class="p">,</span> <span class="ss">status: :primary</span><span class="p">,</span> <span class="ss">line: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">25</span><span class="p">,</span> <span class="ss">status: :success</span><span class="p">,</span> <span class="ss">line: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">50</span><span class="p">,</span> <span class="ss">status: :warning</span><span class="p">,</span> <span class="ss">line: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">75</span><span class="p">,</span> <span class="ss">status: :danger</span><span class="p">,</span> <span class="ss">line: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">100</span><span class="p">,</span> <span class="ss">status: :info</span><span class="p">,</span> <span class="ss">line: </span><span class="kp">true</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-cc15c6f2-4ae3-4759-a825-a15e2f6cb186"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progress-bar-line"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"10.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 10.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progress-bar-line"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-success progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"25.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 25.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progress-bar-line"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-warning progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"50.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 50.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progress-bar-line"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-danger progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"75.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 75.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress progress-bar-line"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-info progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"100.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 100.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="striped"></a><h3>Striped</h3><div class="card-code card"><div class="card-header"><div class="progress"><div class="bg-primary progress-bar progress-bar-striped" aria-valuenow="10.0" aria-valuemin="0" aria-valuemax="100" style="width: 10.0%" role="progressbar">10.0%</div></div>
+<div class="progress"><div class="bg-success progress-bar progress-bar-striped" aria-valuenow="25.0" aria-valuemin="0" aria-valuemax="100" style="width: 25.0%" role="progressbar">25.0%</div></div>
+<div class="progress"><div class="bg-warning progress-bar progress-bar-striped" aria-valuenow="50.0" aria-valuemin="0" aria-valuemax="100" style="width: 50.0%" role="progressbar">50.0%</div></div>
+<div class="progress"><div class="bg-danger progress-bar progress-bar-striped" aria-valuenow="75.0" aria-valuemin="0" aria-valuemax="100" style="width: 75.0%" role="progressbar">75.0%</div></div>
+<div class="progress"><div class="bg-info progress-bar progress-bar-striped" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100" style="width: 100.0%" role="progressbar">100.0%</div></div>
+</div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" data-target="#ruby-9aaee64f-179a-49aa-8302-8b65d081d257">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" data-target="#html-4831524c-5c53-482f-92a4-1ae091775853">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-9aaee64f-179a-49aa-8302-8b65d081d257"><pre>
+<span class="n">ui_progress_bar</span> <span class="mi">10</span><span class="p">,</span> <span class="ss">status: :primary</span><span class="p">,</span> <span class="ss">striped: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">25</span><span class="p">,</span> <span class="ss">status: :success</span><span class="p">,</span> <span class="ss">striped: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">50</span><span class="p">,</span> <span class="ss">status: :warning</span><span class="p">,</span> <span class="ss">striped: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">75</span><span class="p">,</span> <span class="ss">status: :danger</span><span class="p">,</span> <span class="ss">striped: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">100</span><span class="p">,</span> <span class="ss">status: :info</span><span class="p">,</span> <span class="ss">striped: </span><span class="kp">true</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-4831524c-5c53-482f-92a4-1ae091775853"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary progress-bar progress-bar-striped"</span> <span class="na">aria-valuenow=</span><span class="s">"10.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 10.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-success progress-bar progress-bar-striped"</span> <span class="na">aria-valuenow=</span><span class="s">"25.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 25.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-warning progress-bar progress-bar-striped"</span> <span class="na">aria-valuenow=</span><span class="s">"50.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 50.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-danger progress-bar progress-bar-striped"</span> <span class="na">aria-valuenow=</span><span class="s">"75.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 75.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-info progress-bar progress-bar-striped"</span> <span class="na">aria-valuenow=</span><span class="s">"100.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 100.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="animated"></a><h3>Animated</h3><div class="card-code card"><div class="card-header"><div class="progress"><div class="bg-primary progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="10.0" aria-valuemin="0" aria-valuemax="100" style="width: 10.0%" role="progressbar">10.0%</div></div>
+<div class="progress"><div class="bg-success progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="25.0" aria-valuemin="0" aria-valuemax="100" style="width: 25.0%" role="progressbar">25.0%</div></div>
+<div class="progress"><div class="bg-warning progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="50.0" aria-valuemin="0" aria-valuemax="100" style="width: 50.0%" role="progressbar">50.0%</div></div>
+<div class="progress"><div class="bg-danger progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="75.0" aria-valuemin="0" aria-valuemax="100" style="width: 75.0%" role="progressbar">75.0%</div></div>
+<div class="progress"><div class="bg-info progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100" style="width: 100.0%" role="progressbar">100.0%</div></div>
+</div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" data-target="#ruby-5541bfa1-40dd-43de-ad72-02407a59b402">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" data-target="#html-8b4584d6-2626-4512-b8c5-363e6e3609f8">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-5541bfa1-40dd-43de-ad72-02407a59b402"><pre>
+<span class="n">ui_progress_bar</span> <span class="mi">10</span><span class="p">,</span> <span class="ss">status: :primary</span><span class="p">,</span> <span class="ss">striped: </span><span class="kp">true</span><span class="p">,</span> <span class="ss">animated: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">25</span><span class="p">,</span> <span class="ss">status: :success</span><span class="p">,</span> <span class="ss">striped: </span><span class="kp">true</span><span class="p">,</span> <span class="ss">animated: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">50</span><span class="p">,</span> <span class="ss">status: :warning</span><span class="p">,</span> <span class="ss">striped: </span><span class="kp">true</span><span class="p">,</span> <span class="ss">animated: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">75</span><span class="p">,</span> <span class="ss">status: :danger</span><span class="p">,</span> <span class="ss">striped: </span><span class="kp">true</span><span class="p">,</span> <span class="ss">animated: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">100</span><span class="p">,</span> <span class="ss">status: :info</span><span class="p">,</span> <span class="ss">striped: </span><span class="kp">true</span><span class="p">,</span> <span class="ss">animated: </span><span class="kp">true</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-8b4584d6-2626-4512-b8c5-363e6e3609f8"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary progress-bar progress-bar-striped progress-bar-animated"</span> <span class="na">aria-valuenow=</span><span class="s">"10.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 10.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-success progress-bar progress-bar-striped progress-bar-animated"</span> <span class="na">aria-valuenow=</span><span class="s">"25.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 25.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-warning progress-bar progress-bar-striped progress-bar-animated"</span> <span class="na">aria-valuenow=</span><span class="s">"50.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 50.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-danger progress-bar progress-bar-striped progress-bar-animated"</span> <span class="na">aria-valuenow=</span><span class="s">"75.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 75.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-info progress-bar progress-bar-striped progress-bar-animated"</span> <span class="na">aria-valuenow=</span><span class="s">"100.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 100.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="stacked"></a><h3>Stacked</h3><div class="card-code card"><div class="card-header"><div class="progress"><div class="bg-success progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="7.4" aria-valuemin="0" aria-valuemax="100" style="width: 7.4%" role="progressbar">7.4%</div><div class="bg-primary progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="15.3" aria-valuemin="0" aria-valuemax="100" style="width: 15.3%" role="progressbar">15.3%</div><div class="bg-info progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="21.1" aria-valuemin="0" aria-valuemax="100" style="width: 21.1%" role="progressbar">21.1%</div><div class="bg-warning progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="25.9" aria-valuemin="0" aria-valuemax="100" style="width: 25.9%" role="progressbar">25.9%</div><div class="bg-danger progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="30.3" aria-valuemin="0" aria-valuemax="100" style="width: 30.3%" role="progressbar">30.3%</div></div>
+<div class="progress"><div class="bg-danger progress-bar" aria-valuenow="7.4" aria-valuemin="0" aria-valuemax="100" style="width: 7.4%" role="progressbar">7.4%</div><div class="bg-warning progress-bar" aria-valuenow="15.3" aria-valuemin="0" aria-valuemax="100" style="width: 15.3%" role="progressbar">15.3%</div><div class="bg-info progress-bar" aria-valuenow="21.1" aria-valuemin="0" aria-valuemax="100" style="width: 21.1%" role="progressbar">21.1%</div><div class="bg-primary progress-bar" aria-valuenow="25.9" aria-valuemin="0" aria-valuemax="100" style="width: 25.9%" role="progressbar">25.9%</div><div class="bg-success progress-bar" aria-valuenow="30.3" aria-valuemin="0" aria-valuemax="100" style="width: 30.3%" role="progressbar">30.3%</div></div>
+<div class="progress"><div class="bg-success progress-bar" aria-valuenow="7.4" aria-valuemin="0" aria-valuemax="100" style="width: 7.4%" role="progressbar">7.4%</div><div class="bg-primary progress-bar" aria-valuenow="15.3" aria-valuemin="0" aria-valuemax="100" style="width: 15.3%" role="progressbar">15.3%</div><div class="bg-info progress-bar" aria-valuenow="21.1" aria-valuemin="0" aria-valuemax="100" style="width: 21.1%" role="progressbar">21.1%</div><div class="bg-warning progress-bar" aria-valuenow="12.173" aria-valuemin="0" aria-valuemax="100" style="width: 12.173%" role="progressbar">12.173%</div></div>
+</div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" data-target="#ruby-5e6fcdf5-977e-472d-addd-2d2bfa6aeac8">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" data-target="#html-8736d4ef-fe1f-4e65-958e-bb2a3e9c518a">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-5e6fcdf5-977e-472d-addd-2d2bfa6aeac8"><pre>
+<span class="n">ui_progress_bar</span> <span class="mi">100</span><span class="p">,</span> <span class="ss">stacked: </span><span class="kp">true</span><span class="p">,</span> <span class="ss">striped: </span><span class="kp">true</span><span class="p">,</span> <span class="ss">animated: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">100</span><span class="p">,</span> <span class="ss">stacked: </span><span class="kp">true</span><span class="p">,</span> <span class="ss">inverse: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">47</span><span class="p">,</span> <span class="ss">stacked: </span><span class="kp">true</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-8736d4ef-fe1f-4e65-958e-bb2a3e9c518a"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-success progress-bar progress-bar-striped progress-bar-animated"</span> <span class="na">aria-valuenow=</span><span class="s">"7.4"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 7.4%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary progress-bar progress-bar-striped progress-bar-animated"</span> <span class="na">aria-valuenow=</span><span class="s">"15.3"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 15.3%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-info progress-bar progress-bar-striped progress-bar-animated"</span> <span class="na">aria-valuenow=</span><span class="s">"21.1"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 21.1%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-warning progress-bar progress-bar-striped progress-bar-animated"</span> <span class="na">aria-valuenow=</span><span class="s">"25.9"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 25.9%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-danger progress-bar progress-bar-striped progress-bar-animated"</span> <span class="na">aria-valuenow=</span><span class="s">"30.3"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 30.3%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-danger progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"7.4"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 7.4%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-warning progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"15.3"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 15.3%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-info progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"21.1"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 21.1%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"25.9"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 25.9%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-success progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"30.3"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 30.3%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-success progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"7.4"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 7.4%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"15.3"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 15.3%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-info progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"21.1"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 21.1%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-warning progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"12.173"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 12.173%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="progress-bar-with-statuses"></a><h3>Progress bar with statuses</h3><p>
+Status changes according to the percentage of progression.
+<br>
+[:success, :primary, :info, :warning, :danger]
+<br>
+You can pass our status array in <code>statuses</code> option.
+Percentage will be divided by the number of elements in statuses array.
+</p>
+<div class="card-code card"><div class="card-header"><div class="progress"><div class="bg-success progress-bar" aria-valuenow="10.0" aria-valuemin="0" aria-valuemax="100" style="width: 10.0%" role="progressbar">10.0%</div></div>
+<div class="progress"><div class="bg-primary progress-bar" aria-valuenow="34.0" aria-valuemin="0" aria-valuemax="100" style="width: 34.0%" role="progressbar">34.0%</div></div>
+<div class="progress"><div class="bg-info progress-bar progress-bar-striped" aria-valuenow="45.0" aria-valuemin="0" aria-valuemax="100" style="width: 45.0%" role="progressbar">45.0%</div></div>
+<div class="progress"><div class="bg-warning progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="62.0" aria-valuemin="0" aria-valuemax="100" style="width: 62.0%" role="progressbar">62.0%</div></div>
+<div class="progress"><div class="bg-danger progress-bar" aria-valuenow="83.0" aria-valuemin="0" aria-valuemax="100" style="width: 83.0%" role="progressbar">83.0%</div></div>
+<div class="progress"><div class="bg-primary progress-bar" aria-valuenow="49.0" aria-valuemin="0" aria-valuemax="100" style="width: 49.0%" role="progressbar">49.0%</div></div>
+</div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" data-target="#ruby-89a77a42-9736-49c3-994c-d13d734b6acf">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" data-target="#html-877838e9-8057-43fc-95e3-5603875eb123">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-89a77a42-9736-49c3-994c-d13d734b6acf"><pre>
+<span class="n">ui_progress_bar</span> <span class="mi">10</span><span class="p">,</span> <span class="ss">statuses: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">34</span><span class="p">,</span> <span class="ss">statuses: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">45</span><span class="p">,</span> <span class="ss">statuses: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">62</span><span class="p">,</span> <span class="ss">statuses: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">83</span><span class="p">,</span> <span class="ss">statuses: </span><span class="kp">true</span>
+<span class="n">ui_progress_bar</span> <span class="mi">49</span><span class="p">,</span> <span class="ss">statuses: </span><span class="p">[</span><span class="ss">:primary</span><span class="p">,</span> <span class="ss">:danger</span><span class="p">]</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-877838e9-8057-43fc-95e3-5603875eb123"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"bg-success progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"10.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 10.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;</span>10.0%<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"34.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 34.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;</span>34.0%<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"bg-info progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"45.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 45.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;</span>45.0%<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"bg-warning progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"62.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 62.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;</span>62.0%<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"bg-danger progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"83.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 83.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;</span>83.0%<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"49.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 49.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;</span>49.0%<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="custom"></a><h3>Custom</h3><div class="card-code card"><div class="card-header"><div class="progress"><div class="bg-warning progress-bar progress-bar-striped" aria-valuenow="25.0" aria-valuemin="0" aria-valuemax="100" style="width: 25.0%" role="progressbar">25.0%</div><div class="bg-danger progress-bar" aria-valuenow="65.0" aria-valuemin="0" aria-valuemax="100" style="width: 65.0%" role="progressbar">65.0%</div></div></div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" data-target="#ruby-6b6ce110-0116-44ed-b9d0-d201026509b9">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" data-target="#html-54d7694a-9c83-4dfa-9f76-d782fe04a965">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-6b6ce110-0116-44ed-b9d0-d201026509b9"><pre>
+<span class="n">ui_progress_bar</span> <span class="k">do</span> <span class="o">|</span><span class="n">pb</span><span class="o">|</span>
+  <span class="n">pb</span><span class="p">.</span><span class="nf">bar</span> <span class="mi">25</span><span class="p">,</span> <span class="ss">status: :warning</span><span class="p">,</span> <span class="ss">striped: </span><span class="kp">true</span>
+  <span class="n">pb</span><span class="p">.</span><span class="nf">bar</span> <span class="mi">65</span><span class="p">,</span> <span class="ss">status: :danger</span>
+<span class="k">end</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-54d7694a-9c83-4dfa-9f76-d782fe04a965"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-warning progress-bar progress-bar-striped"</span> <span class="na">aria-valuenow=</span><span class="s">"25.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 25.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-danger progress-bar"</span> <span class="na">aria-valuenow=</span><span class="s">"65.0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 65.0%"</span> <span class="na">role=</span><span class="s">"progressbar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section></div>
+</main>
+</div><div class="secondary-nav d-md-none d-lg-block col-xl-2 col-lg-2"><aside class='sticky'>
+<h4>On this page</h4>
+<hr>
+<ul class="nav"><li class="nav-item"><a data-turbolinks="false" href="progress_bar.html#animated">Animated</a></li><li class="nav-item"><a data-turbolinks="false" href="progress_bar.html#custom">Custom</a></li><li class="nav-item"><a data-turbolinks="false" href="progress_bar.html#line">Line</a></li><li class="nav-item"><a data-turbolinks="false" href="progress_bar.html#progress-bar">Progress Bar</a></li><li class="nav-item"><a data-turbolinks="false" href="progress_bar.html#progress-bar-with-statuses">Progress bar with statuses</a></li><li class="nav-item"><a data-turbolinks="false" href="progress_bar.html#stacked">Stacked</a></li><li class="nav-item"><a data-turbolinks="false" href="progress_bar.html#striped">Striped</a></li><li class="nav-item"><a data-turbolinks="false" href="progress_bar.html#status">status</a></li></ul></aside>
+</div></div><div class='scroll-to-top'>
+<a class="back-top btn-primary btn btn-lg" role="button" href="progress_bar.html#top"><i class="glyph fas fa-arrow-circle-up"></i> </a>
+</div>
+</div><footer class='mt-auto'>
+<nav class="nav nav-links justify-content-center"><a href="https://github.com/thooams/Ui-Bibz" class="nav-link"><i class="glyph fab fa-github-alt"></i> Github</a><a href="../../about.html" class="nav-link"><i class="glyph fas fa-book"></i> About</a><a href="https://rubygems.org/gems/ui_bibz" class="nav-link"><i class="glyph fas fa-gem"></i> Gem</a></nav><p>Ui Bibz Framework is designed and created by Thomas HUMMEL (<a href="https://github.com/thooams">@thooams</a>)<br />
+This theme is inspired by <a href="http://getbootstrap.com">Bootstrap theme documentation</a><br />
+Currently v3.0.0.alpha12. Code licensed MIT</p>
+
+</footer>
+
+</body>
+</html>

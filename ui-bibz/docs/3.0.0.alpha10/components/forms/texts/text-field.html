@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-JHZ4Y79ZS3'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JHZ4Y79ZS3');
+</script>
+<title>Ui Bibz - Text field</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="YblkDITK5PhAZ7mv286JVZHehjeX0e73hqI8YoBkMBlFsgQxaYB0xBm5bYRjriJYJlMhMYy9jz67k0r0JIK/aw==" />
+
+<meta CONTENT='Ui Bibz is an Ui Framework that allows you to build an interface very quickly and simply using Bootstrap 5.0.0.alpha3.' name='Description'>
+<meta CONTENT='Thomas HUMMEL &lt;thomas@hummel.link&gt;' name='Author'>
+<meta content='#343a40' name='theme-color'>
+<meta CONTENT='bootstrap rails, bootstrap ruby, ui bibz, bibz bootstrap, bootstrap interface, bootstrap ui, bootstrap interface, ui framework, ui interface' name='Keywords'>
+<link href='../../../packs/media/images/favicon-dddff665ae4b1fc2f21bc368ffe6e1d1.ico' rel='shortcut icon' type='image/x-icon'>
+<link href='../../../packs/media/images/ui-bibz-logo-bc44be1f6375d587afc842f26084abee.png' rel='appel-touch-icon'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<style>
+  ".highlight table td { padding: 5px; }
+  .highlight table pre { margin: 0; }
+  .highlight .cm {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cp {
+    color: #999999;
+    font-weight: bold;
+  }
+  .highlight .c1 {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+    color: #999988;
+    font-style: italic;
+  }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2;
+  }
+  .highlight .gd {
+    color: #000000;
+    background-color: #ffdddd;
+  }
+  .highlight .ge {
+    color: #000000;
+    font-style: italic;
+  }
+  .highlight .gr {
+    color: #aa0000;
+  }
+  .highlight .gh {
+    color: #999999;
+  }
+  .highlight .gi {
+    color: #000000;
+    background-color: #ddffdd;
+  }
+  .highlight .go {
+    color: #888888;
+  }
+  .highlight .gp {
+    color: #555555;
+  }
+  .highlight .gs {
+    font-weight: bold;
+  }
+  .highlight .gu {
+    color: #aaaaaa;
+  }
+  .highlight .gt {
+    color: #aa0000;
+  }
+  .highlight .kc {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kd {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kn {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kp {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kr {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .kt {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .k, .highlight .kv {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .mf {
+    color: #009999;
+  }
+  .highlight .mh {
+    color: #009999;
+  }
+  .highlight .il {
+    color: #009999;
+  }
+  .highlight .mi {
+    color: #009999;
+  }
+  .highlight .mo {
+    color: #009999;
+  }
+  .highlight .m, .highlight .mb, .highlight .mx {
+    color: #009999;
+  }
+  .highlight .sb {
+    color: #d14;
+  }
+  .highlight .sc {
+    color: #d14;
+  }
+  .highlight .sd {
+    color: #d14;
+  }
+  .highlight .s2 {
+    color: #d14;
+  }
+  .highlight .se {
+    color: #d14;
+  }
+  .highlight .sh {
+    color: #d14;
+  }
+  .highlight .si {
+    color: #d14;
+  }
+  .highlight .sx {
+    color: #d14;
+  }
+  .highlight .sr {
+    color: #009926;
+  }
+  .highlight .s1 {
+    color: #d14;
+  }
+  .highlight .ss {
+    color: #990073;
+  }
+  .highlight .s, .highlight .sa, .highlight .dl {
+    color: #d14;
+  }
+  .highlight .na {
+    color: #008080;
+  }
+  .highlight .bp {
+    color: #999999;
+  }
+  .highlight .nb {
+    color: #0086B3;
+  }
+  .highlight .nc {
+    color: #445588;
+    font-weight: bold;
+  }
+  .highlight .no {
+    color: #008080;
+  }
+  .highlight .nd {
+    color: #3c5d5d;
+    font-weight: bold;
+  }
+  .highlight .ni {
+    color: #800080;
+  }
+  .highlight .ne {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nf, .highlight .fm {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nl {
+    color: #990000;
+    font-weight: bold;
+  }
+  .highlight .nn {
+    color: #555555;
+  }
+  .highlight .nt {
+    color: #000080;
+  }
+  .highlight .vc {
+    color: #008080;
+  }
+  .highlight .vg {
+    color: #008080;
+  }
+  .highlight .vi {
+    color: #008080;
+  }
+  .highlight .nv, .highlight .vm {
+    color: #008080;
+  }
+  .highlight .ow {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .o {
+    color: #000000;
+    font-weight: bold;
+  }
+  .highlight .w {
+    color: #bbbbbb;
+  }
+  .highlight {
+    background-color: #f8f8f8;
+  }"
+</style>
+<link rel="stylesheet" media="all" href="../../../packs/css/application-e7c359b4.css" data-turbolinks-track="reload" />
+<script src="../../../packs/js/application-9c3a9a5271f3f9fc3b44.js" data-turbolinks-track="reload"></script>
+
+</head>
+<body>
+<header>
+<nav class="bg-dark navbar navbar-dark fixed-top navbar-expand-lg"><div class="container"><a class="navbar-brand" href="../../../index.html"><img alt="Ui Bibz logo" src="../../../packs/media/images/brand-74a5bcbfd13eabea5f80a6f443816fbe.png" width="37" height="30" /></a><button name="button" type="submit" class="navbar-toggler d-block d-md-none collapsed submenu-toggler"><i class="glyph fas fa-arrow-alt-circle-down"></i>
+</button><button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-id-11791">☰</button><div class="navbar-collapse collapse" id="navbar-id-11791"><ul class="navbar-nav  mr-auto"><li class="nav-item"><a href="../../../getting_started.html" class="nav-link">Get started</a></li><li class="nav-item"><a href="../../boxes/card.html" class="active nav-link">Components</a></li><li class="dropdown nav-item"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown" aria-expanded="false">Component</a><div class="dropdown-menu" arial-labelledby="dropdown-28716"><a class="dropdown-item" href="../../../component.html">Base</a><a class="dropdown-item" href="../../../custom_component.html">Custom</a></div></li><li class="nav-item"><a href="../../../simple_form.html" class="nav-link">Simple form</a></li><li class="nav-item"><a href="../../../theme.html" class="nav-link">Theme</a></li></ul><ul class="navbar-nav"><li class="nav-item"><a href="../../../about.html" class="nav-link"><i class="glyph fas fa-info-circle"></i> <span class="visually-hidden">About</span></a></li><li class="nav-item"><a href="https://github.com/thooams/Ui-Bibz" class="nav-link" target="_blank" rel="noopener"><i class="glyph fab fa-github"></i> <span class="visually-hidden">Github</span></a></li><li class="nav-item"><a href="https://rubygems.org/gems/ui_bibz" class="nav-link" target="_blank" rel="noopener"><i class="glyph fas fa-gem"></i> <span class="visually-hidden">Ruby Gem</span></a></li><li class="nav-item"><a href="https://www.npmjs.com/package/ui-bibz-js" class="nav-link" target="_blank" rel="noopener"><i class="glyph fab fa-npm"></i> <span class="visually-hidden">Npm</span></a></li></ul></div></div></nav></header>
+
+<div class="container-fluid"><div class="row-fluid row"><a name='top'></a>
+<div class="left-nav d-none d-md-block col-xl-2 col-lg-2 col-md-4 col-sm-12 col-xs-12"><div class='sidebar'>
+<ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Boxes</span></li><li class="nav-item"><a href="../../boxes/card.html" class="nav-link">Card</a></li><li class="nav-item"><a href="../../boxes/card-accordion.html" class="nav-link">Card accordion</a></li><li class="nav-item"><a href="../../boxes/card-column.html" class="nav-link">Card column</a></li><li class="nav-item"><a href="../../boxes/card-grid.html" class="nav-link">Card grid</a></li><li class="nav-item"><a href="../../boxes/card-group.html" class="nav-link">Card group</a></li><li class="nav-item"><a href="../../boxes/jumbotron.html" class="nav-link">Jumbotron</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Containers</span></li><li class="nav-item"><a href="../../containers/panel.html" class="nav-link">Panel</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Icons</span></li><li class="nav-item"><a href="../../icons/glyph.html" class="nav-link">Glyph</a></li><li class="nav-item"><a href="../../icons/star.html" class="nav-link">Star</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Layouts</span></li><li class="nav-item"><a href="../../layouts/col.html" class="nav-link">Col</a></li><li class="nav-item"><a href="../../layouts/container.html" class="nav-link">Container</a></li><li class="nav-item"><a href="../../layouts/row.html" class="nav-link">Row</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Lists</span></li><li class="nav-item"><a href="../../lists/list.html" class="nav-link">List</a></li><li class="nav-item"><a href="../../lists/list_group.html" class="nav-link">List group</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Navigations</span></li><li class="nav-item"><a href="../../navigations/breadcrumb.html" class="nav-link">Breadcrumb</a></li><li class="nav-item"><a href="../../navigations/link.html" class="nav-link">Link</a></li><li class="nav-item"><a href="../../navigations/nav.html" class="nav-link">Nav</a></li><li class="nav-item"><a href="../../navigations/navbar.html" class="nav-link">Navbar</a></li><li class="nav-item"><a href="../../navigations/pagination.html" class="nav-link">Pagination</a></li><li class="nav-item"><a href="../../navigations/tab_group.html" class="nav-link">Tab group</a></li><li class="nav-item"><a href="../../navigations/toolbar.html" class="nav-link">Toolbar</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Notifications</span></li><li class="nav-item"><a href="../../notifications/alert.html" class="nav-link">Alert</a></li><li class="nav-item"><a href="../../notifications/badge.html" class="nav-link">Badge</a></li><li class="nav-item"><a href="../../../component.html#popover" class="nav-link">Popover</a></li><li class="nav-item"><a href="../../notifications/progress_bar.html" class="nav-link">Progress bar</a></li><li class="nav-item"><a href="../../notifications/spinner.html" class="nav-link">Spinner</a></li><li class="nav-item"><a href="../../../component.html#tooltip" class="nav-link">Tooltip</a></li><li class="nav-item"><a href="../../notifications/toast.html" class="nav-link">Toast</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Tables</span></li><li class="nav-item"><a href="../../tables/table.html" class="nav-link">Table</a></li><li class="nav-item"><a href="../../tables/table_card.html" class="nav-link">Table card</a></li></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Forms</span></li><ul class="nav"><li class="nav-item nav-text"><span class="nav-link">Buttons</span></li><ul class="nav"><li class="nav-item"><a href="../buttons/button.html" class="nav-link">Button</a></li><li class="nav-item"><a href="../buttons/button-group.html" class="nav-link">Button group</a></li><li class="nav-item"><a href="../buttons/button-link.html" class="nav-link">Button link</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Choices</span></li><ul class="nav"><li class="nav-item"><a href="../choices/box-switch-field.html" class="nav-link">Box Switch field</a></li><li class="nav-item"><a href="../choices/checkbox-field.html" class="nav-link">Checkbox field</a></li><li class="nav-item"><a href="../choices/choice-group.html" class="nav-link">Choice group</a></li><li class="nav-item"><a href="../choices/radio-field.html" class="nav-link">Radio field</a></li><li class="nav-item"><a href="../choices/switch-field.html" class="nav-link">Switch field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dates</span></li><ul class="nav"><li class="nav-item"><a href="../dates/date-picker-field.html" class="nav-link">Date picker field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Dropdowns</span></li><ul class="nav"><li class="nav-item"><a href="../dropdowns/dropdown.html" class="nav-link">Dropdown</a></li><li class="nav-item"><a href="../dropdowns/split_dropdown.html" class="nav-link">Split Dropdown</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Files</span></li><ul class="nav"><li class="nav-item"><a href="../files/file-field.html" class="nav-link">File</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Numbers</span></li><ul class="nav"><li class="nav-item"><a href="../numbers/formula-field.html" class="nav-link">Formula field</a></li><li class="nav-item"><a href="../numbers/number-field.html" class="nav-link">Number field</a></li><li class="nav-item"><a href="../numbers/range-field.html" class="nav-link">Range field</a></li><li class="nav-item"><a href="../numbers/slider-field.html" class="nav-link">Slider field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Selects</span></li><ul class="nav"><li class="nav-item"><a href="../selects/dropdown-select-field.html" class="nav-link">Dropdown select field</a></li><li class="nav-item"><a href="../selects/select-field.html" class="nav-link">Select field</a></li><li class="nav-item"><a href="../selects/multi-column-field.html" class="nav-link">Multi column field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Surrounds</span></li><ul class="nav"><li class="nav-item"><a href="../surrounds/surround-field.html" class="nav-link">Surround field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Textareas</span></li><ul class="nav"><li class="nav-item"><a href="../textareas/markdown-editor-field.html" class="nav-link">Markdown editor field</a></li></ul><li class="nav-item nav-text"><span class="nav-link">Texts</span></li><ul class="nav"><li class="nav-item"><a href="auto-complete-field.html" class="nav-link">Auto complete field</a></li><li class="nav-item"><a href="text-field.html" class="active nav-link">Text field</a></li></ul></ul></ul><ul class="nav-left nav"><li class="nav-item nav-text"><span class="nav-link">Windows</span></li><li class="nav-item"><a href="../../windows/modal.html" class="nav-link">Modal</a></li></ul>
+</div>
+
+</div><div class="content col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12"><main><h2><i class="glyph fas fa-gem"></i> Text Field<span>(ui_text_field)</span><img class="icon-indicator" alt="Ui Bibz Logo" src="../../../packs/media/images/ui-bibz-icon-6bd3067528e15adccc2040534a6f40c5.png" /></h2>
+<blockquote>UiBibz::Ui::Core::Forms::Texts::TextField</blockquote>
+<div class="usage"><h2><i class="glyph fas fa-book"></i> Usage</h2><div>This component is an extension of <a href="../../../component.html">component</a> element. A Ui Bibz component consists of 3 arguments:<ul class="list-options"><li><span class="option-name">content</span><span class="option-types">[value/block]</span></li><li><span class="option-name">html_options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li><li><span class="option-name">options</span><span class="option-types">[hash]</span><span class="option-default">&lt;default: {}&gt;</span></li></ul></div><div class="highlight code card"><div class="card-body"><div class="highlight"><pre class="codehilite"><code>
+ <span class="c1"># by variable </span>
+ <span class="n">ui_text_field</span> <span class="nb">name</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> 
+
+ <span class="c1"># or by block </span>
+ <span class="n">ui_text_field</span> <span class="n">options</span><span class="p">,</span> <span class="n">html_options</span> <span class="k">do</span> 
+   <span class="nb">name</span> 
+ <span class="k">end</span></code></pre></div></div></div></div>
+<div class="component-options" id="component-options"><h2><i class="glyph fas fa-sliders-h"></i> Options</h2>The specific options for this component are:<ul class="list-options"><li><span class="option-name">action</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">append</span><span class="option-types">[html]</span><span class="option-description">Add a content before the field</span></li><li><span class="option-name">cache</span><span class="option-types">[string]</span><span class="option-description">(use to <a href="../../../component.html#cache">cache</a> your component)</span></li><li><span class="option-name">controller</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">prepend</span><span class="option-types">[html]</span><span class="option-description">Add a content after the field</span></li><li><span class="option-name">size</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:lg, :md, :sm</code>)</span><span class="option-description">(use component <a href="../../../component.html#size">size</a> method)</span></li><li><span class="option-name">state</span><span class="option-types">[symbol]</span><span class="option-values">(<code>:disabled, :active</code>)</span><span class="option-description">(use component <a href="../../../component.html#state">state</a> method)</span></li><li><span class="option-name">target</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../../component.html#stimulus-options">stimulus-options</a> method)</span></li><li><span class="option-name">turbolinks</span><span class="option-types">[string]</span><span class="option-description">(use component <a href="../../../component.html#turbolinks">turbolinks</a> method)</span></li><li><span class="option-name">value</span><span class="option-types">[string]</span><span class="option-description">Input's value</span></li></ul></div><div><h2><i class="glyph fas fa-code"></i> Examples</h2>Some examples explain how to use the options present in the component.<section class="section"><a name="text-field"></a><h3>Text Field</h3><div class="card-code card"><div class="card-header"><input type="text" name="search" id="search" class="form-control" />
+</div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" data-target="#ruby-0c624fd4-b895-4ced-ab4f-12aaffd089b0">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" data-target="#html-c47ede9a-a933-45db-887f-a2e37c9ed874">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-0c624fd4-b895-4ced-ab4f-12aaffd089b0"><pre>
+<span class="n">ui_text_field</span> <span class="s2">"search"</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-c47ede9a-a933-45db-887f-a2e37c9ed874"><pre>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Type your search..."</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="text-field-surrounded"></a><h3>Text Field surrounded</h3><div class="card-code card"><div class="card-header"><div class="input-group ui_surround_field"><span class="input-group-text"><i class="glyph fas fa-pencil-alt"></i></span><input type="text" name="search" id="search" placeholder="Type your search..." class="form-control" /><span class="input-group-text"><i class="glyph fas fa-camera-retro"></i></span></div>
+</div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" data-target="#ruby-e39d0b2d-b2af-4b16-9446-1838f5ea664d">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" data-target="#html-641d273b-1530-4d96-bc1a-cd7b778aafa4">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-e39d0b2d-b2af-4b16-9446-1838f5ea664d"><pre>
+<span class="n">ui_text_field</span> <span class="s2">"search"</span><span class="p">,</span> <span class="p">{</span> <span class="ss">append: </span><span class="n">ui_glyph</span><span class="p">(</span><span class="s2">"pencil-alt"</span><span class="p">),</span> <span class="ss">prepend: </span><span class="n">ui_glyph</span><span class="p">(</span><span class="s2">"camera-retro"</span><span class="p">)</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">placeholder: </span><span class="s2">"Type your search..."</span> <span class="p">}</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-641d273b-1530-4d96-bc1a-cd7b778aafa4"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"glyph fa fa-pencil-alt"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Type your search..."</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"glyph fa fa-camera-retro"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="text-field-options"></a><h3>Text Field Options</h3><div class="card-code card"><div class="card-header"><div class="has-danger input-group ui_surround_field"><span class="input-group-text"><i class="glyph fas fa-pencil-alt"></i></span><input type="text" name="search" id="search" placeholder="Type your search..." class="disabled form-control-danger form-control" disabled="disabled" /><span class="input-group-text"><i class="glyph fas fa-camera-retro"></i></span></div>
+</div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" data-target="#ruby-dc812548-d39c-44d9-860b-9f06bf57feba">Ruby</a></li><li class="nav-item"><a class="nav-link" data-toggle="tab" role="tab" data-target="#html-6e48ed40-13e5-456f-9b5c-a81ae3a4759e">Html</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-dc812548-d39c-44d9-860b-9f06bf57feba"><pre>
+<span class="n">ui_text_field</span> <span class="s2">"search"</span><span class="p">,</span> <span class="p">{</span> <span class="ss">state: :disabled</span><span class="p">,</span> <span class="ss">status: :danger</span><span class="p">,</span> <span class="ss">append: </span><span class="n">ui_glyph</span><span class="p">(</span><span class="s2">"pencil-alt"</span><span class="p">),</span> <span class="ss">prepend: </span><span class="n">ui_glyph</span><span class="p">(</span><span class="s2">"camera-retro"</span><span class="p">)</span> <span class="p">},</span> <span class="p">{</span> <span class="ss">placeholder: </span><span class="s2">"Type your search..."</span> <span class="p">}</span>
+</pre></div><div class="card-body highlight tab-pane" id="html-6e48ed40-13e5-456f-9b5c-a81ae3a4759e"><pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group has-danger"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"glyph fa fa-pencil-alt"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Type your search..."</span> <span class="na">class=</span><span class="s">"disabled has-danger form-control"</span> <span class="na">disabled=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"glyph fa fa-camera-retro"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div></section><section class="section"><a name="simple-form"></a><h3>Simple form</h3><p>Ui Bibz is compatible with <a target="_blank" rel="noopener" href="https://github.com/plataformatec/simple_form">simple form</a>.
+    You can use defaults inputs of <strong>Simple Form</strong> and defaults inputs of <strong>Ui Bibz</strong> like <code>ui_text_field</code>. You can use Simple Form input options and Ui Bibz ui_text_field options.</p>
+<div class="card-code card"><div class="card-header"><form class="simple_form" id="new_user" novalidate="novalidate" action="http://localhost:3000/users" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="OHAoRduT0khWFQFMr3is8dED7xHMEQ7+Mz17dacpiKKlp/JhdAKA00NMK0e4VHmQ03wiB+8V3q4ug0IcEeVIJQ==" /><div class="form-group ui_text_field optional user_email"><label class="control-label ui_text_field optional" for="user_email">Email</label><div class="input-group ui_surround_field"><span class="input-group-text"><i class="glyph fas fa-envelope"></i></span><input type="ui_text_field" name="user[email]" id="user_email" class="form-control string ui_text_field optional" /></div></div></form></div><div class="card-block highlight"><ul class="nav nav-tabs" role="tablist"><li class="nav-item"><a class="active nav-link" data-toggle="tab" role="tab" data-target="#ruby-07bfe9c5-9584-4d71-955c-a7cfbdceba93">Ruby</a></li></ul></div><div class="tab-content"><div class="active card-body highlight tab-pane" id="ruby-07bfe9c5-9584-4d71-955c-a7cfbdceba93"><pre>
+<span class="n">ui_form_for</span><span class="p">(</span><span class="vi">@search</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span>
+<span class="err">  </span><span class="o">...</span>
+<span class="err">  </span><span class="n">f</span><span class="p">.</span><span class="nf">input</span> <span class="ss">:email</span><span class="p">,</span> <span class="ss">as: :ui_text_field</span><span class="p">,</span> <span class="ss">append: </span><span class="n">ui_glyph</span><span class="p">(</span><span class="s2">"envelope"</span><span class="p">)</span>
+<span class="err">  </span><span class="o">...</span>
+<span class="k">end</span>
+</pre></div></div></div></section></div>
+</main>
+</div><div class="secondary-nav d-md-none d-lg-block col-xl-2 col-lg-2"><aside class='sticky'>
+<h4>On this page</h4>
+<hr>
+<ul class="nav"><li class="nav-item"><a data-turbolinks="false" href="text-field.html#simple-form">Simple form</a></li><li class="nav-item"><a data-turbolinks="false" href="text-field.html#text-field">Text Field</a></li><li class="nav-item"><a data-turbolinks="false" href="text-field.html#text-field-options">Text Field Options</a></li><li class="nav-item"><a data-turbolinks="false" href="text-field.html#text-field-surrounded">Text Field surrounded</a></li></ul></aside>
+</div></div><div class='scroll-to-top'>
+<a class="back-top btn-primary btn btn-lg" role="button" href="text-field.html#top"><i class="glyph fas fa-arrow-circle-up"></i> </a>
+</div>
+</div><footer class='mt-auto'>
+<nav class="nav nav-links justify-content-center"><a href="https://github.com/thooams/Ui-Bibz" class="nav-link"><i class="glyph fab fa-github-alt"></i> Github</a><a href="../../../about.html" class="nav-link"><i class="glyph fas fa-book"></i> About</a><a href="https://rubygems.org/gems/ui_bibz" class="nav-link"><i class="glyph fas fa-gem"></i> Gem</a></nav><p>Ui Bibz Framework is designed and created by Thomas HUMMEL (<a href="https://github.com/thooams">@thooams</a>)<br />
+This theme is inspired by <a href="http://getbootstrap.com">Bootstrap theme documentation</a><br />
+Currently v3.0.0.alpha10. Code licensed MIT</p>
+
+</footer>
+
+</body>
+</html>
